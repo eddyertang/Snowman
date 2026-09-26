@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Common Crop Notts</title>
+<meta name="description" content="Neighbours in Nottinghamshire pooling orders to buy straight from local farms at farm-gate prices. Collect from a hub near you.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Public+Sans:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="demo-bar">Demo site. Farms, prices and hubs are placeholders, and nothing you enter is sent anywhere.</div>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="logo" href="#top" aria-label="Common Crop home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 29V13" /><path d="M16 17c-6 0-9-4-9-10 6 0 9 4 9 10Z" /><path d="M16 13c0-5 3-9 9-9 0 6-3 9-9 9Z" /></svg>
+      <span>Common Crop<small>Nottinghamshire</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#buys">Crowd-buys</a>
+      <a href="#how">How it works</a>
+      <a href="#farmers">For farmers</a>
+      <a href="#hubs">Hubs</a>
+    </nav>
+    <button type="button" id="basket-open" class="basket-btn">
+      Pledges <span id="basket-count" class="count" hidden>0</span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero wrap">
+    <div class="hero-copy">
+      <p class="eyebrow">Farm-to-neighbour buying club</p>
+      <h1>Buy straight from Notts farms. <em>Together.</em></h1>
+      <p class="lede">Neighbours pool their orders so we can buy in bulk at close to farm-gate prices. Farmers get paid within 7 days. You collect from a hub down the road.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#buys">See this fortnight's crowd-buys</a>
+        <a class="btn btn-ghost" href="#join">Join the founding 200</a>
+      </div>
+    </div>
+
+    <aside class="cycle" aria-labelledby="cycle-title">
+      <p class="cycle-tag">Order cycle <span id="cycle-number">03</span></p>
+      <h2 id="cycle-title" class="visually-hidden">Current order cycle</h2>
+      <div class="countdown" aria-label="Time until orders close">
+        <div><b id="cd-d">0</b><span>days</span></div>
+        <div><b id="cd-h">0</b><span>hrs</span></div>
+        <div><b id="cd-m">0</b><span>mins</span></div>
+      </div>
+      <dl class="cycle-dates">
+        <div><dt>Orders close</dt><dd id="cycle-close">Thu 1 Oct, 8pm</dd></div>
+        <div><dt>Collect</dt><dd id="cycle-collect">Sat 3 Oct, 10am–1pm</dd></div>
+      </dl>
+      <ul class="cycle-stats">
+        <li><b id="stat-households">142</b> households</li>
+        <li><b id="stat-farms">6</b> farms</li>
+        <li><b id="stat-miles">13</b> mi avg. food miles</li>
+      </ul>
+    </aside>
+  </section>
+
+  <section id="buys" class="section wrap" aria-labelledby="buys-title">
+    <div class="section-head">
+      <div>
+        <h2 id="buys-title">Crowd-buys this cycle</h2>
+        <p>Each one goes to the farm only when enough shares are pledged. Miss the target and nobody is charged.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filter by category">
+        <button type="button" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" data-filter="veg" aria-pressed="false">Veg</button>
+        <button type="button" data-filter="fruit" aria-pressed="false">Fruit</button>
+        <button type="button" data-filter="meat" aria-pressed="false">Meat</button>
+        <button type="button" data-filter="eggs" aria-pressed="false">Eggs</button>
+      </div>
+    </div>
+    <div id="buys-grid" class="buys-grid"></div>
+  </section>
+
+  <section id="how" class="section band" aria-labelledby="how-title">
+    <div class="wrap">
+      <h2 id="how-title">How a cycle works</h2>
+      <ol class="steps">
+        <li><h3>Pledge</h3><p>Orders open Friday. Pledge shares in crowd-buys or add standing items. Your card is saved, not charged.</p></li>
+        <li><h3>Target met, we order</h3><p>Thursday 8pm the window closes. Crowd-buys that hit their target become one order per farm. Only then are you charged.</p></li>
+        <li><h3>Farms deliver to the hub</h3><p>One drop per farm, straight to the hub. Chilled goods go in the fridges and get temperature-logged.</p></li>
+        <li><h3>You collect</h3><p>Saturday morning, bring a bag. Anything unclaimed by 1pm is kept chilled and you'll get a message.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section wrap split-section" aria-labelledby="split-title">
+    <div>
+      <h2 id="split-title">Where every £10 goes</h2>
+      <p>We add about 15% to the farm-gate price and publish exactly what it pays for. Common Crop is set up as a Community Interest Company, so surplus goes back into lower prices and the hubs.</p>
+    </div>
+    <div>
+      <div id="split-bar" class="split-bar" aria-hidden="true"></div>
+      <ul id="split-legend" class="split-legend"></ul>
+    </div>
+  </section>
+
+  <section id="farmers" class="section band" aria-labelledby="farmers-title">
+    <div class="wrap farmers">
+      <div>
+        <h2 id="farmers-title">For farmers</h2>
+        <ul class="ticks">
+          <li><b>Paid within 7 days</b>, on one invoice per cycle.</li>
+          <li><b>Predictable orders</b> every fortnight, and whole-crop commitments as we grow.</li>
+          <li><b>Grade-outs welcome.</b> Oversize, undersize, cosmetic marks.</li>
+          <li><b>Gluts sold fast.</b> Tell us Monday and we'll run a crowd-buy that week.</li>
+          <li><b>One drop point</b>, and your farm's story on every product.</li>
+        </ul>
+        <h3 class="sub">Sample farms</h3>
+        <ul id="farm-list" class="farm-list"></ul>
+      </div>
+      <form id="farm-form" class="card-form">
+        <h3>Talk to us about supplying</h3>
+        <label for="farm-name">Farm or business</label>
+        <input id="farm-name" name="farm" required autocomplete="organization">
+        <label for="farm-contact">Your name</label>
+        <input id="farm-contact" name="name" required autocomplete="name">
+        <label for="farm-phone">Phone or email</label>
+        <input id="farm-phone" name="contact" required>
+        <label for="farm-what">What you grow or rear</label>
+        <textarea id="farm-what" name="produce" rows="3" placeholder="e.g. 4 ha potatoes, 200 laying hens (graded)"></textarea>
+        <button type="submit" class="btn btn-primary">Send</button>
+        <p id="farm-done" class="done" role="status" hidden>Thanks. This is a demo, so nothing was sent.</p>
+      </form>
+    </div>
+  </section>
+
+  <section id="hubs" class="section wrap" aria-labelledby="hubs-title">
+    <div class="section-head">
+      <div>
+        <h2 id="hubs-title">Collection hubs</h2>
+        <p>Community spaces, open for three hours on collection day. No delivery vans means lower prices.</p>
+      </div>
+    </div>
+    <ul id="hub-list" class="hub-list"></ul>
+  </section>
+
+  <section id="join" class="section band band-accent" aria-labelledby="join-title">
+    <div class="wrap join">
+      <div>
+        <h2 id="join-title">Join the founding 200</h2>
+        <p>Founding households shape which farms and hubs we start with, and get first pick of meat shares.</p>
+      </div>
+      <form id="join-form" class="card-form">
+        <label for="join-name">Name</label>
+        <input id="join-name" name="name" required autocomplete="name">
+        <label for="join-email">Email</label>
+        <input id="join-email" name="email" type="email" required autocomplete="email">
+        <label for="join-postcode">Postcode</label>
+        <input id="join-postcode" name="postcode" required autocomplete="postal-code" placeholder="NG2 4…">
+        <label for="join-hub">Collection hub</label>
+        <select id="join-hub" name="hub" required></select>
+        <fieldset>
+          <legend>I'd mostly buy</legend>
+          <label class="check"><input id="want-veg" type="checkbox" name="veg" checked> Veg</label>
+          <label class="check"><input id="want-fruit" type="checkbox" name="fruit"> Fruit</label>
+          <label class="check"><input id="want-meat" type="checkbox" name="meat"> Meat shares</label>
+          <label class="check"><input id="want-eggs" type="checkbox" name="eggs"> Eggs</label>
+        </fieldset>
+        <button type="submit" class="btn btn-primary">Join</button>
+        <p id="join-done" class="done" role="status" hidden></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <p><b>Common Crop CIC</b> (to be registered). Food business registration and hygiene rating pending.</p>
+    <p>Sample site. No farm, price or hub shown is real yet.</p>
+  </div>
+</footer>
+
+<div id="basket" class="basket" hidden>
+  <div class="basket-panel" role="dialog" aria-modal="true" aria-labelledby="basket-title">
+    <header>
+      <h2 id="basket-title">Your pledges</h2>
+      <button type="button" id="basket-close" class="icon-btn" aria-label="Close">×</button>
+    </header>
+    <ul id="basket-list" class="basket-list"></ul>
+    <p class="basket-total">Total if every target is met <b id="basket-total">£0</b></p>
+    <button type="button" class="btn btn-primary" disabled>Save card &amp; confirm (coming soon)</button>
+    <p class="fine">You're only charged for crowd-buys that reach their target when orders close.</p>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="store.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

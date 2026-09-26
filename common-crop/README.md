@@ -15,7 +15,7 @@ cd common-crop/site && python3 -m http.server 8000
 # member app:    http://localhost:8000/app.html
 ```
 
-Opening the files directly also works. Demo state is kept in your browser; use "Reset demo" in the app to start over.
+Opening the files directly also works. Demo state is kept in your browser; use "Start over" in the app to start over.
 
 ```sh
 node --test common-crop/tests/*.test.js   # engine tests
@@ -23,22 +23,25 @@ node --test common-crop/tests/*.test.js   # engine tests
 
 ### Try this in the member app
 
-1. **Choose items:** add money to strawberries and watch your share, carry-over and saving update.
-2. **Pickup:** accept Sam's request to collect their parcel.
-3. **Pot:** press **Close orders & buy**.
-4. **Hub scanner:** scan your code. It releases your parcel *and* Sam's. Then scan Sam's code and see it refused.
-5. **Pot:** start the next cycle. Priya didn't collect, so her parcel is forfeited. Your leftovers are still on each item under **Credit**.
+1. **Shop:** tap + on an item. Today's price is set aside from your wallet. Open "Price steps and how we compared" to see the maths.
+2. **Pickup:** say yes to Sam's request to pick up their bag.
+3. **Home:** press **Close orders and buy** under Demo controls.
+4. **Volunteer scanner** (link on Home): scan your code. It hands over your bag *and* Sam's. Sam's own code is refused.
+5. **Home:** start next week. Priya didn't collect, so her bag is donated. Your leftovers show under **Wallet**.
 
 ## Structure
 
 ```
 site/
   index.html   public landing page
-  app.html     member app: Pot · Choose items · Credit · Pickup · Group · Rules · Hub scanner
+  app.html     member app: Home · Shop · Wallet · Pickup · Group (+ Rules, Volunteer scanner)
   styles.css   design tokens on :root (light + dark), then components
-  engine.js    THE RULES: tier pricing, fair allocation, ledger, QR tokens, delegation.
+  engine.js    THE RULES: tier pricing, fair allocation, ledger, QR tokens, delegation,
+               like-for-like supermarket comparison.
                Pure functions, no DOM. Runs in the browser and in Node (tests, server).
-  data.js      sample hubs, pots, items + price tiers, synthetic network demand
+  data.js      sample hubs, pots, items + price tiers, comparison packs, synthetic demand
+  art.js       produce illustrations (inline SVG)
+  ui.js        shared formatting and the "How we compared" panel
   store.js     the only data layer; demo state in localStorage, swap for API calls
   landing.js   landing page rendering
   member.js    member app rendering and events

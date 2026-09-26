@@ -4,29 +4,28 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Common Crop Notts</title>
-<meta name="description" content="Neighbours in Nottinghamshire pooling orders to buy straight from local farms at farm-gate prices. Collect from a hub near you.">
+<meta name="description" content="Club together with neighbours in Nottinghamshire, buy straight from local farms, and pay less for better food.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Public+Sans:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,400&display=swap">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="demo-bar">Demo site. Farms, prices and hubs are placeholders, and nothing you enter is sent anywhere.</div>
+<p class="notice-bar">Demo site: farms, prices and people are made up, and nothing you type is sent anywhere.</p>
 
-<header class="site-header">
-  <div class="wrap header-row">
-    <a class="logo" href="#top" aria-label="Common Crop home">
-      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 29V13" /><path d="M16 17c-6 0-9-4-9-10 6 0 9 4 9 10Z" /><path d="M16 13c0-5 3-9 9-9 0 6-3 9-9 9Z" /></svg>
-      <span>Common Crop<small>Nottinghamshire</small></span>
+<header class="top">
+  <div class="wrap top-row">
+    <a class="brand" href="#top" aria-label="Common Crop home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" class="brand-disc"/><path d="M16 25V14" /><path d="M16 17c-5 0-7-3-7-8 5 0 7 3 7 8Z" /><path d="M16 14c0-4 2-7 7-7 0 5-2 7-7 7Z" /></svg>
+      <span>Common Crop</span>
     </a>
-    <nav class="nav" aria-label="Main">
-      <a href="#buys">This cycle</a>
+    <nav class="top-nav" aria-label="Main">
       <a href="#how">How it works</a>
-      <a href="#farmers">For farmers</a>
-      <a href="#hubs">Hubs</a>
+      <a href="#farmers">Our farmers</a>
+      <a href="#faq">Questions</a>
     </nav>
-    <a href="app.html#pot" class="basket-btn">My pot</a>
+    <a class="btn btn-small" href="app.html#home">Open the app</a>
   </div>
 </header>
 
@@ -34,154 +33,136 @@
 
   <section class="hero wrap">
     <div class="hero-copy">
-      <p class="eyebrow">Farm-to-neighbour buying club</p>
-      <h1>Buy straight from Notts farms. <em>Together.</em></h1>
-      <p class="lede">Join a local pot. Put money on the food you want. Every pot in the county buys together, so the bigger we get, the lower the price. Pick up at a hub down the road with your QR code.</p>
-      <div class="hero-cta">
-        <a class="btn btn-primary" href="app.html#choose">Try the member app</a>
-        <a class="btn btn-ghost" href="#join">Join the founding 200</a>
+      <p class="pill">Nottinghamshire · farm to neighbour</p>
+      <h1>Farm-fresh food, shared with your neighbours.</h1>
+      <p class="lede">Club together with people near you, buy straight from Notts farms in bulk, and pay less for better food. Pick it up down the road on Saturday.</p>
+      <form class="finder" id="finder">
+        <label for="finder-postcode" class="visually-hidden">Your postcode</label>
+        <input id="finder-postcode" name="postcode" placeholder="Your postcode, e.g. NG2 4" autocomplete="postal-code" required>
+        <button class="btn" type="submit">Find my pot</button>
+      </form>
+      <p class="finder-result" id="finder-result" aria-live="polite"></p>
+      <div class="proof">
+        <div class="faces" aria-hidden="true"><span>AI</span><span>SA</span><span>JO</span><span>PR</span><span>+</span></div>
+        <p><b id="proof-count">479 neighbours</b> in <b id="proof-pots">5 local pots</b> this week</p>
       </div>
     </div>
 
-    <aside class="cycle" aria-labelledby="cycle-title">
-      <p class="cycle-tag">Order cycle <span id="cycle-number">03</span></p>
-      <h2 id="cycle-title" class="visually-hidden">Current order cycle</h2>
-      <div class="countdown" aria-label="Time until orders close">
-        <div><b id="cd-d">0</b><span>days</span></div>
-        <div><b id="cd-h">0</b><span>hrs</span></div>
-        <div><b id="cd-m">0</b><span>mins</span></div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="crate" id="crate"></div>
+      <div class="float float-a">
+        <span class="float-art" id="float-art"></span>
+        <div><b id="float-title">Strawberries just got cheaper</b><span id="float-sub">1,016 punnets at £1.60</span></div>
       </div>
-      <dl class="cycle-dates">
-        <div><dt>Orders close</dt><dd id="cycle-close">Thu 1 Oct, 8pm</dd></div>
-        <div><dt>Collect</dt><dd id="cycle-collect">Sat 3 Oct, 10am–1pm</dd></div>
-      </dl>
-      <ul class="cycle-stats">
-        <li><b id="stat-households">479</b> households</li>
-        <li><b id="stat-pots">5</b> pots</li>
-        <li><b id="stat-pot">£0</b> in the pot</li>
-      </ul>
-    </aside>
+      <div class="float float-b"><b id="float-save">31%</b><span>average saving this week</span></div>
+    </div>
   </section>
 
-  <section id="buys" class="section wrap" aria-labelledby="buys-title">
+  <section id="picks" class="section wrap" aria-labelledby="picks-title">
     <div class="section-head">
-      <div>
-        <h2 id="buys-title">This cycle across the network</h2>
-        <p>Prices drop in steps as more money goes into the pot. Savings are against typical supermarket prices for the same thing.</p>
-      </div>
-      <div class="filters" role="group" aria-label="Filter by category">
-        <button type="button" data-filter="all" aria-pressed="true">All</button>
-        <button type="button" data-filter="veg" aria-pressed="false">Veg</button>
-        <button type="button" data-filter="fruit" aria-pressed="false">Fruit</button>
-        <button type="button" data-filter="meat" aria-pressed="false">Meat</button>
-        <button type="button" data-filter="eggs" aria-pressed="false">Eggs</button>
-      </div>
+      <h2 id="picks-title">This week's picks</h2>
+      <p>Prices drop as more neighbours join in. <span class="muted" id="close-line">Orders close Thursday at 8pm.</span></p>
     </div>
-    <div id="buys-grid" class="buys-grid"></div>
+    <div class="picks" id="picks-grid"></div>
+    <p class="fine" id="ref-note"></p>
   </section>
 
   <section id="how" class="section band" aria-labelledby="how-title">
     <div class="wrap">
-      <h2 id="how-title">How a cycle works</h2>
+      <h2 id="how-title" class="center">How it works</h2>
       <ol class="steps">
-        <li><h3>Join a local pot</h3><p>Your postcode puts you in a pot of up to 120 households near one hub. When a pot fills, a new one opens.</p></li>
-        <li><h3>Put money on what you want</h3><p>Top up, then earmark money to items and set the most you'd use. You see the live price and your saving as the pot grows.</p></li>
-        <li><h3>We buy at the best tier</h3><p>Thursday 8pm, all pots buy together at the cheapest bulk price the money reaches. Anything you didn't need stays on the item as credit.</p></li>
-        <li><h3>Scan and collect</h3><p>Saturday, show your QR code at the hub. Or let someone in your pot collect for you, or pay for delivery.</p></li>
+        <li>
+          <span class="step-art" data-art="basket"></span>
+          <h3>Join your local pot</h3>
+          <p>Your postcode puts you with up to 120 households near one hub. Everyone's orders are combined across the county.</p>
+        </li>
+        <li>
+          <span class="step-art" data-art="strawberries"></span>
+          <h3>Pick what you want</h3>
+          <p>Choose how many of each. The more neighbours join a buy, the lower the price, and you'll never pay more than you've set aside.</p>
+        </li>
+        <li>
+          <span class="step-art" data-art="vegbag"></span>
+          <h3>Grab it on Saturday</h3>
+          <p>Show your code at the hub. Or ask a neighbour to pick yours up, or get it delivered.</p>
+        </li>
       </ol>
+      <p class="center small">Anything you don't use stays in your wallet for next week, or you can take it back out.</p>
     </div>
   </section>
 
-  <section class="section wrap split-section" aria-labelledby="split-title">
-    <div>
-      <h2 id="split-title">Where every £10 goes</h2>
-      <p>We add about 15% to the farm-gate price and publish exactly what it pays for. Common Crop is set up as a Community Interest Company, so surplus goes back into lower prices and the hubs.</p>
-    </div>
-    <div>
-      <div id="split-bar" class="split-bar" aria-hidden="true"></div>
-      <ul id="split-legend" class="split-legend"></ul>
-    </div>
-  </section>
-
-  <section id="farmers" class="section band" aria-labelledby="farmers-title">
-    <div class="wrap farmers">
-      <div>
-        <h2 id="farmers-title">For farmers</h2>
-        <ul class="ticks">
-          <li><b>Paid within 7 days</b>, on one invoice per cycle.</li>
-          <li><b>Predictable orders</b> every fortnight, and whole-crop commitments as we grow.</li>
-          <li><b>Grade-outs welcome.</b> Oversize, undersize, cosmetic marks.</li>
-          <li><b>Gluts sold fast.</b> Tell us Monday and we'll run a crowd-buy that week.</li>
-          <li><b>One drop point</b>, and your farm's story on every product.</li>
-        </ul>
-        <h3 class="sub">Sample farms</h3>
-        <ul id="farm-list" class="farm-list"></ul>
-      </div>
-      <form id="farm-form" class="card-form">
-        <h3>Talk to us about supplying</h3>
-        <label for="farm-name">Farm or business</label>
-        <input id="farm-name" name="farm" required autocomplete="organization">
-        <label for="farm-contact">Your name</label>
-        <input id="farm-contact" name="name" required autocomplete="name">
-        <label for="farm-phone">Phone or email</label>
-        <input id="farm-phone" name="contact" required>
-        <label for="farm-what">What you grow or rear</label>
-        <textarea id="farm-what" name="produce" rows="3" placeholder="e.g. 4 ha potatoes, 200 laying hens (graded)"></textarea>
-        <button type="submit" class="btn btn-primary">Send</button>
-        <p id="farm-done" class="done" role="status" hidden>Thanks. This is a demo, so nothing was sent.</p>
-      </form>
-    </div>
-  </section>
-
-  <section id="hubs" class="section wrap" aria-labelledby="hubs-title">
+  <section id="farmers" class="section wrap" aria-labelledby="farmers-title">
     <div class="section-head">
-      <div>
-        <h2 id="hubs-title">Collection hubs</h2>
-        <p>Community spaces, open for three hours on collection day. No delivery vans means lower prices.</p>
-      </div>
+      <h2 id="farmers-title">Meet the farmers</h2>
+      <p>Every item comes from a named farm, usually less than 20 miles away. Farmers are paid within 7 days.</p>
     </div>
-    <ul id="hub-list" class="hub-list"></ul>
+    <div class="farmers" id="farmer-cards"></div>
   </section>
 
-  <section id="join" class="section band band-accent" aria-labelledby="join-title">
-    <div class="wrap join">
+  <section class="section band" aria-labelledby="fair-title">
+    <div class="wrap fair">
       <div>
-        <h2 id="join-title">Join the founding 200</h2>
-        <p>Your postcode puts you in the nearest pot with space. Founding households shape which farms and hubs we start with.</p>
+        <h2 id="fair-title">Where your £10 goes</h2>
+        <p>We add about 15% to what the farm charges, and we're open about where it goes. We're a Community Interest Company, so any surplus goes back into lower prices.</p>
       </div>
-      <form id="join-form" class="card-form">
-        <label for="join-name">Name</label>
-        <input id="join-name" name="name" required autocomplete="name">
-        <label for="join-email">Email</label>
-        <input id="join-email" name="email" type="email" required autocomplete="email">
-        <label for="join-postcode">Postcode</label>
-        <input id="join-postcode" name="postcode" required autocomplete="postal-code" placeholder="NG2 4…">
-        <p class="small" id="join-pot" aria-live="polite">Enter an NG postcode to see your pot.</p>
-        <fieldset>
-          <legend>I'd mostly buy</legend>
-          <label class="check"><input id="want-veg" type="checkbox" name="veg" checked> Veg</label>
-          <label class="check"><input id="want-fruit" type="checkbox" name="fruit"> Fruit</label>
-          <label class="check"><input id="want-meat" type="checkbox" name="meat"> Meat shares</label>
-          <label class="check"><input id="want-eggs" type="checkbox" name="eggs"> Eggs</label>
-        </fieldset>
-        <button type="submit" class="btn btn-primary">Join</button>
-        <p id="join-done" class="done" role="status" hidden></p>
-      </form>
+      <div>
+        <div class="split-bar" id="split-bar" aria-hidden="true"></div>
+        <ul class="split-legend" id="split-legend"></ul>
+      </div>
     </div>
+  </section>
+
+  <section id="faq" class="section wrap narrow" aria-labelledby="faq-title">
+    <h2 id="faq-title" class="center">Questions</h2>
+    <div class="faq">
+      <details><summary>Is it really cheaper than the supermarket?</summary>
+        <p>For most things, yes. We compare like-for-like: British free-range eggs with British free-range eggs, grass-fed beef with grass-fed beef, using the supermarket's best-value pack size. Tap "How we compared" on any item to see the sums.</p></details>
+      <details><summary>What if the price changes after I order?</summary>
+        <p>You choose how many you want and we set aside today's price, so you'll never pay more than that. If more neighbours join and the price drops, the difference stays in your wallet. If people drop out and it goes up, you might get one fewer, and we'll tell you before Saturday.</p></details>
+      <details><summary>What happens to money I don't use?</summary>
+        <p>It stays in your wallet. Use it next week, put it on something else, or send it back to your card whenever you like.</p></details>
+      <details><summary>I can't make it on Saturday.</summary>
+        <p>Ask someone in your pot to collect for you (they have to say yes), or choose delivery if it's available near you. Food that isn't collected goes to a local food bank, and we can't refund it.</p></details>
+      <details><summary>Where does the food come from?</summary>
+        <p>Farms across Nottinghamshire. Each item shows the farm and how far away it is. Meat is butchered and labelled by licensed butchers, and eggs are graded and stamped.</p></details>
+    </div>
+  </section>
+
+  <section id="join" class="section join-band" aria-labelledby="join-title">
+    <div class="wrap narrow center">
+      <span class="join-art" data-art="basket"></span>
+      <h2 id="join-title">Be one of the first 200</h2>
+      <p>Founding neighbours choose which farms and hubs we start with, and get first dibs on meat shares.</p>
+      <form id="join-form" class="join-form">
+        <label for="join-email" class="visually-hidden">Email</label>
+        <input id="join-email" name="email" type="email" required placeholder="Email address" autocomplete="email">
+        <label for="join-postcode" class="visually-hidden">Postcode</label>
+        <input id="join-postcode" name="postcode" required placeholder="Postcode" autocomplete="postal-code">
+        <button class="btn" type="submit">Count me in</button>
+      </form>
+      <p id="join-done" class="done" role="status" hidden></p>
+    </div>
+  </section>
+
+  <section class="section wrap narrow center" aria-labelledby="grow-title">
+    <h2 id="grow-title" class="h-sm">Farmer or grower?</h2>
+    <p>Get paid in 7 days, sell your gluts and grade-outs, and deliver to one place. <a href="#join">Say hello</a> and we'll call you.</p>
   </section>
 
 </main>
 
-<footer class="site-footer">
-  <div class="wrap footer-row">
-    <p><b>Common Crop CIC</b> (to be registered). Food business registration and hygiene rating pending.</p>
-    <p>Sample site. No farm, price or hub shown is real yet.</p>
+<footer class="foot">
+  <div class="wrap foot-row">
+    <p><b>Common Crop CIC</b> (to be registered). Food business registration pending.</p>
+    <p><a href="app.html#rules">Member rules</a> · <a href="app.html#hub">Volunteer scanner</a></p>
   </div>
 </footer>
 
+<script src="art.js"></script>
 <script src="engine.js"></script>
 <script src="data.js"></script>
 <script src="store.js"></script>
+<script src="ui.js"></script>
 <script src="landing.js"></script>
 </body>
 </html>

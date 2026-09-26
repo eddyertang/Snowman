@@ -8,7 +8,7 @@
 (function () {
   const E = window.CCEngine;
   const D = window.CC_DATA;
-  const KEY = "commoncrop.demo.v2";
+  const KEY = "commoncrop.demo.v3";
   const YOU = D.you.id;
 
   function fresh() {
@@ -57,7 +57,7 @@
         memberId: m,
         pot: D.you.pot,
         budget: acc[m].items[itemId],
-        maxUnits: (state.maxUnits[m] || {})[itemId] || 1,
+        maxUnits: (state.maxUnits[m] || {})[itemId] || 0, // leftovers alone don't buy anything
         seq: i,
       }));
     return D.networkDemand[itemId].concat(real);
@@ -114,6 +114,31 @@
     },
     setDelivery(on) { state.delivery = on; save(); },
 
+    /**
+     * Friendly path: "I want N of these". Sets the max and puts exactly enough
+     * money on the item at today's price; any extra on the item (e.g. last
+     * week's leftover) is used first, and any surplus goes back to the wallet.
+     */
+    setWanted(itemId, qty) {
+      const item = itemById(itemId);
+      const entry = Math.max(...item.tiers.map((t) => t.unitPrice));
+      const price = projection(item).result.unitPrice || entry;
+      const target = qty * price;
+      const current = this.account().items[itemId] || 0;
+      if (target > current && this.account().unassigned < target - current) {
+        const e = new Error(`Add ${"£" + ((target - current - this.account().unassigned) / 100).toFixed(2)} to your wallet to get ${qty}.`);
+        e.shortfall = target - current - this.account().unassigned;
+        throw e;
+      }
+      state.maxUnits[YOU] = state.maxUnits[YOU] || {};
+      state.maxUnits[YOU][itemId] = qty;
+      save();
+      this.setEarmark(itemId, target);
+    },
+    wanted(itemId) {
+      return (state.maxUnits[YOU] || {})[itemId] || 0;
+    },
+
     // ---- cycle
     closeCycle() {
       if (state.phase !== "open") return;
@@ -144,6 +169,8 @@
       }
       state.cycle += 1;
       state.phase = "open";
+      // Fresh basket each week; leftover money stays on its item until reused.
+      state.maxUnits[YOU] = {};
       state.results = null;
       state.delegations = state.delegations.filter((d) => d.cycle >= state.cycle);
       save();

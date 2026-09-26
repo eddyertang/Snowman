@@ -251,6 +251,16 @@ This replaces the simple crowd-buys in §5 with local pots, earmarked credit and
 - **Guards:** you can't overspend a bucket, and you can't withdraw earmarked money until you move it back. A parcel can't be collected twice, and a delegated parcel won't release to the original member's code. The test suite covers each of these (`tests/engine.test.js`).
 - **Deterministic:** the same inputs always give the same allocation. Store the engine version with each cycle's results so any cycle can be re-run and audited.
 
+### How "you save" is worked out
+
+1. **Like-for-like first.** Each item is compared with the *same quality and origin*: British grass-fed beef against British grass-fed beef, free-range eggs against free-range eggs. It's never compared with the cheapest imported or indoor-reared option.
+2. **Best-value pack size.** For the comparison product, take the supermarket's cheapest price per kg (or per egg) across all its pack sizes, which is usually its biggest pack.
+3. **Scale to our unit.** Multiply by how much is in one of our units. Your example: 5 kg of beef for £20 against a supermarket best of £8/kg gives 5 × £8 = £40, so it's half price.
+4. **Mixed items use a basket.** A beef share is compared with the same mix of cuts (40% mince, 20% braising, 25% roasting joint, 15% steak, each at its own best-value price). A veg bag is compared with its contents bought separately.
+5. **Show the sums.** Every item has a "How we compared" panel with the product, pack and price used. Checks are dated and name the retailer (the `reference_prices` table).
+
+This is in `engine.js` (`referenceBreakdown`), with tests including your beef example.
+
 ### What these features change legally
 
 | Feature | Issue | What to do |

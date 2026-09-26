@@ -110,8 +110,43 @@
     return { tier: next, unitsShort: Math.max(0, next.minUnits - wholeCases(wanted, item.caseSize)) };
   }
 
+  // ------------------------------------------------------ price comparison
+  //
+  // Like-for-like supermarket price for one of our units.
+  //
+  //   item.perUnit   how many base units (kg, or eggs) are in one of our units
+  //   item.compare   { basis: 'kg'|'each', components: [{ label, share, packs }] }
+  //     packs        [{ name, size (base units), price (pence) }] for the SAME
+  //                  quality (e.g. British grass-fed, free-range)
+  //
+  // For each component we take the supermarket's cheapest price per base unit
+  // across its pack sizes (usually its biggest pack), then scale up:
+  //   5 kg of beef, supermarket best £8/kg  ->  5 x £8 = £40 to compare with.
+  // Mixed items (a beef share, a veg bag) are a weighted basket of components.
+
+  function bestPack(packs) {
+    return packs.reduce((best, p) => (p.price / p.size < best.price / best.size ? p : best));
+  }
+
+  function referenceBreakdown(item) {
+    const c = item.compare;
+    if (!c) return null;
+    const parts = c.components.map((comp) => {
+      const pack = bestPack(comp.packs);
+      return { label: comp.label, share: comp.share, pack, perBase: pack.price / pack.size };
+    });
+    const perBase = parts.reduce((s, p) => s + p.share * p.perBase, 0);
+    return { basis: c.basis, parts, perBase, unitPrice: Math.round(perBase * item.perUnit) };
+  }
+
+  function referenceUnitPrice(item) {
+    const b = referenceBreakdown(item);
+    return b ? b.unitPrice : item.refPrice || 0;
+  }
+
   function saving(item, units, cost) {
-    return item.refPrice ? units * item.refPrice - cost : 0;
+    const ref = referenceUnitPrice(item);
+    return ref ? units * ref - cost : 0;
   }
 
   // ----------------------------------------------------------------- ledger
@@ -289,6 +324,7 @@
 
   const Engine = {
     UNASSIGNED, solveItem, waterFill, unitsWanted, nextTierHint, saving,
+    referenceBreakdown, referenceUnitPrice,
     accountsFrom, applyEvent, tryAppend, available, emptyAccount, settleCycle,
     pickupToken, parseToken, holderOf, parcelsForHolder, scan,
   };

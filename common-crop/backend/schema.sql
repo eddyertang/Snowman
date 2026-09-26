@@ -61,6 +61,7 @@ create table items (
   category  text not null,
   unit      text not null,                    -- '400 g punnet'
   unit_plural text not null,
+  per_unit  numeric(8,3) not null,           -- base units (kg/each) in one unit
   case_size int  not null check (case_size > 0),
   case_label text not null,                   -- 'flat of 8'
   chilled   boolean not null default false,
@@ -79,13 +80,19 @@ create table item_tiers (
 
 -- Supermarket reference prices must be like-for-like, dated and sourced
 -- (comparative advertising rules).
+-- One row per pack checked. The engine uses the cheapest price per base unit
+-- (kg or each) per component, weighted by share (e.g. a beef share's cuts).
 create table reference_prices (
   item_id    text not null references items(id),
+  component  text not null default 'all',     -- 'mince', 'steak'... or 'all'
+  share      numeric(4,3) not null default 1, -- component's share of our unit
   checked_on date not null,
   retailer   text not null,
-  product    text not null,                   -- exact product compared
-  unit_price int  not null,
-  primary key (item_id, checked_on, retailer)
+  product    text not null,                   -- exact product, same quality
+  basis      text not null check (basis in ('kg','each')),
+  pack_size  numeric(8,3) not null check (pack_size > 0),
+  pack_price int  not null check (pack_price > 0),
+  primary key (item_id, component, checked_on, retailer, product)
 );
 
 -- Cycles and allocation ------------------------------------------------------

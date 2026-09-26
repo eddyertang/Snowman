@@ -121,3 +121,35 @@ test("settleCycle commits allocations and delivery fees", () => {
   assert.equal(acc.items.strawberries, 2000 - 8 * 240);
   assert.equal(acc.unassigned, 1000 - 350);
 });
+
+test("price comparison: 5 kg beef at £20 vs supermarket £8/kg is half price", () => {
+  const beef = {
+    perUnit: 5,
+    compare: { basis: "kg", components: [{ label: "British beef", share: 1, packs: [{ name: "1 kg", size: 1, price: 800 }] }] },
+  };
+  assert.equal(E.referenceUnitPrice(beef), 4000);
+  assert.equal(E.saving(beef, 1, 2000), 2000);
+});
+
+test("price comparison uses the supermarket's cheapest pack size per kg", () => {
+  const berries = {
+    perUnit: 0.4,
+    compare: { basis: "kg", components: [{ label: "British strawberries", share: 1, packs: [
+      { name: "400 g", size: 0.4, price: 275 }, { name: "600 g", size: 0.6, price: 375 },
+    ] }] },
+  };
+  const b = E.referenceBreakdown(berries);
+  assert.equal(b.parts[0].pack.name, "600 g"); // £6.25/kg beats £6.88/kg
+  assert.equal(b.unitPrice, 250);
+});
+
+test("mixed items compare against a weighted basket of like-for-like parts", () => {
+  const share = {
+    perUnit: 10,
+    compare: { basis: "kg", components: [
+      { label: "Mince", share: 0.5, packs: [{ name: "1 kg", size: 1, price: 1000 }] },
+      { label: "Steak", share: 0.5, packs: [{ name: "1 kg", size: 1, price: 3000 }] },
+    ] },
+  };
+  assert.equal(E.referenceUnitPrice(share), 20000); // 10 kg x £20/kg average
+});

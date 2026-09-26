@@ -1,119 +1,91 @@
-/* Landing page. Read-only view of the network pot, via Store. */
+/* Landing page: friendly, read-only view of this week, via Store. */
 (function () {
   const S = window.Store;
   const D = S.data;
-  const $ = (sel, root = document) => root.querySelector(sel);
-  const gbp = (p) => "£" + (p / 100).toFixed(2);
-  const gbpRound = (p) => "£" + Math.round(p / 100).toLocaleString("en-GB");
-  const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-  const DAY = 86400000;
-  let filter = "all";
+  const { esc, gbp, gbpRound, savePct, compareHtml } = window.CCUI;
+  const art = (id) => window.CCArt.get(id);
+  const $ = (sel) => document.querySelector(sel);
 
-  // Roll the sample cycle forward in 14-day steps so the demo never looks expired.
-  function currentCycle() {
-    let closes = new Date(D.cycle.closesAt).getTime();
-    let collect = new Date(D.cycle.collectOn + "T10:00:00").getTime();
-    let number = D.cycle.number;
-    while (closes < Date.now()) { closes += 14 * DAY; collect += 14 * DAY; number++; }
-    return { number, closes: new Date(closes), collect: new Date(collect) };
-  }
-  const fmtDay = (d) => d.toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short" });
+  const projs = S.projections();
+  const byId = Object.fromEntries(projs.map((p) => [p.item.id, p]));
 
-  function renderCycle() {
-    const c = currentCycle();
-    const ms = c.closes - Date.now();
-    $("#cycle-number").textContent = String(c.number).padStart(2, "0");
-    $("#cycle-close").textContent = fmtDay(c.closes) + ", 8pm";
-    $("#cycle-collect").textContent = fmtDay(c.collect) + ", by pot slot";
-    $("#cd-d").textContent = Math.floor(ms / DAY);
-    $("#cd-h").textContent = Math.floor((ms % DAY) / 3600000);
-    $("#cd-m").textContent = Math.floor((ms % 3600000) / 60000);
-    const totals = S.potTotals();
-    $("#stat-households").textContent = D.pots.reduce((s, p) => s + p.members, 0);
-    $("#stat-pots").textContent = D.pots.length;
-    $("#stat-pot").textContent = gbpRound(Object.values(totals).reduce((a, b) => a + b, 0));
-  }
+  // ---- hero
+  $("#crate").innerHTML = ["strawberries", "bramley", "eggs", "vegbag", "potatoes", "beef"]
+    .map((id) => `<span class="crate-item cat-${S.itemById(id).category}">${art(id)}</span>`).join("");
 
-  function renderItems() {
-    const projs = S.projections().filter((p) => filter === "all" || p.item.category === filter);
-    $("#buys-grid").innerHTML = projs.map((p) => {
-      const it = p.item, r = p.result;
-      const tiers = it.tiers.slice().sort((a, b) => a.minUnits - b.minUnits);
-      const perUnitSave = r.bought ? it.refPrice - r.unitPrice : 0;
-      const pct = p.hint ? Math.min(100, Math.round((r.units / p.hint.tier.minUnits) * 100)) : 100;
-      return `<article class="buy" data-status="${p.hint ? "open" : "met"}">
-        <header class="buy-top">
-          <span class="buy-cat">${esc(it.category)}</span>
-          <span class="chip ${p.hint ? "chip-close" : "chip-met"}">${p.hint ? `Tier ${r.tierIndex + 1} of ${tiers.length}` : "Best price reached"}</span>
-        </header>
+  const straw = byId.strawberries;
+  $("#float-art").innerHTML = art("strawberries");
+  $("#float-title").textContent = "Strawberries just got cheaper";
+  $("#float-sub").textContent = `${straw.result.units.toLocaleString("en-GB")} ${straw.item.plural} at ${gbp(straw.result.unitPrice)} each`;
+
+  const bought = projs.filter((p) => p.result.bought);
+  const avg = Math.round(bought.reduce((s, p) => s + savePct(p.item, p.result.unitPrice), 0) / bought.length);
+  $("#float-save").textContent = avg + "%";
+
+  const households = D.pots.reduce((s, p) => s + p.members, 0);
+  $("#proof-count").textContent = `${households} neighbours`;
+  $("#proof-pots").textContent = `${D.pots.length} local pots`;
+
+  // ---- picks
+  $("#picks-grid").innerHTML = projs.map((p) => {
+    const it = p.item, r = p.result;
+    const pct = savePct(it, r.unitPrice);
+    const nudge = p.hint && p.hint.unitsShort > 0
+      ? `<p class="nudge"><span class="bar"><span style="width:${Math.min(96, Math.round((r.units / p.hint.tier.minUnits) * 100))}%"></span></span>
+          ${p.hint.unitsShort.toLocaleString("en-GB")} more ${esc(it.plural)} and it drops to <b>${gbp(p.hint.tier.unitPrice)}</b></p>`
+      : `<p class="nudge nudge-done"><span class="tick" aria-hidden="true"></span> Best price unlocked</p>`;
+    return `<article class="pick cat-${it.category}">
+      <div class="pick-art">${art(it.id)}</div>
+      <div class="pick-body">
         <h3>${esc(it.name)}</h3>
-        <p class="buy-unit">Per ${esc(it.unit)} · bought by the ${esc(it.caseLabel)}</p>
-        <p class="buy-farm">${esc(it.farm)} <span class="miles">${it.miles} mi</span></p>
-        <div class="buy-price">
-          <strong>${r.bought ? gbp(r.unitPrice) : "–"}</strong><span>now</span>
-          ${perUnitSave > 0 ? `<span class="perkg">save ${gbp(perUnitSave)} vs ${gbp(it.refPrice)}</span>` : ""}
-        </div>
-        <div class="meter" aria-hidden="true"><span style="width:${pct}%"></span></div>
-        <p class="meter-label">${p.hint
-          ? `<b>${p.hint.unitsShort}</b> more ${esc(it.plural)} unlock <b>${gbp(p.hint.tier.unitPrice)}</b>`
-          : `<b>${r.units}</b> ${esc(it.plural)} at the lowest price`}</p>
-        <p class="buy-note">${p.people} people · ${gbpRound(r.totalBudget)} on this item · network saving ${gbpRound(Math.max(0, p.networkSaving))}</p>
-        <div class="buy-actions"><a class="btn btn-primary" href="app.html#choose">Add money in the app</a></div>
-      </article>`;
-    }).join("");
-  }
+        <p class="farm-line">${esc(it.farm)} · ${it.miles} miles</p>
+        <p class="price"><b>${r.bought ? gbp(r.unitPrice) : "–"}</b> <span>per ${esc(it.unit)}</span></p>
+        ${pct > 0 ? `<span class="save">${pct}% less than the supermarket</span>` : ""}
+        ${nudge}
+        <details class="how"><summary>How we compared</summary>${compareHtml(it, r.unitPrice)}</details>
+      </div>
+    </article>`;
+  }).join("");
+  $("#ref-note").textContent = D.refNote;
 
-  function renderSplit() {
-    $("#split-bar").innerHTML = D.split.map((s) => `<span class="seg seg-${s.key}" style="flex:${s.amount}"></span>`).join("");
-    $("#split-legend").innerHTML = D.split.map((s) => `<li><i class="seg-${s.key}"></i><span>${esc(s.label)}</span><b>£${s.amount.toFixed(2)}</b></li>`).join("");
-  }
+  const closes = new Date(D.cycle.closesAt);
+  $("#close-line").textContent = `Orders close ${closes.toLocaleDateString("en-GB", { weekday: "long" })} at 8pm.`;
 
-  function renderFarms() {
-    $("#farm-list").innerHTML = D.items.map((i) => `<li><b>${esc(i.farm)}</b><span>${esc(i.name)}</span><span class="miles">${i.miles} mi</span></li>`).join("");
-  }
+  // ---- how it works + join illustrations
+  document.querySelectorAll("[data-art]").forEach((el) => { el.innerHTML = art(el.dataset.art); });
 
-  function renderHubs() {
-    $("#hub-list").innerHTML = D.hubs.map((h) => {
-      const pots = D.pots.filter((p) => p.hub === h.id);
-      return `<li class="hub">
-        <span class="chip chip-hub-${pots.some((p) => p.members >= p.capacity) ? "pilot" : "planned"}">${pots.length} pot${pots.length > 1 ? "s" : ""}</span>
-        <h3>${esc(h.name)}</h3>
-        <p>${esc(h.venue)}</p>
-        ${pots.map((p) => `<p class="hub-when">${esc(p.name.replace(h.name + " ", ""))}: ${esc(p.slot)} · ${p.members}/${p.capacity}</p>`).join("")}
-      </li>`;
-    }).join("");
-  }
+  // ---- farmers
+  $("#farmer-cards").innerHTML = ["beef", "strawberries", "bramley", "eggs", "potatoes", "chicken"].map((id) => S.itemById(id)).map((it) => `
+    <article class="farmer cat-${it.category}">
+      <span class="farmer-art">${art(it.id)}</span>
+      <div>
+        <h3>${esc(it.farmer)}</h3>
+        <p class="farm-line">${esc(it.farm)} · ${it.miles} miles</p>
+        <p>${esc(it.story)}</p>
+      </div>
+    </article>`).join("");
 
-  function previewPot() {
-    const pc = $("#join-postcode").value;
-    const out = $("#join-pot");
-    if (pc.trim().length < 3) { out.textContent = "Enter an NG postcode to see your pot."; return null; }
+  // ---- fair split
+  $("#split-bar").innerHTML = D.split.map((s) => `<span class="seg seg-${s.key}" style="flex:${s.amount}"></span>`).join("");
+  $("#split-legend").innerHTML = D.split.map((s) => `<li><i class="seg-${s.key}"></i><span>${esc(s.label)}</span><b>£${s.amount.toFixed(2)}</b></li>`).join("");
+
+  // ---- pot finder + join
+  function potMessage(pc) {
     const m = S.potForPostcode(pc);
-    if (!m) { out.textContent = "We're only in Nottingham NG1–NG12 so far. Join anyway and we'll tell you when a pot opens near you."; return null; }
-    out.innerHTML = m.pot
-      ? `You'd join <b>${esc(m.pot.name)}</b>: ${esc(m.hub.name)}, about ${m.km.toFixed(1)} km away, ${esc(m.pot.slot)}.`
-      : `Pots at ${esc(m.hub.name)} are full. You'll start a new one there.`;
-    return m;
+    if (!m) return "We're starting in Nottingham (NG1 to NG12). Join below and we'll let you know when a pot opens near you.";
+    if (!m.pot) return `The pots at ${m.hub.name} are full, so you'd help start a new one there.`;
+    const spaces = m.pot.capacity - m.pot.members;
+    return `You'd be in <b>${esc(m.pot.name)}</b>, ${m.km.toFixed(1)} km away. Pick-up is ${esc(m.pot.slot)}. ${spaces} spaces left.`;
   }
-
-  document.addEventListener("click", (e) => {
-    const f = e.target.closest("[data-filter]");
-    if (!f) return;
-    filter = f.dataset.filter;
-    document.querySelectorAll("[data-filter]").forEach((b) => b.setAttribute("aria-pressed", String(b === f)));
-    renderItems();
+  $("#finder").addEventListener("submit", (e) => {
+    e.preventDefault();
+    $("#finder-result").innerHTML = potMessage($("#finder-postcode").value) + ` <a href="#join">Join now</a>`;
+    $("#join-postcode").value = $("#finder-postcode").value;
   });
-  $("#join-postcode").addEventListener("input", previewPot);
   $("#join-form").addEventListener("submit", (e) => {
     e.preventDefault();
-    const form = Object.fromEntries(new FormData(e.target));
-    const m = previewPot();
     const done = $("#join-done");
     done.hidden = false;
-    done.textContent = `Thanks${form.name ? ", " + form.name.split(" ")[0] : ""}. ${m && m.pot ? `You're down for ${m.pot.name}. ` : ""}This is a demo, so nothing was sent.`;
+    done.innerHTML = `Lovely! ${potMessage($("#join-postcode").value)} <br><span class="small">This is a demo, so nothing was sent.</span>`;
   });
-  $("#farm-form").addEventListener("submit", (e) => { e.preventDefault(); $("#farm-done").hidden = false; });
-
-  renderCycle(); renderItems(); renderSplit(); renderFarms(); renderHubs();
-  setInterval(renderCycle, 60000);
 })();

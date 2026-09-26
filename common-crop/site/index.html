@@ -133,12 +133,45 @@
       <span class="join-art" data-art="basket"></span>
       <h2 id="join-title">Be one of the first 200</h2>
       <p>Founding neighbours choose which farms and hubs we start with, and get first dibs on meat shares.</p>
-      <form id="join-form" class="join-form">
-        <label for="join-email" class="visually-hidden">Email</label>
-        <input id="join-email" name="email" type="email" required placeholder="Email address" autocomplete="email">
-        <label for="join-postcode" class="visually-hidden">Postcode</label>
-        <input id="join-postcode" name="postcode" required placeholder="Postcode" autocomplete="postal-code">
-        <button class="btn" type="submit">Count me in</button>
+      <form id="join-form" class="join-form" novalidate>
+        <div class="join-row">
+          <label for="join-email" class="visually-hidden">Email</label>
+          <input id="join-email" name="email" type="email" required placeholder="Email address" autocomplete="email">
+          <label for="join-postcode" class="visually-hidden">Postcode</label>
+          <input id="join-postcode" name="postcode" required placeholder="Postcode" autocomplete="postal-code" maxlength="10">
+        </div>
+        <fieldset class="ask">
+          <legend>What would you buy? <span class="muted">(optional)</span></legend>
+          <div class="tap">
+            <label><input type="checkbox" name="interests" value="veg" id="int-veg"><span>Veg</span></label>
+            <label><input type="checkbox" name="interests" value="fruit" id="int-fruit"><span>Fruit</span></label>
+            <label><input type="checkbox" name="interests" value="eggs" id="int-eggs"><span>Eggs</span></label>
+            <label><input type="checkbox" name="interests" value="meat" id="int-meat"><span>Meat</span></label>
+            <label><input type="checkbox" name="interests" value="dairy" id="int-dairy"><span>Dairy</span></label>
+            <label><input type="checkbox" name="interests" value="bakery" id="int-bakery"><span>Bread &amp; flour</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="ask">
+          <legend>Roughly what would you spend a week? <span class="muted">(optional)</span></legend>
+          <div class="tap">
+            <label><input type="radio" name="weekly_spend" value="under_20" id="sp-1"><span>Under £20</span></label>
+            <label><input type="radio" name="weekly_spend" value="20_40" id="sp-2"><span>£20–40</span></label>
+            <label><input type="radio" name="weekly_spend" value="40_70" id="sp-3"><span>£40–70</span></label>
+            <label><input type="radio" name="weekly_spend" value="over_70" id="sp-4"><span>£70+</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="ask">
+          <legend>Could you collect on a Saturday? <span class="muted">(optional)</span></legend>
+          <div class="tap">
+            <label><input type="radio" name="would_collect" value="yes" id="col-1"><span>Yes</span></label>
+            <label><input type="radio" name="would_collect" value="maybe" id="col-2"><span>Sometimes</span></label>
+            <label><input type="radio" name="would_collect" value="delivery_only" id="col-3"><span>Only with delivery</span></label>
+          </div>
+        </fieldset>
+        <label class="consent"><input type="checkbox" name="consent_updates" id="join-consent" required>
+          <span>Email me about Common Crop starting near me. I can unsubscribe any time. We only use your details for this and never sell them.</span></label>
+        <p id="join-error" class="error" role="alert" hidden></p>
+        <button class="btn" type="submit" id="join-submit">Count me in</button>
       </form>
       <p id="join-done" class="done" role="status" hidden></p>
     </div>
@@ -158,6 +191,7 @@
   </div>
 </footer>
 
+<script src="config.js"></script>
 <script src="art.js"></script>
 <script src="engine.js"></script>
 <script src="data.js"></script>

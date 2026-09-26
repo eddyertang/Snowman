@@ -45,6 +45,13 @@
   }
 
   const itemById = (id) => D.items.find((i) => i.id === id);
+
+  /** UK outward code ("NG2" from "ng2 4ab", "NG24AB" or "NG2"). The inward part is always 3 chars. */
+  function outwardCode(pc) {
+    const t = String(pc).toUpperCase().trim().replace(/\s+/g, " ");
+    if (t.includes(" ")) return t.split(" ")[0];
+    return t.length > 4 && /\d[A-Z]{2}$/.test(t) ? t.slice(0, -3) : t;
+  }
   const accounts = () => E.accountsFrom(state.events);
   const realMembers = () => Object.keys(D.people);
 
@@ -210,8 +217,7 @@
 
     // ---- signup: nearest pot with space
     potForPostcode(pc) {
-      const district = String(pc).toUpperCase().replace(/\s+/g, "").match(/^NG\d{1,2}/);
-      const ll = district && D.postcodes[district[0]];
+      const ll = D.postcodes[outwardCode(pc)];
       if (!ll) return null;
       const dist = (h) => Math.hypot((h.lat - ll[0]) * 111, (h.lng - ll[1]) * 68);
       const ranked = D.hubs.slice().sort((a, b) => dist(a) - dist(b));
@@ -220,6 +226,25 @@
         if (pot) return { pot, hub: h, km: dist(h) };
       }
       return { pot: null, hub: ranked[0], km: dist(ranked[0]) };
+    },
+
+    /** Founding-member sign-up. Live when config.js has Supabase details. */
+    async joinWaitlist(form) {
+      const cfg = window.CC_CONFIG || {};
+      if (!cfg.supabaseUrl || !cfg.supabaseKey) return { ok: true, demo: true };
+      const headers = { apikey: cfg.supabaseKey, "Content-Type": "application/json", Prefer: "return=minimal" };
+      if (cfg.supabaseKey.startsWith("eyJ")) headers.Authorization = "Bearer " + cfg.supabaseKey; // legacy anon key
+      let res;
+      try {
+        res = await fetch(cfg.supabaseUrl.replace(/\/$/, "") + "/rest/v1/waitlist", {
+          method: "POST", headers, body: JSON.stringify(form),
+        });
+      } catch (e) {
+        return { ok: false, error: "We couldn't reach the server. Check your connection and try again." };
+      }
+      if (res.status === 201) return { ok: true };
+      if (res.status === 409) return { ok: true, already: true };
+      return { ok: false, error: "Something went wrong saving your details. Please try again in a minute." };
     },
 
     reset() { state = fresh(); save(); },

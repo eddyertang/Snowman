@@ -72,7 +72,7 @@
   // ---- pot finder + join
   function potMessage(pc) {
     const m = S.potForPostcode(pc);
-    if (!m) return "We're starting in Nottingham (NG1 to NG12). Join below and we'll let you know when a pot opens near you.";
+    if (!m) return "We're starting in Nottingham (NG1 to NG12). We'll let you know when a pot opens near you.";
     if (!m.pot) return `The pots at ${m.hub.name} are full, so you'd help start a new one there.`;
     const spaces = m.pot.capacity - m.pot.members;
     return `You'd be in <b>${esc(m.pot.name)}</b>, ${m.km.toFixed(1)} km away. Pick-up is ${esc(m.pot.slot)}. ${spaces} spaces left.`;
@@ -82,10 +82,32 @@
     $("#finder-result").innerHTML = potMessage($("#finder-postcode").value) + ` <a href="#join">Join now</a>`;
     $("#join-postcode").value = $("#finder-postcode").value;
   });
-  $("#join-form").addEventListener("submit", (e) => {
+  $("#join-form").addEventListener("submit", async (e) => {
     e.preventDefault();
+    const f = e.target;
+    const err = $("#join-error");
+    const email = f.email.value.trim(), postcode = f.postcode.value.trim().toUpperCase();
+    const problem = !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email) ? "Please enter a valid email address."
+      : postcode.length < 2 ? "Please enter your postcode."
+      : !f.consent_updates.checked ? "Please tick the box so we can email you when your pot opens." : "";
+    if (problem) { err.textContent = problem; err.hidden = false; return; }
+    err.hidden = true;
+    const btn = $("#join-submit");
+    btn.disabled = true; btn.textContent = "Saving…";
+    const res = await S.joinWaitlist({
+      email, postcode,
+      interests: [...f.querySelectorAll('[name="interests"]:checked')].map((x) => x.value),
+      weekly_spend: f.querySelector('[name="weekly_spend"]:checked')?.value || null,
+      would_collect: f.querySelector('[name="would_collect"]:checked')?.value || null,
+      consent_updates: true,
+      source: "landing",
+    });
+    btn.disabled = false; btn.textContent = "Count me in";
+    if (!res.ok) { err.textContent = res.error; err.hidden = false; return; }
+    f.hidden = true;
     const done = $("#join-done");
     done.hidden = false;
-    done.innerHTML = `Lovely! ${potMessage($("#join-postcode").value)} <br><span class="small">This is a demo, so nothing was sent.</span>`;
+    done.innerHTML = (res.already ? "You're already on the list. " : "You're in! ") + potMessage(postcode)
+      + (res.demo ? `<br><span class="small">Demo mode: nothing was sent.</span>` : "");
   });
 })();

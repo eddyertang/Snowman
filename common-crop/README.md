@@ -29,6 +29,22 @@ node --test common-crop/tests/*.test.js   # engine tests
 4. **Volunteer scanner** (link on Home): scan your code. It hands over your bag *and* Sam's. Sam's own code is refused.
 5. **Home:** start next week. Priya didn't collect, so her bag is donated. Your leftovers show under **Wallet**.
 
+## Go live: founding-member waitlist
+
+The landing page's sign-up form saves to Supabase once two values are filled in. Until then it runs in demo mode.
+
+1. Create a **new Supabase project** for Common Crop, in an EU region (London if offered).
+2. Run `backend/migrations/001_waitlist.sql` in the SQL editor.
+   - The public key can only **add** sign-ups. It can't read, edit or delete them.
+   - Rows without the consent tick are refused.
+   - Emails are unique regardless of capitals.
+   - Only the outward postcode (e.g. NG2) is used for planning, via the `waitlist_by_district` view.
+3. Put the project URL and **publishable** key into `site/config.js`. Never use the secret/service key there.
+4. Deploy `site/` to Cloudflare Pages: no build command, output directory `common-crop/site`.
+5. Read sign-ups in the dashboard: Table editor → `waitlist`, or `select * from waitlist_by_district`.
+
+Before collecting real emails, publish a short privacy notice. It should say who you are, what you collect (email, postcode, optional answers), why (to tell people when a pot opens near them and to plan hubs), how long you keep it, and how to be removed. Also pay the ICO data protection fee.
+
 ## Structure
 
 ```
@@ -42,10 +58,12 @@ site/
   data.js      sample hubs, pots, items + price tiers, comparison packs, synthetic demand
   art.js       produce illustrations (inline SVG)
   ui.js        shared formatting and the "How we compared" panel
+  config.js    live settings (Supabase URL + publishable key); empty = demo mode
   store.js     the only data layer; demo state in localStorage, swap for API calls
   landing.js   landing page rendering
   member.js    member app rendering and events
-backend/schema.sql   tables that mirror the engine (append-only ledger etc.)
+backend/schema.sql   full data model for later (append-only ledger etc.)
+backend/migrations/  what actually runs on Supabase, in order (001 = waitlist)
 tests/engine.test.js
 ```
 

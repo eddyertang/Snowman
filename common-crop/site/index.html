@@ -21,14 +21,12 @@
       <span>Common Crop<small>Nottinghamshire</small></span>
     </a>
     <nav class="nav" aria-label="Main">
-      <a href="#buys">Crowd-buys</a>
+      <a href="#buys">This cycle</a>
       <a href="#how">How it works</a>
       <a href="#farmers">For farmers</a>
       <a href="#hubs">Hubs</a>
     </nav>
-    <button type="button" id="basket-open" class="basket-btn">
-      Pledges <span id="basket-count" class="count" hidden>0</span>
-    </button>
+    <a href="app.html#pot" class="basket-btn">My pot</a>
   </div>
 </header>
 
@@ -38,9 +36,9 @@
     <div class="hero-copy">
       <p class="eyebrow">Farm-to-neighbour buying club</p>
       <h1>Buy straight from Notts farms. <em>Together.</em></h1>
-      <p class="lede">Neighbours pool their orders so we can buy in bulk at close to farm-gate prices. Farmers get paid within 7 days. You collect from a hub down the road.</p>
+      <p class="lede">Join a local pot. Put money on the food you want. Every pot in the county buys together, so the bigger we get, the lower the price. Pick up at a hub down the road with your QR code.</p>
       <div class="hero-cta">
-        <a class="btn btn-primary" href="#buys">See this fortnight's crowd-buys</a>
+        <a class="btn btn-primary" href="app.html#choose">Try the member app</a>
         <a class="btn btn-ghost" href="#join">Join the founding 200</a>
       </div>
     </div>
@@ -58,9 +56,9 @@
         <div><dt>Collect</dt><dd id="cycle-collect">Sat 3 Oct, 10am–1pm</dd></div>
       </dl>
       <ul class="cycle-stats">
-        <li><b id="stat-households">142</b> households</li>
-        <li><b id="stat-farms">6</b> farms</li>
-        <li><b id="stat-miles">13</b> mi avg. food miles</li>
+        <li><b id="stat-households">479</b> households</li>
+        <li><b id="stat-pots">5</b> pots</li>
+        <li><b id="stat-pot">£0</b> in the pot</li>
       </ul>
     </aside>
   </section>
@@ -68,8 +66,8 @@
   <section id="buys" class="section wrap" aria-labelledby="buys-title">
     <div class="section-head">
       <div>
-        <h2 id="buys-title">Crowd-buys this cycle</h2>
-        <p>Each one goes to the farm only when enough shares are pledged. Miss the target and nobody is charged.</p>
+        <h2 id="buys-title">This cycle across the network</h2>
+        <p>Prices drop in steps as more money goes into the pot. Savings are against typical supermarket prices for the same thing.</p>
       </div>
       <div class="filters" role="group" aria-label="Filter by category">
         <button type="button" data-filter="all" aria-pressed="true">All</button>
@@ -86,10 +84,10 @@
     <div class="wrap">
       <h2 id="how-title">How a cycle works</h2>
       <ol class="steps">
-        <li><h3>Pledge</h3><p>Orders open Friday. Pledge shares in crowd-buys or add standing items. Your card is saved, not charged.</p></li>
-        <li><h3>Target met, we order</h3><p>Thursday 8pm the window closes. Crowd-buys that hit their target become one order per farm. Only then are you charged.</p></li>
-        <li><h3>Farms deliver to the hub</h3><p>One drop per farm, straight to the hub. Chilled goods go in the fridges and get temperature-logged.</p></li>
-        <li><h3>You collect</h3><p>Saturday morning, bring a bag. Anything unclaimed by 1pm is kept chilled and you'll get a message.</p></li>
+        <li><h3>Join a local pot</h3><p>Your postcode puts you in a pot of up to 120 households near one hub. When a pot fills, a new one opens.</p></li>
+        <li><h3>Put money on what you want</h3><p>Top up, then earmark money to items and set the most you'd use. You see the live price and your saving as the pot grows.</p></li>
+        <li><h3>We buy at the best tier</h3><p>Thursday 8pm, all pots buy together at the cheapest bulk price the money reaches. Anything you didn't need stays on the item as credit.</p></li>
+        <li><h3>Scan and collect</h3><p>Saturday, show your QR code at the hub. Or let someone in your pot collect for you, or pay for delivery.</p></li>
       </ol>
     </div>
   </section>
@@ -149,7 +147,7 @@
     <div class="wrap join">
       <div>
         <h2 id="join-title">Join the founding 200</h2>
-        <p>Founding households shape which farms and hubs we start with, and get first pick of meat shares.</p>
+        <p>Your postcode puts you in the nearest pot with space. Founding households shape which farms and hubs we start with.</p>
       </div>
       <form id="join-form" class="card-form">
         <label for="join-name">Name</label>
@@ -158,8 +156,7 @@
         <input id="join-email" name="email" type="email" required autocomplete="email">
         <label for="join-postcode">Postcode</label>
         <input id="join-postcode" name="postcode" required autocomplete="postal-code" placeholder="NG2 4…">
-        <label for="join-hub">Collection hub</label>
-        <select id="join-hub" name="hub" required></select>
+        <p class="small" id="join-pot" aria-live="polite">Enter an NG postcode to see your pot.</p>
         <fieldset>
           <legend>I'd mostly buy</legend>
           <label class="check"><input id="want-veg" type="checkbox" name="veg" checked> Veg</label>
@@ -182,21 +179,9 @@
   </div>
 </footer>
 
-<div id="basket" class="basket" hidden>
-  <div class="basket-panel" role="dialog" aria-modal="true" aria-labelledby="basket-title">
-    <header>
-      <h2 id="basket-title">Your pledges</h2>
-      <button type="button" id="basket-close" class="icon-btn" aria-label="Close">×</button>
-    </header>
-    <ul id="basket-list" class="basket-list"></ul>
-    <p class="basket-total">Total if every target is met <b id="basket-total">£0</b></p>
-    <button type="button" class="btn btn-primary" disabled>Save card &amp; confirm (coming soon)</button>
-    <p class="fine">You're only charged for crowd-buys that reach their target when orders close.</p>
-  </div>
-</div>
-
+<script src="engine.js"></script>
 <script src="data.js"></script>
 <script src="store.js"></script>
-<script src="app.js"></script>
+<script src="landing.js"></script>
 </body>
 </html>

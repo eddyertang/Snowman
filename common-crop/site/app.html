@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Common Crop · My Pot</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Public+Sans:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="app">
+
+<div class="demo-bar">Demo member app. Sample people, prices and money. Nothing leaves this browser. <button type="button" id="reset" class="link-btn">Reset demo</button></div>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="logo" href="index.html" aria-label="Common Crop home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 29V13" /><path d="M16 17c-6 0-9-4-9-10 6 0 9 4 9 10Z" /><path d="M16 13c0-5 3-9 9-9 0 6-3 9-9 9Z" /></svg>
+      <span>Common Crop<small id="hdr-pot">Sneinton Pot 2</small></span>
+    </a>
+    <div class="hdr-credit">
+      <span>Your credit</span>
+      <b id="hdr-credit">£0.00</b>
+    </div>
+  </div>
+  <nav class="tabs wrap" aria-label="Member sections">
+    <a href="#pot" data-tab="pot">Pot</a>
+    <a href="#choose" data-tab="choose">Choose items</a>
+    <a href="#credit" data-tab="credit">Credit</a>
+    <a href="#pickup" data-tab="pickup">Pickup</a>
+    <a href="#group" data-tab="group">Group</a>
+    <a href="#rules" data-tab="rules">Rules</a>
+    <a href="#hub" data-tab="hub" class="tab-staff">Hub scanner</a>
+  </nav>
+</header>
+
+<main class="wrap app-main">
+
+  <!-- POT -->
+  <section id="panel-pot" class="panel" data-panel="pot" aria-labelledby="pot-title">
+    <div class="panel-head">
+      <div>
+        <p class="eyebrow">Cycle <span class="js-cycle">4</span> · <span id="pot-phase">open</span></p>
+        <h1 id="pot-title">Sneinton Pot 2</h1>
+        <p class="muted" id="pot-sub"></p>
+      </div>
+      <div class="cycle-actions" id="cycle-actions"></div>
+    </div>
+
+    <div class="tiles" id="pot-tiles"></div>
+
+    <h2 class="h-sm">This cycle across the network</h2>
+    <p class="muted small">All pots buy together, so every new member pushes the price down for everyone. Your pot is your local group for chat and collection.</p>
+    <div class="table-wrap">
+      <table class="data" id="pot-items">
+        <thead><tr><th>Item</th><th>Price reached</th><th class="num">Bought</th><th class="num">You get</th><th class="num">Carries over</th><th class="num">You save</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <h2 class="h-sm">Pots in the network</h2>
+    <ul class="pots" id="pot-list"></ul>
+    <p class="muted small">When a pot reaches 120 households a new one opens. It shares the hub on a new collection slot and gets its own group chat.</p>
+  </section>
+
+  <!-- CHOOSE -->
+  <section class="panel" data-panel="choose" aria-labelledby="choose-title" hidden>
+    <div class="panel-head">
+      <div>
+        <h1 id="choose-title">Choose items</h1>
+        <p class="muted">Put money on what you want and set the most you'd use. The price drops as the network pot grows. Money you can't use this week stays on the item for next time.</p>
+      </div>
+      <div class="unassigned-pill">Unassigned <b id="choose-unassigned">£0</b></div>
+    </div>
+    <p id="choose-error" class="error" role="alert" hidden></p>
+    <div class="items-grid" id="items-grid"></div>
+    <p class="muted small" id="ref-note"></p>
+  </section>
+
+  <!-- CREDIT -->
+  <section class="panel" data-panel="credit" aria-labelledby="credit-title" hidden>
+    <h1 id="credit-title">Credit</h1>
+    <div class="tiles" id="credit-tiles"></div>
+
+    <div class="credit-grid">
+      <div>
+        <h2 class="h-sm">Credit by item</h2>
+        <div class="table-wrap">
+          <table class="data" id="credit-items">
+            <thead><tr><th>Where it sits</th><th class="num">Available</th><th class="num">Bought, awaiting pickup</th><th>Move</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <form id="move-form" class="inline-form">
+          <label for="move-amount">Move</label>
+          <input id="move-amount" name="amount" inputmode="decimal" placeholder="£5.00" required>
+          <label for="move-from">from</label>
+          <select id="move-from" name="from"></select>
+          <label for="move-to">to</label>
+          <select id="move-to" name="to"></select>
+          <button class="btn btn-small" type="submit">Move</button>
+        </form>
+        <p id="credit-error" class="error" role="alert" hidden></p>
+      </div>
+      <div class="card-form">
+        <h3>Top up or withdraw</h3>
+        <p class="muted small">Top-ups land as unassigned credit. You can withdraw unassigned credit back to your card at any time. Move earmarked credit back first.</p>
+        <div class="btn-row">
+          <button type="button" class="btn btn-primary btn-small" data-topup="1000">+ £10</button>
+          <button type="button" class="btn btn-primary btn-small" data-topup="2000">+ £20</button>
+          <button type="button" class="btn btn-primary btn-small" data-topup="5000">+ £50</button>
+        </div>
+        <form id="withdraw-form" class="inline-form">
+          <label for="withdraw-amount">Withdraw</label>
+          <input id="withdraw-amount" name="amount" inputmode="decimal" placeholder="£10.00" required>
+          <button class="btn btn-ghost btn-small" type="submit">Withdraw to card</button>
+        </form>
+      </div>
+    </div>
+
+    <h2 class="h-sm">Ledger</h2>
+    <p class="muted small">Every penny, in order. Your balances are calculated from this list and nothing else.</p>
+    <ol class="ledger" id="ledger"></ol>
+  </section>
+
+  <!-- PICKUP -->
+  <section class="panel" data-panel="pickup" aria-labelledby="pickup-title" hidden>
+    <h1 id="pickup-title">Pickup</h1>
+    <div class="pickup-grid">
+      <div class="qr-card">
+        <p class="eyebrow">Your code · cycle <span class="js-cycle">4</span></p>
+        <div id="qr" class="qr" aria-label="Your pickup QR code"></div>
+        <p class="token" id="token"></p>
+        <p id="qr-covers" class="small"></p>
+        <div id="parcel"></div>
+      </div>
+      <div class="stack">
+        <div class="card-form">
+          <h3>Where and when</h3>
+          <p id="pickup-where"></p>
+          <div class="map-wrap"><svg id="map" viewBox="0 0 600 420" role="img" aria-label="Map of collection hubs"></svg></div>
+          <ul class="hub-rows" id="hub-rows"></ul>
+        </div>
+        <div class="card-form">
+          <h3>Someone else collecting?</h3>
+          <p class="muted small">Both of you must agree. Once they accept, only their code releases your parcel, and your parcel counts as delivered to you when they scan (see Rules).</p>
+          <div id="deleg-in"></div>
+          <label for="deleg-to">Ask someone in your pot to collect yours</label>
+          <select id="deleg-to"></select>
+          <div id="deleg-out"></div>
+        </div>
+        <div class="card-form">
+          <h3>Delivery</h3>
+          <label class="check"><input type="checkbox" id="delivery"> Deliver to my door (+<span id="delivery-fee">£3.50</span>, taken from unassigned credit)</label>
+          <p class="muted small" id="delivery-note"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GROUP -->
+  <section class="panel" data-panel="group" aria-labelledby="group-title" hidden>
+    <div class="panel-head">
+      <div>
+        <h1 id="group-title">Sneinton Pot 2 group</h1>
+        <p class="muted">Cook together, share pickup runs, swap recipes. Only members of this pot who opt in can see it.</p>
+      </div>
+      <label class="check"><input type="checkbox" id="chat-optin"> Show me in the group</label>
+    </div>
+    <div class="chat" id="chat-box">
+      <ol class="chat-list" id="chat-list"></ol>
+      <form id="chat-form" class="chat-form">
+        <label for="chat-input" class="visually-hidden">Message</label>
+        <input id="chat-input" autocomplete="off" placeholder="Message your pot…" maxlength="500">
+        <button class="btn btn-primary btn-small" type="submit">Send</button>
+      </form>
+    </div>
+    <p class="muted small">Be kind. Messages can be reported to the coordinators, who remove anything that breaks the group rules.</p>
+  </section>
+
+  <!-- RULES -->
+  <section class="panel prose" data-panel="rules" aria-labelledby="rules-title" hidden>
+    <h1 id="rules-title">How it works, and the rules</h1>
+    <p class="muted">Plain-English summary of the member terms. Placeholder wording, to be checked by a solicitor before launch.</p>
+
+    <h2>Your money</h2>
+    <ul>
+      <li>Money you add is <b>pre-payment for food</b>, not an investment. It earns no interest or return.</li>
+      <li>You decide which items your money is earmarked for. When orders close, the network buys at the best price its combined pot reaches, and your share is committed.</li>
+      <li>Anything that isn't needed stays on the item as carry-over. You can keep it there, move it to another item, or move it to unassigned and <b>withdraw it to your card</b>.</li>
+      <li>If an item doesn't reach even its smallest bulk quantity, nothing is bought and all the money on it carries over.</li>
+    </ul>
+
+    <h2>Collecting</h2>
+    <ul>
+      <li>Show your QR code at your pot's hub during your collection slot. Scanning it hands over your parcel and completes the purchase.</li>
+      <li><b>If you don't collect by the end of the slot</b>, we'll message you and hold chilled items until 4pm where we can. After that, uncollected food is donated to a local food bank or community fridge, and <b>the money isn't refunded</b>, because the food was bought for you and can't be resold.</li>
+      <li>This doesn't affect your legal rights if the food was faulty or not as described.</li>
+    </ul>
+
+    <h2>Someone collecting for you</h2>
+    <ul>
+      <li>You can nominate someone in your pot. It only takes effect when they accept.</li>
+      <li>Once their code is scanned, the parcel counts as handed to you. After that, <b>loss, damage or mix-ups between you and them aren't our responsibility</b>.</li>
+      <li>We remain responsible for the food being safe and as described when it left us.</li>
+    </ul>
+
+    <h2>Delivery</h2>
+    <ul>
+      <li>Where available, delivery costs a flat fee per cycle, taken from your unassigned credit when orders close. If there's not enough, you'll collect instead.</li>
+    </ul>
+
+    <h2>Group chat</h2>
+    <ul>
+      <li>Opt-in, per pot. Be respectful and no selling. We remove illegal or abusive content and can suspend accounts.</li>
+    </ul>
+  </section>
+
+  <!-- HUB SCANNER -->
+  <section class="panel" data-panel="hub" aria-labelledby="hub-title" hidden>
+    <h1 id="hub-title">Hub scanner</h1>
+    <p class="muted">Volunteer view. On the live app this uses the phone camera. Here you can paste a code or use the demo buttons.</p>
+    <p id="hub-closed" class="notice" hidden>Orders for this cycle haven't closed yet, so there are no parcels to hand over. Close the cycle on the Pot tab.</p>
+    <form id="scan-form" class="inline-form">
+      <label for="scan-input">Code</label>
+      <input id="scan-input" placeholder="CC1-4-you-XXXXX" autocomplete="off">
+      <button class="btn btn-primary btn-small" type="submit">Scan</button>
+    </form>
+    <div class="btn-row">
+      <button type="button" class="btn btn-ghost btn-small" data-scan="you">Scan your code</button>
+      <button type="button" class="btn btn-ghost btn-small" data-scan="sam">Scan Sam's code</button>
+      <button type="button" class="btn btn-ghost btn-small" data-scan="priya">Scan Priya's code</button>
+    </div>
+    <div id="scan-result" role="status"></div>
+  </section>
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="engine.js"></script>
+<script src="data.js"></script>
+<script src="store.js"></script>
+<script src="member.js"></script>
+</body>
+</html>

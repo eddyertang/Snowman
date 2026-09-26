@@ -220,4 +220,53 @@ Farmers usually get squeezed on price, payment terms and waste. Offer them the o
 
 ## 9. The website
 
-See `site/` (a working shell you can open in a browser today) and `README.md` for how it grows into the real thing.
+See `site/` and `README.md`. `site/index.html` is the public landing page; `site/app.html` is the member app (pots, credit, pickup, group, hub scanner). Both work as a demo in the browser today.
+
+---
+
+## 10. The pot model (v2)
+
+This replaces the simple crowd-buys in §5 with local pots, earmarked credit and QR pickup.
+
+### How it works
+
+1. **Join a pot.** Your postcode puts you in the nearest **pot**: a local group of up to 120 households with one hub, one collection slot and one group chat. When a pot fills, a new one opens at the same hub on a new slot (e.g. Sneinton Pot 1 at 10–11:30, Pot 2 at 11:30–1).
+2. **Top up and earmark.** Members add credit, then put money on the items they want and set **"most I'd use"** (e.g. £10 on strawberries, max 3 punnets).
+3. **All pots buy together.** Pots are social and logistical groups, but every pot's money is combined for buying. Bulk tiers are set per item (e.g. strawberries £2.40 → £1.95 at 160 punnets → £1.60 at 480 → £1.35 at 1,200), so each new member lowers the price for everyone.
+4. **Close and allocate (Thursday 8pm).** The engine (`site/engine.js`) works out, for each item:
+   - **Which tier:** it tries the cheapest tier first. At that price each member wants `min(their max, budget ÷ price)` units. If the total, rounded down to whole cases, reaches the tier's minimum, that tier is bought. Otherwise it tries the next tier up.
+   - **Who gets what:** units are shared as evenly as possible up to each member's max ("water-filling"). Any odd units left after rounding to whole cases go in the order people signed up.
+   - **Carry-over:** whatever a member earmarked but didn't need **stays on that item** for next week, so they top up less next time. They can also move it to another item, or to unassigned credit and withdraw it.
+5. **Pick up with a QR code.** Each member has a code per cycle. Scanning it at the hub hands over their parcel and completes the purchase. Credit moves from "bought, awaiting pickup" to "spent".
+6. **Collecting for someone else.** A member can nominate someone in their pot. It only takes effect when that person accepts. After that, **only the nominee's code releases the parcel**, and scanning it releases both.
+7. **Not collected:** food is held until 4pm where possible, then donated. It isn't refunded.
+8. **Delivery:** optional, for a flat fee per cycle, where a pot has it.
+
+**Your strawberry example:** 430 people put money on strawberries, but most families can't get through a whole flat. Each person caps it at 1–4 punnets. The network buys 127 flats at £1.60 because it's 168 punnets short of the £1.35 tier. Everyone gets what they asked for (up to their cap), and the rest of their money stays on strawberries for next week. The demo shows exactly this.
+
+### The "concrete method" for money
+
+- **Append-only ledger.** Every penny is an event: deposit, move, commit, collect, forfeit, or withdraw. Balances are **calculated** from the list, never typed in. History can't be edited; corrections are new events. The database enforces this (`backend/schema.sql`).
+- **Per-item credit.** Each member's credit sits in buckets: unassigned, one per item, "bought, awaiting pickup", spent, forfeited and withdrawn. The Credit tab shows all of these.
+- **Guards:** you can't overspend a bucket, and you can't withdraw earmarked money until you move it back. A parcel can't be collected twice, and a delegated parcel won't release to the original member's code. The test suite covers each of these (`tests/engine.test.js`).
+- **Deterministic:** the same inputs always give the same allocation. Store the engine version with each cycle's results so any cycle can be re-run and audited.
+
+### What these features change legally
+
+| Feature | Issue | What to do |
+|---|---|---|
+| **Holding credit balances** | Money held for later use and withdrawable on request can start to look like e-money or deposit-taking, which are FCA-regulated. A prepayment to one business for its own goods is generally outside those regimes. | Credit can only be spent on Common Crop food. Withdrawals go **back to the original card** as a refund, never to any bank account. Cap balances (e.g. £250), and prompt or refund credit unused for 3 months. Keep member money in a separate account (or as Stripe customer balance). **Get a one-off opinion from a payments solicitor before launch.** This is the biggest legal unknown in v2. |
+| **"Pot" wording** | A pooled fund with members sharing outcomes can look like a collective investment scheme. | The pot is only a **pricing mechanism**. Legally, each member pre-pays Common Crop for their own food, and Common Crop sells to them. Never use "invest", "fund" or "returns". |
+| **Tier pricing** | Consumers must know the total price before they're bound. | The member's budget is the **most they can pay**, and the price can only fall from what's shown. Say "you pay at most £X, usually less". The final price is fixed at close. |
+| **Supermarket savings** | Price comparisons must be accurate, like-for-like and verifiable. Since the Digital Markets, Competition and Consumers Act 2024, the CMA can fine directly. | Compare the same weight, grade and production standard. Date each check and name the retailer. Keep evidence (the `reference_prices` table). If in doubt, drop the claim. |
+| **No refund if not collected** | The term must be fair and prominent (Consumer Rights Act 2015). You can't exclude liability for faulty food or negligence. | Short plain rules, agreed at signup and shown again at checkout. Send a reminder on the day, keep a clear window, donate rather than bin. The Rules tab has draft wording. |
+| **Someone else collecting** | When does it stop being your responsibility? | Under the Consumer Rights Act, **risk passes when goods reach the consumer *or a person they've identified*** to take them. A mutually accepted nomination plus the scan record is exactly that. You still answer for the food being safe and as described when it left you. |
+| **QR codes** | A copied screenshot could be used to take someone's food. | Codes are signed on the server, change every cycle, and work once. The volunteer sees the member's first name and parcel list. Rules: treat your code like a ticket. |
+| **Group chat** | A chat between users is a "user-to-user service" under the **Online Safety Act 2023**: illegal-content risk assessment, a reporting route, terms of use, handling complaints. | **Pilot with a WhatsApp Community per pot** (you're a group admin, not the service provider), then build in-app chat once it proves useful. Members must be 18+. The app already has an opt-in, and the schema has report and remove support. |
+| **Delivery** | Food transport hygiene and insurance. | Chilled boxes, a temperature check at dispatch, business-use vehicle insurance. If you use couriers, have a written contract. |
+| **Donating uncollected food** | Donated food still has to be safe. | Partner with a food bank or community fridge (FareShare-style rules). Only donate before the use-by date, and log it. |
+
+### Operations sizing
+
+- **120 households per pot, one 90-minute slot:** about 80 pickups an hour, which two volunteers can handle with a scanner and pre-packed labelled bags.
+- **Pre-pack by pot:** the engine's allocation becomes a packing list per member. Bag and label everything on Friday night or Saturday morning.

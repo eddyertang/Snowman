@@ -1,0 +1,70 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.7/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": false,
+    "color": {
+      "defaultPalette": false,
+      "defaultGradients": false,
+      "custom": false,
+      "palette": [
+        { "slug": "green-900", "color": "#0b501b", "name": "Green 900" },
+        { "slug": "green-700", "color": "#1f6b31", "name": "Green 700" },
+        { "slug": "green-50", "color": "#eef4ef", "name": "Green 50" },
+        { "slug": "stone-50", "color": "#faf8f5", "name": "Stone 50" },
+        { "slug": "stone-100", "color": "#f2eee8", "name": "Stone 100" },
+        { "slug": "stone-300", "color": "#d9d1c5", "name": "Stone 300" },
+        { "slug": "stone-600", "color": "#7a6f62", "name": "Stone 600" },
+        { "slug": "ink-900", "color": "#1a1a17", "name": "Ink 900" },
+        { "slug": "ink-600", "color": "#4a4741", "name": "Ink 600" },
+        { "slug": "white", "color": "#ffffff", "name": "White" },
+        { "slug": "focus", "color": "#b5651d", "name": "Focus" },
+        { "slug": "error", "color": "#b42318", "name": "Error" }
+      ]
+    },
+    "layout": {
+      "contentSize": "68ch",
+      "wideSize": "1280px"
+    },
+    "spacing": {
+      "units": ["px", "rem"]
+    },
+    "typography": {
+      "fluid": false,
+      "customFontSize": false,
+      "fontFamilies": [
+        {
+          "slug": "inter",
+          "name": "Inter",
+          "fontFamily": "Inter, sans-serif"
+        },
+        {
+          "slug": "display",
+          "name": "Cormorant Garamond",
+          "fontFamily": "\"Cormorant Garamond\", serif"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "#faf8f5",
+      "text": "#1a1a17"
+    },
+    "typography": {
+      "fontFamily": "Inter, sans-serif",
+      "fontSize": "1rem",
+      "lineHeight": "1.6"
+    },
+    "elements": {
+      "link": {
+        "color": { "text": "#0b501b" },
+        ":hover": { "color": { "text": "#1f6b31" } }
+      },
+      "button": {
+        "color": { "background": "#0b501b", "text": "#ffffff" },
+        "border": { "radius": "8px" }
+      }
+    }
+  }
+}

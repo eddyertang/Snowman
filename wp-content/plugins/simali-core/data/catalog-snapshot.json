@@ -1,85 +1,5 @@
 [
   {
-    "slug": "everything-i-wish-somebody-had-told-me-before-i-bought-my-stone-floor",
-    "name": "Everything I Wish Somebody Had Told Me Before I Bought My stone Floor",
-    "price": 10.0,
-    "max_price": null,
-    "categories": [
-      "stone-flooring-guides"
-    ],
-    "short": "Everything I Wish Somebody Had Told Me Before I Bought My Stone Floor Thinking about natural stone but don\u2019t know where to start? I\u2019ve spent years supplying, laying, repairing and looking after stone floors, and this is the practical advice I wish somebody had given me before I started. 30 pages of straight-talking advice about choosing your stone, measuring, preparation, underfloor heating, laying, grouting, sealing, cleaning, repairs, choosing an installer and avoiding expensive mistakes. I\u2019ve kept it simple. I\u2019m not here to bamboozle you or frighten you into buying anything. Just the things that actually matter when you\u2019re spending your money on a floor you\u2019ll probably live with for decades. \u00a310 \u2014 instant PDF download."
-  },
-  {
-    "slug": "worcester-limestone-flooring",
-    "name": "Worcester Limestone Flooring \u2013 Timeless Stone Collection",
-    "price": 0.0,
-    "max_price": null,
-    "categories": [
-      "timeless-stone-collection"
-    ],
-    "short": "Worcester limestone flooring is a warm, characterful 20mm limestone with rich orange and yellow tones softened by natural grey shelly detailing. Supplied in 500mm and 600mm widths with random lengths, Worcester offers a honed finish with gently tumbled edges for a timeless, hard-wearing floor suited to both traditional and contemporary interiors."
-  },
-  {
-    "slug": "newbury-limestone-flooring",
-    "name": "Newbury Limestone \u2013 Timeless Stone Collection",
-    "price": 0.0,
-    "max_price": null,
-    "categories": [
-      "timeless-stone-collection"
-    ],
-    "short": "Newbury limestone flooring from the Timeless Stone Collection features soft biscuit beige tones with subtle grey flecking and gently tumbled edges. Supplied in random length flagstone format and large format tiles, Newbury offers a refined and timeless natural stone finish."
-  },
-  {
-    "slug": "epsom-limestone-flooring",
-    "name": "Epsom Limestone \u2013 Sandblasted Flagstone Flooring",
-    "price": 0.0,
-    "max_price": null,
-    "categories": [
-      "timeless-stone-collection"
-    ],
-    "short": "Epsom limestone flooring features a refined sandblasted finish with soft biscuit tones and subtle grey shelly detail. Available in 400mm, 500mm and 600mm random lengths at 18mm thickness, Epsom offers a lightly textured alternative to honed limestone finishes."
-  },
-  {
-    "slug": "bellissimo-porcelain-tile-600x1200mm",
-    "name": "Bellissimo Porcelain Tile  600x1200mm",
-    "price": 50.0,
-    "max_price": null,
-    "categories": [
-      "porcelain"
-    ],
-    "short": "Bellissimo is a large-format 600x1200mm porcelain tile available in Pink and Beige. Designed to create a refined, contemporary finish, this durable porcelain tile is suitable for walls and floors. 1.39 tiles per m\u00b2. \u00a350 per m\u00b2 inc VAT."
-  },
-  {
-    "slug": "barcelona-porcelain-feature-tile-223mm",
-    "name": "Barcelona Porcelain Feature Tile",
-    "price": 45.48,
-    "max_price": null,
-    "categories": [
-      "porcelain"
-    ],
-    "short": "Barcelona is a 223mm x 223mm patterned porcelain feature tile available in Azur, Grigio and Nero. Designed to bring Mediterranean character to kitchens, bathrooms and feature floors, this durable porcelain tile is suitable for both walls and floors. 20 tiles per m\u00b2. \u00a345.48 per m\u00b2 inc VAT."
-  },
-  {
-    "slug": "athens-marble-effect-porcelain-tile",
-    "name": "Athens Marble Effect Porcelain Tile",
-    "price": 36.66,
-    "max_price": 39.04,
-    "categories": [
-      "porcelain"
-    ],
-    "short": "Athens Marble Effect Porcelain Tile combines the timeless elegance of natural marble with the strength and practicality of porcelain, making it perfect for stylish, low-maintenance interiors."
-  },
-  {
-    "slug": "arbia-porcelain-tile",
-    "name": "Arbia Porcelain Tile",
-    "price": 33.5,
-    "max_price": 38.86,
-    "categories": [
-      "porcelain"
-    ],
-    "short": "Contemporary porcelain tile available in multiple large formats. Durable, low maintenance and suitable for underfloor heating."
-  },
-  {
     "slug": "alba-ivory-porcelain-tile-600x400mm",
     "name": "Alba Ivory Porcelain Tile 600x400mm",
     "price": 31.5,
@@ -87,7 +7,52 @@
     "categories": [
       "porcelain"
     ],
-    "short": "Alba Ivory porcelain tile in a 600x400mm format, featuring warm ivory tones with a subtle stone-effect finish. A versatile and durable porcelain tile suitable for walls and floors."
+    "collection": null,
+    "short": "Alba Ivory porcelain tile in a 600x400mm format, featuring warm ivory tones with a subtle stone-effect finish. A versatile and durable porcelain tile suitable for walls and floors.",
+    "description": "<p><strong>Alba Ivory Porcelain Tile</strong></p><p>Alba Ivory is a warm stone-effect porcelain tile designed to bring light and softness to interior spaces. Featuring gentle ivory tones with natural variation, this tile creates a bright and welcoming atmosphere while maintaining the strength and performance of porcelain.</p><p>The 600x400mm format allows for flexible installation layouts and works particularly well in kitchens, bathrooms and open-plan living areas.</p><p>Manufactured for durability and low maintenance, Alba Ivory porcelain tiles offer excellent resistance to moisture and everyday wear.</p><p><strong>Tile Specification</strong></p><ul><li>Size: 600mm x 400mm</li><li>Pieces per m²: 4.17</li><li>Finish: Stone-effect porcelain</li><li>Colour: Ivory / warm neutral tones</li><li>Suitable for: Floors and walls</li><li>Underfloor heating compatible</li><li>Easy to maintain</li></ul><p><strong>Porcelain Tile Supply &amp; Installation</strong></p><p>Simali Stone supplies porcelain tiles nationally and offers professional installation within a 40-mile radius of Shaftesbury, Dorset. For advice or availability, please call 01747 852557.</p>",
+    "material": "Porcelain",
+    "sizes": [
+      "600 × 400mm"
+    ],
+    "thickness": [],
+    "finish": [],
+    "edge": [],
+    "colours": [
+      "Ivory"
+    ],
+    "location": [
+      "Indoor"
+    ],
+    "rooms": [
+      "Kitchens",
+      "Bathrooms",
+      "Living rooms",
+      "Open-plan spaces",
+      "Walls"
+    ],
+    "ufh": true,
+    "origin": null,
+    "tags": [
+      "600x400 porcelain",
+      "ivory porcelain tile",
+      "porcelain floor tile",
+      "stone effect porcelain"
+    ],
+    "featured": false,
+    "virtual": false,
+    "meta_description": "Alba Ivory porcelain tile 600x400mm with warm ivory stone-effect tones. Durable, low-maintenance porcelain suitable for walls and floors.",
+    "images": [
+      {
+        "file": "alba-ivory-porcelain-floor-tiles.jpg",
+        "alt": "Alba ivory porcelain tile 600x400mm showing ivory stone effect finish",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/Alba-Ivory-porcelain-floor-tiles.jpg"
+      },
+      {
+        "file": "alba-stone-lifestyle.jpg",
+        "alt": "Alba Ivory Porcelain Tile 600x400mm",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/Alba-Stone-Lifestyle.jpg"
+      }
+    ]
   },
   {
     "slug": "alba-silver-porcelain-tile-600x400mm",
@@ -97,67 +62,1900 @@
     "categories": [
       "porcelain"
     ],
-    "short": "Alba Silver porcelain tile in a 600x400mm format, featuring soft silver-grey tones with a subtle stone-effect finish. A durable and low-maintenance porcelain tile suitable for walls and floors."
+    "collection": null,
+    "short": "Alba Silver porcelain tile in a 600x400mm format, featuring soft silver-grey tones with a subtle stone-effect finish. A durable and low-maintenance porcelain tile suitable for walls and floors.",
+    "description": "<p><strong>Alba Silver Porcelain Tile</strong></p><p>Alba Silver Porcelain Tile is a contemporary stone-effect porcelain tile featuring cool silver-grey tones and subtle natural movement. Designed to replicate the look of natural stone while offering the durability and practicality of porcelain, this tile is ideal for modern and traditional interiors alike.</p><p>The 600x400mm format allows for flexible layout options and works well in kitchens, bathrooms, hallways and open-plan living areas.</p><p>Porcelain tiles such as Alba Silver provide excellent durability, resistance to moisture and low maintenance requirements, making them a practical flooring solution for busy households.</p><p><strong>Tile Specification</strong></p><ul><li>Size: 600mm x 400mm</li><li>Pieces per m²: 4.17</li><li>Finish: Stone-effect porcelain</li><li>Colour: Silver / grey tones</li><li>Suitable for: Floors and walls</li><li>Underfloor heating compatible</li><li>Low maintenance and easy to clean\n<p><strong>Porcelain Tile Supply &amp; Installation</strong></p><p>Simali Stone supplies porcelain tiles nationally and offers professional tile installation within a 40-mile radius of Shaftesbury, Dorset. For availability or installation enquiries, please call <a href=\"tel:01747852557\">01747 852557</a></p></li></ul>",
+    "material": "Porcelain",
+    "sizes": [
+      "600 × 400mm"
+    ],
+    "thickness": [],
+    "finish": [],
+    "edge": [],
+    "colours": [
+      "Grey"
+    ],
+    "location": [
+      "Indoor"
+    ],
+    "rooms": [
+      "Kitchens",
+      "Hallways",
+      "Bathrooms",
+      "Living rooms",
+      "Open-plan spaces",
+      "Walls"
+    ],
+    "ufh": true,
+    "origin": null,
+    "tags": [
+      "600x400 porcelain",
+      "porcelain floor tile",
+      "silver porcelain tile",
+      "stone effect porcelain"
+    ],
+    "featured": false,
+    "virtual": false,
+    "meta_description": "Alba Silver porcelain tile in 600x400mm featuring soft silver-grey stone-effect tones. Durable, low-maintenance porcelain suitable for floors and walls.",
+    "images": [
+      {
+        "file": "alba-silver-porcelain-tiles.jpg",
+        "alt": "Alba Silver porcelain tile 600x400mm showing silver-grey stone effect finish",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/Alba-Silver-porcelain-tiles.jpg"
+      },
+      {
+        "file": "alba-porcelain-tiles-room-set.jpg",
+        "alt": "Alba Silver porcelain tile installed on living room floor and feature wall",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/Alba-porcelain-tiles-room-set.jpg"
+      }
+    ]
   },
   {
-    "slug": "york",
-    "name": "York Limestone Flagstone Flooring \u2013 Timeless Stone Collection",
-    "price": 0.0,
-    "max_price": null,
+    "slug": "arbia-porcelain-tile",
+    "name": "Arbia Porcelain Tile",
+    "price": 33.5,
+    "max_price": 38.86,
     "categories": [
-      "timeless-stone-collection"
+      "porcelain"
     ],
-    "short": "York limestone flagstone flooring is a substantial 22\u201323mm natural stone with warm autumnal tones and traditional cathedral-style character. Supplied in 400mm, 500mm and 600mm random lengths, as well as larger format options and opus patterns, York features a brushed and lightly honed surface with hand-cut edges."
+    "collection": null,
+    "short": "Contemporary porcelain tile available in multiple large formats. Durable, low maintenance and suitable for underfloor heating.",
+    "description": "<p>Arbia Porcelain Tile is a contemporary stone-effect porcelain range available in Grey, Sand and Ivory tones. Designed to replicate the look of natural stone while offering the durability and low maintenance of porcelain, Arbia suits both modern and traditional interiors.</p><p><strong>Key Features </strong></p><ul><li>Available in 292x592mm</li><li>Available in 592x592mm</li><li>Available in 600x1200mm</li><li>Durable porcelain construction</li><li>Suitable for underfloor heating</li><li>Ideal for kitchens, bathrooms and open-plan living areas</li><li>Suitable for walls and floors\n<p>Supply &amp; Installation</p><p>Simali Stone supplies Arbia  porcelain tiles nationally and offers professional installation within a 40-mile radius of Shaftesbury, Dorset. Our showroom displays a wide range of porcelain and natural stone flooring for customers to view in person.</p></li><li><p>For availability or advice, call 01747 852557.</p></li></ul>",
+    "material": "Porcelain",
+    "sizes": [
+      "292 × 592mm",
+      "592 × 592mm",
+      "600 × 1200mm"
+    ],
+    "thickness": [],
+    "finish": [],
+    "edge": [],
+    "colours": [
+      "Grey",
+      "Beige",
+      "Ivory"
+    ],
+    "location": [
+      "Indoor"
+    ],
+    "rooms": [
+      "Kitchens",
+      "Bathrooms",
+      "Living rooms",
+      "Open-plan spaces",
+      "Walls"
+    ],
+    "ufh": true,
+    "origin": null,
+    "tags": [
+      "Arbia porcelain",
+      "Large format tile",
+      "porcelain floor tile",
+      "stone effect porcelain"
+    ],
+    "featured": true,
+    "virtual": false,
+    "meta_description": "Arbia porcelain tile available in Grey, Sand and Ivory in 292x592mm, 592x592mm and 600x1200mm formats. Durable stone-effect porcelain suitable for walls, floors and underfloor heating. View at Simali Stone.",
+    "images": [
+      {
+        "file": "arbia-grey-porcelain-bathroom-tiles.jpg",
+        "alt": "Arbia Grey porcelain tile showing cool grey stone-effect surface and subtle natural texture",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/arbia-grey-porcelain-bathroom-tiles.jpg"
+      },
+      {
+        "file": "arbia-sand-porcelain-tile-60x120cm.jpg",
+        "alt": "Arbia Sand porcelain tile close-up featuring warm beige stone-effect texture and natural variation",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/arbia-sand-porcelain-tile-60x120cm.jpg"
+      },
+      {
+        "file": "arbia-sand-porcelain-bathroom-tiles-jpg.jpg",
+        "alt": "Arbia Sand porcelain tile installed in modern living space showing warm stone-effect finish",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/arbia-sand-porcelain-bathroom-tiles.jpg-.jpg"
+      },
+      {
+        "file": "arbia-ivory-porcelain-tile-60x120cm.jpg",
+        "alt": "Arbia Ivory porcelain tile close-up showing warm neutral stone-effect surface and subtle natural movement",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/arbia-ivory-porcelain-tile-60x120cm.jpg"
+      },
+      {
+        "file": "arbia-ivory-porcelain-bathroom-tiles.jpg",
+        "alt": "Arbia Ivory porcelain tile installed in contemporary interior floor setting with soft neutral tones",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/Arbia-Ivory-porcelain-bathroom-tiles.jpg"
+      }
+    ]
   },
   {
-    "slug": "timeless-stone-collection-wetherby",
-    "name": "Wetherby Limestone Flooring \u2013 Antiqued Heritage Flagstone",
-    "price": 0.0,
+    "slug": "ascot",
+    "name": "Ascot",
+    "price": 59.0,
     "max_price": null,
     "categories": [
-      "timeless-stone-collection"
+      "limestone"
     ],
-    "short": "Wetherby limestone flooring is an antiqued 15mm natural stone with warm biscuit tones and enhanced fossil character. Acid-washed to gently expose shell detail, Wetherby is supplied in 500mm and 600mm random lengths with softly tumbled edges for a traditional flagstone appearance."
+    "collection": null,
+    "short": "A predominantly light creamy beige limestone with delicate light grey veins running throughout the tiles. Perfect for a variety of floor spaces in both contemporary and traditional settings.",
+    "description": "<ul><li>Brushed finish</li><li>Available in large format size options</li></ul>",
+    "material": "Limestone",
+    "sizes": [
+      "600 × random lengths × 20mm",
+      "900 × 600 × 15mm"
+    ],
+    "thickness": [
+      "15mm",
+      "20mm"
+    ],
+    "finish": [
+      "Brushed"
+    ],
+    "edge": [],
+    "colours": [
+      "Grey",
+      "Cream",
+      "Beige"
+    ],
+    "location": [
+      "Indoor"
+    ],
+    "rooms": [],
+    "ufh": null,
+    "origin": null,
+    "tags": [
+      "ascot",
+      "beige",
+      "brushed",
+      "cream",
+      "grey",
+      "limestone"
+    ],
+    "featured": false,
+    "virtual": false,
+    "meta_description": "Ascot",
+    "images": [
+      {
+        "file": "ascot1-1.jpg",
+        "alt": "ascot limestone slabs in light cream and beige tones",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/ascot1-1.jpg"
+      },
+      {
+        "file": "ascot2.jpg",
+        "alt": "Ascot limestone floor tile with natural honed finish",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/ascot2.jpg"
+      },
+      {
+        "file": "palmero33.jpg",
+        "alt": "Ascot limestone texture showing premium natural stone surface",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/palmero33.jpg"
+      }
+    ]
   },
   {
-    "slug": "timeless-stone-collection-southwell",
-    "name": "Southwell Limestone Flagstone Flooring \u2013 Timeless Stone Collection",
-    "price": 0.0,
+    "slug": "ashford",
+    "name": "Ashford",
+    "price": 53.0,
     "max_price": null,
     "categories": [
-      "timeless-stone-collection"
+      "limestone",
+      "outdoor"
     ],
-    "short": "Southwell limestone flagstone flooring is a substantial 22\u201323mm natural stone with elegant neutral grey tones and a brushed, lightly honed surface. Supplied in 400mm, 500mm and 600mm random lengths, Southwell features hand-cut edges and a traditional flagstone character ideal for larger spaces."
+    "collection": null,
+    "short": "Limestone with a textured surface, in a deep mid to dark grey. Consistent in colour and exceptionally hard wearing. Suitable for a diverse range of environments and room settings,",
+    "description": "",
+    "material": "Limestone",
+    "sizes": [
+      "600 × random lengths × 22mm",
+      "900 × 600 × 22mm"
+    ],
+    "thickness": [
+      "22mm"
+    ],
+    "finish": [
+      "Textured"
+    ],
+    "edge": [
+      "Tumbled"
+    ],
+    "colours": [
+      "Grey"
+    ],
+    "location": [
+      "Indoor",
+      "Outdoor"
+    ],
+    "rooms": [
+      "Patios"
+    ],
+    "ufh": null,
+    "origin": null,
+    "tags": [
+      "ashford",
+      "dark",
+      "grey",
+      "indoor",
+      "limestone",
+      "outdoor"
+    ],
+    "featured": false,
+    "virtual": false,
+    "meta_description": "Ashford",
+    "images": [
+      {
+        "file": "ashford1.jpg",
+        "alt": "Ashford limestone tile with tumbled edge detail",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/ashford1.jpg"
+      },
+      {
+        "file": "ashford2.jpg",
+        "alt": "Ashford grey limestone floor with riven honed finish",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/ashford2.jpg"
+      },
+      {
+        "file": "ashford3.jpg",
+        "alt": "Ashford limestone flooring mid grey natural stone tile",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/ashford3.jpg"
+      }
+    ]
   },
   {
-    "slug": "ludlow",
-    "name": "Ludlow Flagstone Limestone Flooring \u2013 Timeless Stone Collection",
-    "price": 0.0,
-    "max_price": null,
+    "slug": "athens-marble-effect-porcelain-tile",
+    "name": "Athens Marble Effect Porcelain Tile",
+    "price": 36.66,
+    "max_price": 39.04,
     "categories": [
-      "timeless-stone-collection"
+      "porcelain"
     ],
-    "short": "Ludlow limestone flagstone flooring is a substantial 22\u201323mm thick natural stone with deep grey tones and a textured riven surface. Supplied in 500mm and 600mm random lengths, Ludlow delivers an authentic worn flagstone appearance with brushed finishing and hand-cut edges."
+    "collection": null,
+    "short": "Athens Marble Effect Porcelain Tile combines the timeless elegance of natural marble with the strength and practicality of porcelain, making it perfect for stylish, low-maintenance interiors.",
+    "description": "<p>Athens Marble Effect Porcelain Tile is a polished marble-look porcelain range available in Azure, Nero and Beige. Designed to replicate the elegance of natural marble while offering the durability and low maintenance of porcelain, Athens is ideal for modern interiors.</p><ul><li>Polished marble-effect porcelain</li><li>Available in 300x600mm and 600x600mm</li><li>Beige available in 600x600mm only</li><li>Suitable for walls and floors</li><li>Compatible with underfloor heating</li></ul><p><strong>Porcelain Tile Supply &amp; Installation</strong></p><p>Simali Stone supplies porcelain tiles nationally and offers professional tile installation within a 40-mile radius of Shaftesbury, Dorset. For availability or installation enquiries, please call 01747 852557.</p>",
+    "material": "Porcelain",
+    "sizes": [
+      "300 × 600mm",
+      "600 × 600mm"
+    ],
+    "thickness": [],
+    "finish": [
+      "Polished"
+    ],
+    "edge": [],
+    "colours": [
+      "Beige",
+      "Blue",
+      "Black"
+    ],
+    "location": [
+      "Indoor"
+    ],
+    "rooms": [
+      "Walls"
+    ],
+    "ufh": true,
+    "origin": null,
+    "tags": [
+      "marble effect porcelain tile",
+      "polished marble porcelain",
+      "porcelain"
+    ],
+    "featured": true,
+    "virtual": false,
+    "meta_description": "Athens marble effect porcelain tile available in Azure, Nero and Beige in polished finishes. Sizes include 300x600mm and 600x600mm. Elegant marble-look porcelain suitable for walls, floors and underfloor heating.",
+    "images": [
+      {
+        "file": "athens-blue-marble-effect-porcelain-tile.jpg",
+        "alt": "Athens Azure polished marble effect porcelain tile blue-grey veining detail",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/athens-blue-marble-effect-porcelain-tile.jpg"
+      },
+      {
+        "file": "athens-nero-marble-effect-porcelain-tile.jpg",
+        "alt": "Athens Nero marble effect porcelain tile polished surface close-up detail",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/athens-nero-marble-effect-porcelain-tile.jpg"
+      },
+      {
+        "file": "athens-nero-marble-effect-porcelain-floor-and-wall-tiles.jpg",
+        "alt": "Athens Nero polished marble effect porcelain tile contemporary interior room set",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/athens-nero-marble-effect-porcelain-floor-and-wall-tiles.jpg"
+      },
+      {
+        "file": "athens-beige-marble-effect-porcelain-tile.jpg",
+        "alt": "Athens Beige polished marble effect porcelain tile 600x600 close-up detail",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/athens-beige-marble-effect-porcelain-tile.jpg"
+      },
+      {
+        "file": "athens-beige-marble-effect-porcelain-floor-and-wall-tiles.jpg",
+        "alt": "Athens Beige marble effect porcelain tile polished finish bathroom installation",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/athens-beige-marble-effect-porcelain-floor-and-wall-tiles.jpg"
+      }
+    ]
   },
   {
-    "slug": "kelso",
-    "name": "Kelso Limestone Flooring \u2013 Timeless Stone Collection",
-    "price": 0.0,
+    "slug": "barcelona-porcelain-feature-tile-223mm",
+    "name": "Barcelona Porcelain Feature Tile",
+    "price": 45.48,
     "max_price": null,
     "categories": [
-      "timeless-stone-collection"
+      "porcelain"
     ],
-    "short": "Kelso limestone flooring is a refined 15mm grey natural stone with warm undertones, subtle fossil detailing and fine calcite veining. Supplied in 500mm and 600mm widths with random lengths, Kelso features a honed surface and lightly tumbled edges for a calm, balanced finish."
+    "collection": null,
+    "short": "Barcelona is a 223mm x 223mm patterned porcelain feature tile available in Azur, Grigio and Nero. Designed to bring Mediterranean character to kitchens, bathrooms and feature floors, this durable porcelain tile is suitable for both walls and floors. 20 tiles per m². £45.48 per m² inc VAT.",
+    "description": "<p>Barcelona Porcelain feature Tile is a decorative patterned porcelain tile designed to create impact and character within a space. Supplied in a 223mm x 223mm format, it delivers traditional Mediterranean styling with the strength and practicality of modern porcelain.</p><p>Ideal for kitchens, bathrooms, hallways and statement floor areas, Barcelona works beautifully as a full floor covering or as a defined feature zone within a larger layout.</p><p><strong>Colour Options</strong></p><p>Barcelona Azur</p><p>A rich blue-toned patterned finish that adds depth and visual movement. Particularly effective in kitchens, cloakrooms and feature spaces where colour is welcomed.</p><p>Barcelona Grigio</p><p>A softer grey-based design offering subtle contrast. Works well in contemporary interiors and pairs easily with neutral cabinetry and fittings.</p><p>Barcelona Nero</p><p>A bold black and white patterned option designed to create strong visual definition. Ideal for hallways, bathrooms and statement floors.</p><p><strong>Tile Format &amp; Coverage</strong></p><ul><li>Size: 223mm x 223mm</li><li>20 tiles per square metre</li><li>Porcelain construction</li><li>Matt patterned finish</li><li>Suitable for walls and floors</li></ul><p>The compact square format allows detailed pattern flow while remaining practical for both small and medium-sized rooms.</p><p><strong>Porcelain Tile Supply &amp; Installation</strong></p><p>Simali Stone supplies porcelain tiles nationally and offers professional tile installation within a 40-mile radius of Shaftesbury, Dorset. For availability or installation enquiries, please call 01747 852557.</p>",
+    "material": "Porcelain",
+    "sizes": [
+      "223 × 223mm"
+    ],
+    "thickness": [],
+    "finish": [],
+    "edge": [],
+    "colours": [
+      "Grey",
+      "Blue",
+      "Black"
+    ],
+    "location": [
+      "Indoor"
+    ],
+    "rooms": [
+      "Kitchens",
+      "Hallways",
+      "Bathrooms",
+      "Walls"
+    ],
+    "ufh": null,
+    "origin": null,
+    "tags": [
+      "floor and wall tile",
+      "porcelain feature tile",
+      "porcelain tile"
+    ],
+    "featured": false,
+    "virtual": false,
+    "meta_description": "Barcelona Porcelain Feature Tile 223mm patterned porcelain tile available in Azure, Grigio and Nero. Suitable for floors and walls. 20 tiles per m². £45.48 per m² inc VAT.",
+    "images": [
+      {
+        "file": "barcelona-azur-porcelain-floor-tiles.jpg",
+        "alt": "Barcelona Azure 223mm patterned porcelain feature tile close-up",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/barcelona-azur-porcelain-floor-tiles.jpg"
+      },
+      {
+        "file": "barcelona-azur-porcelain-wall-tiles-interior-room-set.jpg",
+        "alt": "Barcelona Azure porcelain tile kitchen floor installation",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/barcelona-azur-porcelain-wall-tiles-interior-room-set.jpg"
+      },
+      {
+        "file": "barcelona-grigio-porcelain-floor-wall.jpg",
+        "alt": "Barcelona Grigio 223mm grey patterned porcelain feature tile close-up",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/barcelona-grigio-porcelain-floor-wall.jpg"
+      },
+      {
+        "file": "barcelona-grigio-porcelain-tile-room-set.jpg",
+        "alt": "Barcelona Grigio patterned porcelain bathroom floor",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/barcelona-grigio-porcelain-tile-room-set.jpg"
+      },
+      {
+        "file": "barcelona-nero-porcelain-floor-wall-tile.jpg",
+        "alt": "Barcelona Nero 223mm black and white porcelain feature tile close-up",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/barcelona-nero-porcelain-floor-wall-tile.jpg"
+      },
+      {
+        "file": "barcelona-nero-porcelain-tile-room-set.jpg",
+        "alt": "Barcelona Nero black and white patterned hallway floor tile",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/barcelona-nero-porcelain-tile-room-set.jpg"
+      }
+    ]
   },
   {
     "slug": "bath",
-    "name": "Bath Limestone Flooring \u2013 Timeless Stone Collection",
+    "name": "Bath Limestone Flooring – Timeless Stone Collection",
     "price": 0.0,
     "max_price": null,
     "categories": [
       "timeless-stone-collection"
     ],
-    "short": "Bath limestone flooring is a refined 15mm natural stone featuring warm creamy tones with subtle white shell flecks and gentle tonal variation. Supplied in 600mm random lengths, 600x900mm and 900x900mm formats, Bath offers a clean honed finish with lightly tumbled edges for a timeless, elegant look."
+    "collection": "Timeless Stone Collection",
+    "short": "Bath limestone flooring is a refined 15mm natural stone featuring warm creamy tones with subtle white shell flecks and gentle tonal variation. Supplied in 600mm random lengths, 600x900mm and 900x900mm formats, Bath offers a clean honed finish with lightly tumbled edges for a timeless, elegant look.",
+    "description": "<p>Bath limestone flooring is part of our Timeless Stone Collection and is selected for its warm, creamy character and classic limestone appeal. The stone features soft neutral tones with natural shell inclusions and subtle contrasting markings that create interest without overwhelming a space.</p><p>Its balanced colour makes Bath limestone particularly well suited to kitchens, hallways and open-plan living areas where light reflection and warmth are important.</p><p><strong>Finish &amp; Character</strong></p><p>Bath limestone is supplied with:</p><ul><li>A smooth honed surface</li><li>Gently tumbled edges</li><li>Soft natural tonal variation</li></ul><p>The finish gives the floor a composed, refined appearance while maintaining the authenticity of natural limestone.</p><p><strong>Sizes &amp; Specification</strong></p><p>Bath limestone is available in:</p><ul><li>600mm widths with random lengths</li><li>600x900mm</li><li>900x900mm</li><li>15mm thickness</li></ul><p>This range of formats allows flexibility for both traditional flagstone-style layouts and more contemporary grid patterns.</p><p>⸻</p><p><strong>Installation &amp; Suitability</strong></p><p>Bath limestone flooring works beautifully in:</p><ul><li>Kitchens</li><li>Hallways</li><li>Open-plan living areas</li><li>Dining spaces</li><li>Barn conversions</li></ul><p>It is compatible with underfloor heating and is suitable for most internal domestic settings.</p>",
+    "material": "Limestone",
+    "sizes": [
+      "600 × random lengths × 15mm",
+      "600 × 900 × 15mm",
+      "900 × 900 × 15mm"
+    ],
+    "thickness": [
+      "15mm"
+    ],
+    "finish": [
+      "Honed"
+    ],
+    "edge": [
+      "Tumbled"
+    ],
+    "colours": [
+      "Cream"
+    ],
+    "location": [
+      "Indoor"
+    ],
+    "rooms": [
+      "Kitchens",
+      "Hallways",
+      "Living rooms",
+      "Open-plan spaces"
+    ],
+    "ufh": true,
+    "origin": null,
+    "tags": [
+      "Bath Limestone",
+      "creamy tones",
+      "easy to maintain",
+      "fossil",
+      "honed",
+      "indoor",
+      "limestone",
+      "suitable for underfloor heating",
+      "Timeless Stone Collection",
+      "tumbled edge"
+    ],
+    "featured": true,
+    "virtual": false,
+    "meta_description": "Bath limestone flooring with warm creamy tones and subtle shell detail. Available in 600mm random lengths, 600x900mm and 900x900mm formats with honed finish and tumbled edges.",
+    "images": [
+      {
+        "file": "bath-limestone-floor-living-room-conservatory-dorset-1.jpg",
+        "alt": "Bath Limestone showing a living room floor flowing to a consevatory floor with natural colour variations",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/bath-limestone-floor-living-room-conservatory-dorset-1.jpg"
+      },
+      {
+        "file": "bath1-1.jpg",
+        "alt": "Bath Limestone Flooring – Timeless Stone Collection",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/bath1-1.jpg"
+      },
+      {
+        "file": "bath1.jpg",
+        "alt": "Timeless Stone Collection natural stone flooring tiles available from Simali Stone Ltd showroom in Shaftesbury Dorset with UK nationwide delivery",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/bath1.jpg"
+      },
+      {
+        "file": "bath2.jpg",
+        "alt": "Bath Limestone Flooring – Timeless Stone Collection",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/bath2.jpg"
+      },
+      {
+        "file": "bath3.jpg",
+        "alt": "Bath Limestone Flooring – Timeless Stone Collection",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/bath3.jpg"
+      },
+      {
+        "file": "bath5.jpg",
+        "alt": "limestone flooring Manhester Kitchen",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/bath5.jpg"
+      },
+      {
+        "file": "bath6.jpg",
+        "alt": "Bath Limestone Flooring – Timeless Stone Collection",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/bath6.jpg"
+      },
+      {
+        "file": "bath7.jpg",
+        "alt": "Bath Limestone Flooring – Timeless Stone Collection",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/bath7.jpg"
+      },
+      {
+        "file": "heritage-limestone-flooring-installation-dorset-014.jpg",
+        "alt": "Bath Limestone Flooring – Timeless Stone Collection",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/heritage-limestone-flooring-installation-dorset-014.jpg"
+      },
+      {
+        "file": "bath-limestone-conservatory-floor-and-skirting-boards-templecombe-1.jpg",
+        "alt": "Bath limestone consevatory floor with limestone skirting boards in Templecomb, dorset",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/bath-limestone-conservatory-floor-and-skirting-boards-templecombe-1.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "bellissimo-porcelain-tile-600x1200mm",
+    "name": "Bellissimo Porcelain Tile 600x1200mm",
+    "price": 50.0,
+    "max_price": null,
+    "categories": [
+      "porcelain"
+    ],
+    "collection": null,
+    "short": "Bellissimo is a large-format 600x1200mm porcelain tile available in Pink and Beige. Designed to create a refined, contemporary finish, this durable porcelain tile is suitable for walls and floors. 1.39 tiles per m². £50 per m² inc VAT.",
+    "description": "<p><strong>Bellissimo Porcelain Tile  600x1200mm</strong></p><p>Bellissimo Porcelain Tile  600x1200mm is a contemporary large-format porcelain tile designed to create clean lines and a seamless modern finish. Supplied in a generous 600mm x 1200mm format, it reduces grout lines and enhances the feeling of space within a room.</p><p>Available in Bellissimo Pink and Bellissimo Beige, this tile offers subtle warmth and soft natural tones, making it ideal for kitchens, bathrooms and open-plan living areas.</p><p>The 1200mm length provides a premium look, particularly effective on floors and full-height wall installations.</p><p><strong>Colour Options</strong></p><p><strong>Bellissimo Pink</strong></p><p>A soft, warm-toned porcelain tile that introduces subtle colour without overpowering a space. Ideal for contemporary interiors seeking warmth and character.</p><p><strong>Bellissimo Beige</strong></p><p>A versatile neutral shade designed to complement a wide range of cabinetry and furnishings. Suitable for both modern and classic interior schemes.</p><p><strong>Large Format Benefits</strong></p><ul><li>Fewer grout lines</li><li>Clean, modern appearance</li><li>Enhances the sense of space</li><li>Suitable for walls and floors</li></ul><p>The 600x1200mm size is particularly effective in open-plan areas and larger bathrooms where continuity is desired.</p><p><strong>Tile Specification</strong></p><ul><li>Material: Porcelain</li><li>Finish: Matt</li><li>Size: 600mm x 1200mm</li><li>Coverage: 1.39 tiles per m²</li><li>Suitable for walls and floors</li><li>Price: £50 per m² inc VAT</li></ul><p><strong>Porcelain Tile Supply &amp; Installation</strong></p><p>Simali Stone supplies porcelain tiles nationally and offers professional tile installation within a 40-mile radius of Shaftesbury, Dorset. For availability or installation enquiries, please call 01747 852557.</p><p><a href=\"/our-work/\">View our stone flooring installations across the South West</a></p>",
+    "material": "Porcelain",
+    "sizes": [
+      "600 × 1200mm"
+    ],
+    "thickness": [],
+    "finish": [
+      "Polished"
+    ],
+    "edge": [],
+    "colours": [
+      "Beige",
+      "Pink"
+    ],
+    "location": [
+      "Indoor"
+    ],
+    "rooms": [
+      "Kitchens",
+      "Bathrooms",
+      "Living rooms",
+      "Open-plan spaces",
+      "Walls"
+    ],
+    "ufh": null,
+    "origin": null,
+    "tags": [
+      "large format polished porcelain",
+      "marble effect porcelain tile",
+      "polished marble porcelain",
+      "porcelain"
+    ],
+    "featured": false,
+    "virtual": false,
+    "meta_description": "Bellissimo Porcelain Tile 600x1200mm porcelain tile in Pink and Beige. Contemporary wall and floor tile. £50 per m² inc VAT.",
+    "images": [
+      {
+        "file": "bellissimo-pink-marble-effect-porcelain-tile.jpg",
+        "alt": "Bellissimo Pink 600x1200mm porcelain tile close-up",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/bellissimo-pink-marble-effect-porcelain-tile.jpg"
+      },
+      {
+        "file": "bellissimo-beige-marble-effect-porcelain-tile.jpg",
+        "alt": "Bellissimo Beige 600x1200mm porcelain tile close-up",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/bellissimo-beige-marble-effect-porcelain-tile.jpg"
+      },
+      {
+        "file": "bellissimo-pink-marble-effect-porcelain-room-set-tile.jpg",
+        "alt": "Bellissimo Pink 600x1200mm porcelain tile floor installation",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/bellissimo-pink-marble-effect-porcelain-room-set-tile.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "cathedral-grey",
+    "name": "Cathedral Grey",
+    "price": 50.0,
+    "max_price": null,
+    "categories": [
+      "limestone",
+      "outdoor"
+    ],
+    "collection": null,
+    "short": "This gorgeous flagstone flooring tile will recall visits to old pubs and church’s where original flagstone floors are still in existence. It is grey in a trendy, old school way with its tumbled and brushed surface recreating a natural stone floor which looks centuries old.",
+    "description": "<ul><li>Traditional yet timeless  mid-dark grey limestone</li><li>Hand-cut , tumbled and brushed surface  .</li><li>Ideal for both classical and contemporary room settings.</li></ul>",
+    "material": "Limestone",
+    "sizes": [
+      "400 × random lengths × 22mm",
+      "500 × random lengths × 22mm",
+      "600 × random lengths × 22mm"
+    ],
+    "thickness": [
+      "22mm"
+    ],
+    "finish": [
+      "Brushed"
+    ],
+    "edge": [
+      "Tumbled",
+      "Hand-cut"
+    ],
+    "colours": [
+      "Grey"
+    ],
+    "location": [
+      "Indoor",
+      "Outdoor"
+    ],
+    "rooms": [],
+    "ufh": null,
+    "origin": null,
+    "tags": [
+      "brushed",
+      "cathedral",
+      "grey",
+      "hand cut",
+      "limestone",
+      "tumbled"
+    ],
+    "featured": false,
+    "virtual": false,
+    "meta_description": "This gorgeous flagstone flooring tile will recall visits to old pubs and church’s where original flagstone floors are still in existence. It is grey in a trendy, old school way with its tumbled and brushed surface recreating a natural stone floor which looks centuries old.",
+    "images": [
+      {
+        "file": "cathedral-grey1.jpg",
+        "alt": "Close-up of Cathedral Grey limestone flooring surface with hand-cut edges and aged natural stone texture",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/05/cathedral-grey1.jpg"
+      },
+      {
+        "file": "catheral-grey2.jpg",
+        "alt": "Cathedral Grey limestone flooring samples showing mid-dark grey colour variation and natural stone character",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/05/catheral-grey2.jpg"
+      },
+      {
+        "file": "cathedral-grey3.jpg",
+        "alt": "Cathedral Grey limestone flooring in random length layout showing mixed stone sizes and hand-cut edges",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/05/cathedral-grey3.jpg"
+      },
+      {
+        "file": "cathedralgrey6.jpg",
+        "alt": "Cathedral Grey limestone flooring installed in a traditional interior with classic British flagstone appearance",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/05/cathedralgrey6.jpg"
+      },
+      {
+        "file": "cathedralgrey5.jpg",
+        "alt": "Cathedral Grey limestone flooring slab showing mid-dark grey natural stone with tumbled and brushed flagstone finish",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/05/cathedralgrey5.jpg"
+      },
+      {
+        "file": "cathedralgrey8.jpg",
+        "alt": "Cathedral Grey",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/05/cathedralgrey8.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "cathedral",
+    "name": "Cathedral",
+    "price": 50.0,
+    "max_price": null,
+    "categories": [
+      "limestone",
+      "outdoor"
+    ],
+    "collection": null,
+    "short": "This rustic green/brown limestone with the ageless looks of old farmhouse style flagstone tile. The striking, time-worn appearance ,with a brushed surface and its tumbled edges, is like stepping into the past.",
+    "description": "<ul><li>Cathedral Limestone</li><li>olive hued limestone</li><li>warm variation in colour</li></ul>",
+    "material": "Limestone",
+    "sizes": [
+      "400 × random lengths × 22mm",
+      "500 × random lengths × 22mm",
+      "600 × random lengths × 22mm"
+    ],
+    "thickness": [
+      "22mm"
+    ],
+    "finish": [
+      "Brushed"
+    ],
+    "edge": [
+      "Tumbled"
+    ],
+    "colours": [
+      "Green",
+      "Brown"
+    ],
+    "location": [
+      "Indoor",
+      "Outdoor"
+    ],
+    "rooms": [],
+    "ufh": null,
+    "origin": null,
+    "tags": [
+      "brown",
+      "brushed",
+      "cathedral",
+      "green",
+      "limestone",
+      "olive",
+      "tumbled",
+      "warm"
+    ],
+    "featured": true,
+    "virtual": false,
+    "meta_description": "Cathedral Limestone",
+    "images": [
+      {
+        "file": "cathedral-limestone-floor-grouted-wiltshire.jpg",
+        "alt": "Cathedral limestone kitchen flooring installed in Wiltshire",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/cathedral-limestone-floor-grouted-wiltshire.jpg"
+      },
+      {
+        "file": "cathedral-1.jpg",
+        "alt": "Cathedral limestone flooring slab showing warm olive green and brown natural stone tones with honed and brushed finish",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/05/cathedral-1.jpg"
+      },
+      {
+        "file": "cathedral2.jpg",
+        "alt": "Cathedral limestone flooring samples showing natural colour variation in olive green and brown tones",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/05/cathedral2.jpg"
+      },
+      {
+        "file": "cathedral3.jpg",
+        "alt": "Cathedral limestone flooring installed in a traditional interior with rustic British stone flagstone appearance",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/05/cathedral3.jpg"
+      },
+      {
+        "file": "cathedral4.jpg",
+        "alt": "Cathedral limestone opus pattern flooring layout showing mixed stone sizes in classic French pattern design",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/05/cathedral4.jpg"
+      },
+      {
+        "file": "cathedral-limestone-floor-installed-teffont.jpg",
+        "alt": "Cathedral limestone showing a front door mat well and natural tonal colours",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/Cathedral-limestone-floor-installed-teffont.jpg"
+      },
+      {
+        "file": "cathedral-limestone-part-grouted-with-steps-shaftesbury.jpg",
+        "alt": "cathedral limestone patio showing step and ramp detail",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/cathedral-limestone-part-grouted-with-steps-shaftesbury.jpg"
+      },
+      {
+        "file": "cathedral-limestone-hallway-flooring-installation-dorset-034.jpg",
+        "alt": "Cathedral Limestone hallway flooring with twin doorways and clean, freshly finished surface in Bruton",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/cathedral-limestone-hallway-flooring-installation-Dorset-034-scaled.jpg"
+      },
+      {
+        "file": "cathedral-limestone-flooring-installation-frome-014.jpg",
+        "alt": "Cathedral limestone open plan flooring installation before grouting in Frome home",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/cathedral-limestone-flooring-installation-Frome-014-scaled.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "classic-cream",
+    "name": "Classic Cream",
+    "price": 56.0,
+    "max_price": 74.0,
+    "categories": [
+      "limestone"
+    ],
+    "collection": null,
+    "short": "Muted, creamy tones with subtle patterning throughout. Blends well in to a wide variety of settings.",
+    "description": "<ul><li>Highly durable</li><li>Little variation between tiles</li><li>Suitable for classical and modern settings</li></ul>",
+    "material": "Limestone",
+    "sizes": [
+      "600 × 900 × 15mm",
+      "600 × random lengths × 15mm",
+      "900 × 900 × 15mm"
+    ],
+    "thickness": [
+      "15mm"
+    ],
+    "finish": [],
+    "edge": [],
+    "colours": [
+      "Cream"
+    ],
+    "location": [
+      "Indoor"
+    ],
+    "rooms": [],
+    "ufh": null,
+    "origin": null,
+    "tags": [
+      "classic",
+      "cream",
+      "durable"
+    ],
+    "featured": false,
+    "virtual": false,
+    "meta_description": "Muted, creamy tones with subtle patterning throughout. Blends well in to a wide variety of settings.",
+    "images": [
+      {
+        "file": "classic-cream1.jpg",
+        "alt": "Classic Cream limestone flooring slab showing soft cream natural stone with subtle texture and light tonal variation",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/classic-cream1.jpg"
+      },
+      {
+        "file": "classiccream2.jpg",
+        "alt": "Close-up of Classic Cream limestone flooring surface with smooth texture and minimal natural stone variation",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/classiccream2.jpg"
+      },
+      {
+        "file": "classiccream3.jpg",
+        "alt": "Classic Cream limestone flooring installed in a bright interior with elegant natural stone appearance",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/classiccream3.jpg"
+      },
+      {
+        "file": "classiccream4.jpg",
+        "alt": "Classic Cream limestone flagstone flooring in traditional layout with large format stone tiles",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/classiccream4.jpg"
+      },
+      {
+        "file": "classiccream5.jpg",
+        "alt": "Classic Cream limestone flooring samples showing consistent creamy tones and refined natural stone finish",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/classiccream5.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "cotswold",
+    "name": "Cotswold",
+    "price": 69.6,
+    "max_price": null,
+    "categories": [
+      "limestone"
+    ],
+    "collection": null,
+    "short": "Tumbled and brushed limestone with delicate fossil-like detail running throughout the tiles. Its aged yet minimalistic appearance makes it perfect for traditional and contemporary room settings.",
+    "description": "<ul><li>Hard-wearing</li><li>Rich sandy-beige colour</li></ul>",
+    "material": "Limestone",
+    "sizes": [
+      "600 × random lengths × 20mm",
+      "900 × 600 × 20mm"
+    ],
+    "thickness": [
+      "20mm"
+    ],
+    "finish": [
+      "Brushed"
+    ],
+    "edge": [
+      "Tumbled"
+    ],
+    "colours": [
+      "Grey",
+      "Beige"
+    ],
+    "location": [
+      "Indoor"
+    ],
+    "rooms": [],
+    "ufh": null,
+    "origin": null,
+    "tags": [
+      "beige",
+      "brushed",
+      "cotswold",
+      "fossil",
+      "grey",
+      "limestone",
+      "tumbled"
+    ],
+    "featured": false,
+    "virtual": false,
+    "meta_description": "Tumbled and brushed limestone with delicate fossil-like detail running throughout the tiles. Its aged yet minimalistic appearance makes it perfect for traditional and contemporary room settings.",
+    "images": [
+      {
+        "file": "cotswaldtb1.jpg",
+        "alt": "Cotswold",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/cotswaldtb1.jpg"
+      },
+      {
+        "file": "cotswaldtb2.jpg",
+        "alt": "Cotswold",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/cotswaldtb2.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "desert-grey",
+    "name": "Desert Grey",
+    "price": 42.0,
+    "max_price": null,
+    "categories": [
+      "limestone",
+      "outdoor"
+    ],
+    "collection": null,
+    "short": "Light grey , textured contemporary stone . Durable- suitable for indoor and outdoor use.",
+    "description": "<ul><li>Textured limestone</li><li>Light Grey</li></ul>",
+    "material": "Limestone",
+    "sizes": [
+      "600 × random lengths × 22mm",
+      "900 × 600 × 22mm"
+    ],
+    "thickness": [
+      "22mm"
+    ],
+    "finish": [
+      "Textured"
+    ],
+    "edge": [],
+    "colours": [
+      "Grey"
+    ],
+    "location": [
+      "Indoor",
+      "Outdoor"
+    ],
+    "rooms": [
+      "Patios"
+    ],
+    "ufh": null,
+    "origin": null,
+    "tags": [
+      "desert",
+      "grey",
+      "indoor",
+      "limestone",
+      "outdoor",
+      "textured"
+    ],
+    "featured": false,
+    "virtual": false,
+    "meta_description": "Light grey , textured contemporary stone . Durable- suitable for indoor and outdoor use.",
+    "images": [
+      {
+        "file": "desertgrey1.jpg",
+        "alt": "Desert Grey sandstone flooring 900x600mm tile showing light grey colour and riven surface texture",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/desertgrey1.jpg"
+      },
+      {
+        "file": "desertgrey2.jpg",
+        "alt": "Desert Grey sandstone flooring slab showing light grey natural stone with riven textured surface and tumbled edges",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/desertgrey2.jpg"
+      },
+      {
+        "file": "desertgrey3.jpg",
+        "alt": "Close-up of Desert Grey sandstone flooring surface with natural riven texture and subtle grey variation",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/desertgrey3.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "desert-olive",
+    "name": "Desert Olive",
+    "price": 42.0,
+    "max_price": null,
+    "categories": [
+      "limestone",
+      "outdoor"
+    ],
+    "collection": null,
+    "short": "Suitable for indoor and outdoor use, this textured limestone would suit both contemporary and vintage settings.",
+    "description": "<ul><li>Grey-beige</li><li>Textured Limestone</li></ul>",
+    "material": "Limestone",
+    "sizes": [
+      "600 × random lengths × 22mm",
+      "900 × 600 × 22mm"
+    ],
+    "thickness": [
+      "22mm"
+    ],
+    "finish": [
+      "Textured"
+    ],
+    "edge": [],
+    "colours": [
+      "Grey",
+      "Beige",
+      "Green"
+    ],
+    "location": [
+      "Indoor",
+      "Outdoor"
+    ],
+    "rooms": [
+      "Patios"
+    ],
+    "ufh": null,
+    "origin": null,
+    "tags": [
+      "beige",
+      "desert",
+      "grey",
+      "indoor",
+      "limestone",
+      "olive",
+      "outdoor"
+    ],
+    "featured": false,
+    "virtual": false,
+    "meta_description": "Suitable for indoor and outdoor use, this textured limestone would suit both contemporary and vintage settings.",
+    "images": [
+      {
+        "file": "desertolive1.jpg",
+        "alt": "Desert Olive limestone flooring in random length layout showing mixed stone sizes and textured finish",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/desertolive1.jpg"
+      },
+      {
+        "file": "desertolive2.jpg",
+        "alt": "Close-up of Desert Olive limestone flooring surface with natural riven texture and subtle olive colour variation",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/desertolive2.jpg"
+      },
+      {
+        "file": "desertolive3.jpg",
+        "alt": "Desert Olive limestone flooring slab showing grey beige olive natural stone with riven textured surface and tumbled edges",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/desertolive3.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "epsom-limestone-flooring",
+    "name": "Epsom Limestone – Sandblasted Flagstone Flooring",
+    "price": 0.0,
+    "max_price": null,
+    "categories": [
+      "timeless-stone-collection"
+    ],
+    "collection": "Timeless Stone Collection",
+    "short": "Epsom limestone flooring features a refined sandblasted finish with soft biscuit tones and subtle grey shelly detail. Available in 400mm, 500mm and 600mm random lengths at 18mm thickness, Epsom offers a lightly textured alternative to honed limestone finishes.",
+    "description": "<p>Epsom Limestone flooring – Sandblasted Finish</p><p>Epsom limestone flooring is a sandblasted variation of our popular Heritage limestone, offering a paler biscuit base with visible shelly inclusions and gentle grey undertones. The sandblasted surface provides a slightly more textured finish while maintaining an elegant and architectural appearance.</p><p>Unlike honed limestone finishes, Epsom limestone delivers a softer visual depth with enhanced surface character, making it well suited to both traditional and contemporary interiors.</p><p><a href=\"/our-work/\">For professional installation services across Dorset and the South West</a>, please contact Simali Stone.</p><p>Sizes and Thickness</p><p>Epsom limestone is available in:</p><p>*             400mm x random lengths</p><p>*             500mm x random lengths</p><p>*             600mm x random lengths</p><p>*             18mm thickness</p><p>The random length format creates a classic flagstone layout ideal for kitchens, hallways and open plan living areas.</p><p>Suitability</p><p>Epsom limestone flooring is suitable for:</p><p>*             Kitchens</p><p>*             Hallways</p><p>*             Open plan living areas</p><p>*             Garden rooms</p><p>*             Barn conversions</p><p>The sandblasted finish provides subtle additional grip compared to honed finishes, making it practical for high-traffic areas.</p><p>For professional installation services across Dorset and the South West, please contact Simali Stone for advice and availability.</p>",
+    "material": "Limestone",
+    "sizes": [
+      "400 × random lengths × 18mm",
+      "500 × random lengths × 18mm",
+      "600 × random lengths × 18mm"
+    ],
+    "thickness": [
+      "18mm"
+    ],
+    "finish": [
+      "Sandblasted"
+    ],
+    "edge": [],
+    "colours": [
+      "Grey",
+      "Beige"
+    ],
+    "location": [
+      "Indoor"
+    ],
+    "rooms": [
+      "Kitchens",
+      "Hallways",
+      "Living rooms",
+      "Open-plan spaces"
+    ],
+    "ufh": null,
+    "origin": null,
+    "tags": [
+      "18mm limestone",
+      "Beige/grey",
+      "limestone",
+      "Sandblasted limestone"
+    ],
+    "featured": false,
+    "virtual": false,
+    "meta_description": "Epsom limestone flooring with sandblasted finish supplied by Simali Stone. A paler biscuit limestone with shelly detail available in 400mm, 500mm and 600mm random lengths.",
+    "images": [
+      {
+        "file": "epsom-limestone-kitchen-diner-floor.jpg",
+        "alt": "Epsom limestone floor viewed from above showing doorway transition and flagstone layout",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/epsom-limestone-kitchen-diner-floor-scaled.jpg"
+      },
+      {
+        "file": "epsom-limestone-close-up-textured-floor.jpg",
+        "alt": "Detail of grout lines and sandblasted finish on Epsom limestone flagstone flooring",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/epsom-limestone-close-up-textured-floor.jpg"
+      },
+      {
+        "file": "epsom-limestone-dining-room-floor.jpg",
+        "alt": "Natural Epsom limestone flooring beneath solid wood dining table in Dorset kitchen",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/epsom-limestone-dining-room-floor.jpg"
+      },
+      {
+        "file": "epsom-limestone-kitchen-floor.jpg",
+        "alt": "Close-up of Epsom limestone flooring showing sandblasted texture and natural shelly detail",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/epsom-limestone-kitchen-floor.jpg"
+      },
+      {
+        "file": "epsom-limestone-kitchen-flooring.jpg",
+        "alt": "Sandblasted Epsom limestone kitchen floor with large dining table and random length layout",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/epsom-limestone-kitchen-flooring-scaled.jpg"
+      },
+      {
+        "file": "epsom-limestone-showing-random-length-flagstones-kitchen.jpg",
+        "alt": "Epsom limestone flooring installed in a kitchen with traditional AGA and fitted units",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/epsom-limestone-showing-random-length-flagstones-kitchen.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "everything-i-wish-somebody-had-told-me-before-i-bought-my-stone-floor",
+    "name": "Everything I Wish Somebody Had Told Me Before I Bought My stone Floor",
+    "price": 10.0,
+    "max_price": null,
+    "categories": [
+      "stone-flooring-guides"
+    ],
+    "collection": null,
+    "short": "Everything I Wish Somebody Had Told Me Before I Bought My Stone Floor Thinking about natural stone but don’t know where to start? I’ve spent years supplying, laying, repairing and looking after stone floors, and this is the practical advice I wish somebody had given me before I started. 30 pages of straight-talking advice about choosing your stone, measuring, preparation, underfloor heating, laying, grouting, sealing, cleaning, repairs, choosing an installer and avoiding expensive mistakes. I’ve kept it simple. I’m not here to bamboozle you or frighten you into buying anything. Just the things that actually matter when you’re spending your money on a floor you’ll probably live with for decades. £10 — instant PDF download.",
+    "description": "<p><strong>Thinking about buying a natural stone floor?</strong></p><p>Before you spend hundreds or thousands of pounds on the floor itself, spend ten quid on getting the decisions right.</p><p>I’ve spent years supplying, laying, repairing and looking after natural stone floors. I’ve seen the good jobs, the bad jobs, the expensive mistakes and the things that nobody thinks to ask until it’s too late.</p><p>So I put together the guide I wish somebody had given me before I started.</p><p><strong></strong><strong>Everything I Wish Somebody Had Told Me Before I Bought My Stone Floor</strong> is 30 pages of practical, straight-talking advice about:</p><p>• choosing the right stone for your house<br/>\n• limestone, porcelain, terracotta and marble<br/>\n• measuring and allowing for waste<br/>\n• getting the floor underneath properly prepared<br/>\n• underfloor heating<br/>\n• planning the layout before you start<br/>\n• laying and grouting<br/>\n• sealing and cleaning<br/>\n• repairing and renovating existing stone<br/>\n• choosing the right installer<br/>\n• avoiding common mistakes and expensive surprises</p><p>There isn’t a complicated formula to it. Natural stone isn’t something you need to be frightened of.</p><p>It’s about understanding what you’re buying, asking the right questions and making sensible decisions before the first piece of stone goes down.</p><p><strong>It’s £10 and you get the PDF instantly after purchase.</strong></p><p>Read it before you order your stone or start your floor. It could save you a hell of a lot more than a tenner.</p>",
+    "material": null,
+    "sizes": [],
+    "thickness": [],
+    "finish": [],
+    "edge": [],
+    "colours": [],
+    "location": null,
+    "rooms": [],
+    "ufh": null,
+    "origin": null,
+    "tags": [],
+    "featured": false,
+    "virtual": true,
+    "meta_description": "Everything I Wish Somebody Had Told Me Before I Bought My Stone Floor Thinking about natural stone but don’t know where to start? I’ve spent years supplying, laying, repairing and looking after stone floors, and this is the practical advice I wish somebody had given me before I started. 30 pages of straight-talking advice about choosing your stone, measuring, preparation, underfloor heating, laying, grouting, sealing, cleaning, repairs, choosing an installer and avoiding expensive mistakes. I’ve kept it simple. I’m not here to bamboozle you or frighten you into buying anything. Just the things that actually matter when you’re spending your money on a floor you’ll probably live with for decades. £10 — instant PDF download.",
+    "images": [
+      {
+        "file": "molly-on-stone-floor-with-toy.jpg",
+        "alt": "Everything I Wish Somebody Had Told Me Before I Bought My stone Floor",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/09/molly-on-stone-floor-with-toy.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "field-house",
+    "name": "Fieldstone",
+    "price": 78.0,
+    "max_price": null,
+    "categories": [
+      "limestone"
+    ],
+    "collection": null,
+    "short": "Fieldstone limestone, also known as Worcester in the Timeless Stone Collection. A warm natural stone with yellow and golden tones, supplied in 400mm, 500mm and 600mm widths with random lengths at 20mm.",
+    "description": "",
+    "material": "Limestone",
+    "sizes": [
+      "400 × random lengths × 20mm",
+      "500 × random lengths × 20mm",
+      "600 × random lengths × 20mm"
+    ],
+    "thickness": [
+      "20mm"
+    ],
+    "finish": [],
+    "edge": [],
+    "colours": [
+      "Golden"
+    ],
+    "location": [
+      "Indoor"
+    ],
+    "rooms": [],
+    "ufh": null,
+    "origin": null,
+    "tags": [
+      "field",
+      "fieldhouse",
+      "house",
+      "limestone",
+      "yellow"
+    ],
+    "featured": false,
+    "virtual": false,
+    "meta_description": "",
+    "images": [
+      {
+        "file": "fieldhoue3.jpg",
+        "alt": "Fieldstone limestone flooring installed in a traditional interior with warm natural stone appearance showroom picture",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/fieldhoue3.jpg"
+      },
+      {
+        "file": "fieldhouse1.jpg",
+        "alt": "Close-up of Fieldstone limestone flooring surface showing fossil shell detail and warm colour variation",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/fieldhouse1.jpg"
+      },
+      {
+        "file": "fieldhouse3-75.jpg",
+        "alt": "Fieldstone",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/fieldhouse3.75.png"
+      }
+    ]
+  },
+  {
+    "slug": "hampton-olive",
+    "name": "Hampton Olive",
+    "price": 50.0,
+    "max_price": null,
+    "categories": [
+      "limestone",
+      "outdoor"
+    ],
+    "collection": null,
+    "short": "Varying in colour from tile to tile, predominantly olive, with a mixture of bronze and brown tones. Highly durable and suitable for both indoor and outdoor use.",
+    "description": "<ul><li>Hand cut tumbled edges and a textured surface.</li><li> Particularly suited to older style, more traditional room settings.</li></ul>",
+    "material": "Limestone",
+    "sizes": [
+      "600 × random lengths × 22mm",
+      "900 × 600 × 22mm"
+    ],
+    "thickness": [
+      "22mm"
+    ],
+    "finish": [
+      "Textured"
+    ],
+    "edge": [
+      "Tumbled",
+      "Hand-cut"
+    ],
+    "colours": [
+      "Beige",
+      "Green",
+      "Brown",
+      "Golden"
+    ],
+    "location": [
+      "Indoor",
+      "Outdoor"
+    ],
+    "rooms": [
+      "Patios"
+    ],
+    "ufh": null,
+    "origin": null,
+    "tags": [
+      "beige",
+      "bronze",
+      "hampton",
+      "indoor",
+      "limestone",
+      "olive",
+      "outdoor",
+      "traditional",
+      "yello"
+    ],
+    "featured": false,
+    "virtual": false,
+    "meta_description": "Varying in colour from tile to tile, predominantly olive, with a mixture of bronze and brown tones. Highly durable and suitable for both indoor and outdoor use.",
+    "images": [
+      {
+        "file": "hamptonolive1.jpg",
+        "alt": "Hampton Olive",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/hamptonolive1.jpg"
+      },
+      {
+        "file": "hamptonolive2.jpg",
+        "alt": "Hampton Olive",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/hamptonolive2.jpg"
+      },
+      {
+        "file": "hamptonolive3.jpg",
+        "alt": "Hampton Olive",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/hamptonolive3.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "heritage-grey",
+    "name": "Heritage Grey",
+    "price": 42.35,
+    "max_price": 61.0,
+    "categories": [
+      "limestone",
+      "outdoor"
+    ],
+    "collection": null,
+    "short": "Mid-dark grey colour tile, with hand-cut, tumbled edges and a textured brushed surface. Ideal for a wide variety of room settings both contemporary and classical, and available in a selection of large format size options.",
+    "description": "<ul><li>Highly durable, antiqued limestone</li><li>Suitable for both indoor and outdoor use</li></ul>",
+    "material": "Limestone",
+    "sizes": [
+      "600 × 400 × 15mm",
+      "600 × random lengths × 22mm",
+      "900 × 600 × 22mm"
+    ],
+    "thickness": [
+      "15mm",
+      "22mm"
+    ],
+    "finish": [
+      "Antiqued",
+      "Brushed",
+      "Textured"
+    ],
+    "edge": [
+      "Tumbled",
+      "Hand-cut"
+    ],
+    "colours": [
+      "Grey"
+    ],
+    "location": [
+      "Indoor",
+      "Outdoor"
+    ],
+    "rooms": [
+      "Patios"
+    ],
+    "ufh": null,
+    "origin": null,
+    "tags": [
+      "brushed",
+      "dark",
+      "durable",
+      "grey",
+      "heritage",
+      "indoor",
+      "limestone",
+      "outdoor",
+      "tumbled"
+    ],
+    "featured": false,
+    "virtual": false,
+    "meta_description": "Mid-dark grey colour tile, with hand-cut, tumbled edges and a textured brushed surface. Ideal for a wide variety of room settings both contemporary and classical, and available in a selection of large format size options.",
+    "images": [
+      {
+        "file": "heritagegrey1.jpg",
+        "alt": "Heritage Grey",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/heritagegrey1.jpg"
+      },
+      {
+        "file": "heritagegrey2.jpg",
+        "alt": "Heritage Grey",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/heritagegrey2.jpg"
+      },
+      {
+        "file": "heritagegrey3.jpg",
+        "alt": "Heritage Grey",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/heritagegrey3.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "heritage",
+    "name": "Heritage",
+    "price": 49.0,
+    "max_price": 74.9,
+    "categories": [
+      "limestone",
+      "outdoor"
+    ],
+    "collection": null,
+    "short": "Elegance emanates from these Heritage tiles with a gently textured surface giving a certain refinement that many more rustic flagstone tiles may not have. OPUS ALSO AVAILABLE . CONTACT US FOR DETAILS.",
+    "description": "<ul><li>smooth surface</li><li>soft tumbled edges</li><li>Available in opus</li></ul>",
+    "material": "Limestone",
+    "sizes": [
+      "400 × random lengths × 15mm",
+      "500 × random lengths × 15mm",
+      "600 × random lengths × 15mm",
+      "900 × 900 × 15mm"
+    ],
+    "thickness": [
+      "15mm"
+    ],
+    "finish": [
+      "Textured"
+    ],
+    "edge": [
+      "Tumbled"
+    ],
+    "colours": [
+      "Grey",
+      "Beige"
+    ],
+    "location": [
+      "Indoor",
+      "Outdoor"
+    ],
+    "rooms": [],
+    "ufh": null,
+    "origin": null,
+    "tags": [
+      "Beige/grey",
+      "flagstone",
+      "heritage",
+      "limestone",
+      "opus",
+      "tumbled"
+    ],
+    "featured": true,
+    "virtual": false,
+    "meta_description": "Heritage Limestone",
+    "images": [
+      {
+        "file": "heritage2.jpg",
+        "alt": "Close view of Heritage limestone flooring showing honed surface and subtle colour variation",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/05/heritage2.jpg"
+      },
+      {
+        "file": "heritage-1.jpg",
+        "alt": "Close view of Heritage limestone flooring showing honed surface and subtle shade variation and tumbled edges",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/05/heritage-1.jpg"
+      },
+      {
+        "file": "haritage3.jpg",
+        "alt": "Heritage",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/05/haritage3.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "kelso",
+    "name": "Kelso Limestone Flooring – Timeless Stone Collection",
+    "price": 0.0,
+    "max_price": null,
+    "categories": [
+      "timeless-stone-collection"
+    ],
+    "collection": "Timeless Stone Collection",
+    "short": "Kelso limestone flooring is a refined 15mm grey natural stone with warm undertones, subtle fossil detailing and fine calcite veining. Supplied in 500mm and 600mm widths with random lengths, Kelso features a honed surface and lightly tumbled edges for a calm, balanced finish.",
+    "description": "<p>Kelso limestone flooring is part of our Timeless Stone Collection and is selected for its soft warm grey tones and composed surface character. The stone displays natural fossil markings and delicate calcite lines that introduce subtle depth while maintaining a clean, understated appearance.</p><p>Finished with a smooth honed surface and gently tumbled edges, Kelso limestone provides a versatile flooring option that works particularly well in contemporary kitchens, hallways and open-plan interiors where a cooler-toned natural stone floor is desired.</p><p><strong>Sizes &amp; Specification</strong></p><p>Kelso limestone is supplied in:</p><ul><li>500mm widths with random lengths</li><li>600mm widths with random lengths</li><li>15mm thickness</li><li>Honed surface finish</li><li>Lightly tumbled edges</li></ul><p>The random length format enhances the natural movement of the stone while keeping the overall layout structured and elegant.</p><p><strong>Installation &amp; Suitability</strong></p><p>Kelso limestone flooring is suitable for kitchens, hallways and open-plan living spaces and can be used with underfloor heating when installed correctly.</p><p>Simali Stone supplies and installs Kelso limestone across Dorset and the South West, ensuring professional preparation and long-term performance.</p>",
+    "material": "Limestone",
+    "sizes": [
+      "600 × random lengths × 15mm",
+      "500 × random lengths × 15mm"
+    ],
+    "thickness": [
+      "15mm"
+    ],
+    "finish": [
+      "Honed"
+    ],
+    "edge": [
+      "Tumbled"
+    ],
+    "colours": [
+      "Grey"
+    ],
+    "location": [
+      "Indoor"
+    ],
+    "rooms": [
+      "Kitchens",
+      "Hallways",
+      "Living rooms",
+      "Open-plan spaces"
+    ],
+    "ufh": true,
+    "origin": null,
+    "tags": [
+      "15mm thick",
+      "grey limestone",
+      "indoor",
+      "indoor stone flooring",
+      "limestone",
+      "Timeless Stone Collection"
+    ],
+    "featured": false,
+    "virtual": false,
+    "meta_description": "Kelso limestone flooring is a 15mm honed grey natural stone with warm undertones, fossil detailing and calcite veining. Supplied in 500mm and 600mm random lengths.",
+    "images": [
+      {
+        "file": "kelso1-1.jpg",
+        "alt": "Timeless Stone Collection natural stone flooring tiles available from Simali Stone Ltd showroom in Shaftesbury Dorset with UK nationwide delivery",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/kelso1-1.jpg"
+      },
+      {
+        "file": "kelso1.jpg",
+        "alt": "Kelso Limestone Flooring – Timeless Stone Collection",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/kelso1.jpg"
+      },
+      {
+        "file": "kelso2.jpg",
+        "alt": "Kelso Limestone Flooring – Timeless Stone Collection",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/kelso2.jpg"
+      },
+      {
+        "file": "kelso3.jpg",
+        "alt": "Oxford kitchen limestone floor tiles",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/kelso3.jpg"
+      },
+      {
+        "file": "kelso4.jpg",
+        "alt": "Kelso Limestone Flooring – Timeless Stone Collection",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/kelso4.jpg"
+      },
+      {
+        "file": "kelso4-1.jpg",
+        "alt": "Kelso Limestone Flooring – Timeless Stone Collection",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/kelso4-1.jpg"
+      },
+      {
+        "file": "kelso5.jpg",
+        "alt": "Kelso Limestone Flooring – Timeless Stone Collection",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/kelso5.jpg"
+      },
+      {
+        "file": "kelso6.jpg",
+        "alt": "Kelso Limestone Flooring – Timeless Stone Collection",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/kelso6.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "lucca-grey",
+    "name": "Lucca Grey",
+    "price": 53.2,
+    "max_price": null,
+    "categories": [
+      "limestone"
+    ],
+    "collection": null,
+    "short": "Suitable for both antique and contemporary settings; Stunning varied grey tones running through the stone makes this one of the most popular available.",
+    "description": "<ul><li>worn , elegant look</li><li>Grey tones</li><li>versatile for a range of settings</li></ul>",
+    "material": "Limestone",
+    "sizes": [
+      "500 × random lengths × 15mm",
+      "600 × random lengths × 15mm"
+    ],
+    "thickness": [
+      "15mm"
+    ],
+    "finish": [],
+    "edge": [],
+    "colours": [
+      "Grey"
+    ],
+    "location": [
+      "Indoor"
+    ],
+    "rooms": [],
+    "ufh": null,
+    "origin": null,
+    "tags": [
+      "antique",
+      "grey",
+      "limestone",
+      "luca",
+      "popular"
+    ],
+    "featured": false,
+    "virtual": false,
+    "meta_description": "Lucca Grey",
+    "images": [
+      {
+        "file": "luccagrey1.jpg",
+        "alt": "Close-up of Lucca Grey limestone showing fossil shells and calcite mineral deposits within the stone",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/luccagrey1.jpg"
+      },
+      {
+        "file": "luccagrey2.jpg",
+        "alt": "Lucca Grey limestone flooring tile showing natural grey variation with shell content and calcite veining",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/luccagrey2.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "ludlow",
+    "name": "Ludlow Flagstone Limestone Flooring – Timeless Stone Collection",
+    "price": 0.0,
+    "max_price": null,
+    "categories": [
+      "timeless-stone-collection",
+      "outdoor"
+    ],
+    "collection": "Timeless Stone Collection",
+    "short": "Ludlow limestone flagstone flooring is a substantial 22–23mm thick natural stone with deep grey tones and a textured riven surface. Supplied in 500mm and 600mm random lengths, Ludlow delivers an authentic worn flagstone appearance with brushed finishing and hand-cut edges.",
+    "description": "<p>Ludlow Limestone Flagstone Flooring</p><p>Ludlow limestone flagstone flooring is part of our Timeless Stone Collection and is selected for its strong traditional character. With rich grey depth, natural tonal variation and a gently riven surface, Ludlow recreates the look of historic stone floors found in country houses, castles and heritage properties.</p><p>Its heavier 22–23mm thickness gives the floor physical presence and durability, making it ideal for high-traffic areas.</p><p>Finish &amp; Surface Texture</p><p>Ludlow features:</p><p>*             A brushed and lightly honed surface</p><p>*             Natural riven texture</p><p>*             Hand-cut, chipped flagstone edges</p><p>*             22–23mm substantial thickness</p><p>The surface appears naturally worn, offering an aged aesthetic without artificial distressing.</p><p>Sizes &amp; Specification</p><p>Ludlow limestone is supplied in:</p><p>*             500mm widths with random lengths</p><p>*             600mm widths with random lengths</p><p>*             22–23mm thickness</p><p>The random length format enhances the traditional flagstone layout, giving variation and movement across larger floors.</p><p>Installation &amp; Suitability</p><p>Ludlow limestone flagstone flooring works particularly well in:</p><p>*             Large kitchens</p><p>*             Hallways</p><p>*             Barn conversions</p><p>*             Farmhouses</p><p>*             Period renovations</p><p>*             Open-plan spaces requiring character</p><p>Its thickness and surface texture make it a durable option for busy family homes while retaining timeless appeal.</p>",
+    "material": "Limestone",
+    "sizes": [
+      "600 × random lengths × 22mm",
+      "500 × random lengths × 22mm"
+    ],
+    "thickness": [
+      "22–23mm"
+    ],
+    "finish": [
+      "Honed",
+      "Brushed",
+      "Riven",
+      "Textured"
+    ],
+    "edge": [
+      "Hand-cut"
+    ],
+    "colours": [
+      "Grey"
+    ],
+    "location": [
+      "Indoor",
+      "Outdoor"
+    ],
+    "rooms": [
+      "Kitchens",
+      "Hallways",
+      "Open-plan spaces"
+    ],
+    "ufh": true,
+    "origin": null,
+    "tags": [
+      "22mm limestone",
+      "brushed",
+      "grey",
+      "indoor",
+      "limestone",
+      "outdoor",
+      "Riven surface",
+      "suitable for underfloor heating",
+      "Timeless Stone Collection"
+    ],
+    "featured": true,
+    "virtual": false,
+    "meta_description": "Ludlow limestone flagstone flooring in 22–23mm thickness with brushed riven surface and hand-cut edges. Supplied in 500mm and 600mm random lengths.",
+    "images": [
+      {
+        "file": "ludlow-limestone-floor-installed-wiltshire.jpg",
+        "alt": "Ludlow Limestone sealed and ready for grout",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/ludlow-limestone-floor-installed-wiltshire-scaled.jpg"
+      },
+      {
+        "file": "ludlow1-1.jpg",
+        "alt": "Timeless Stone Collection natural stone flooring tiles available from Simali Stone Ltd showroom in Shaftesbury Dorset with UK nationwide delivery",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/ludlow1-1.jpg"
+      },
+      {
+        "file": "ludlow1.jpg",
+        "alt": "Ludlow Flagstone Limestone Flooring – Timeless Stone Collection",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/ludlow1.jpg"
+      },
+      {
+        "file": "ludlow2.jpg",
+        "alt": "Ludlow Flagstone Limestone Flooring – Timeless Stone Collection",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/ludlow2.jpg"
+      },
+      {
+        "file": "ludlow4.jpg",
+        "alt": "Natural stone flooring Birmingham home",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/ludlow4.jpg"
+      },
+      {
+        "file": "ludlow5.jpg",
+        "alt": "Ludlow Flagstone Limestone Flooring – Timeless Stone Collection",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/ludlow5.jpg"
+      },
+      {
+        "file": "ludlow6.jpg",
+        "alt": "Ludlow Flagstone Limestone Flooring – Timeless Stone Collection",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/ludlow6.jpg"
+      },
+      {
+        "file": "ludlow7.jpg",
+        "alt": "Ludlow Flagstone Limestone Flooring – Timeless Stone Collection",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/ludlow7.jpg"
+      },
+      {
+        "file": "ludlow8.jpg",
+        "alt": "oxford Kitchen limestone floor tiles",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/ludlow8.jpg"
+      },
+      {
+        "file": "ludlow9.jpg",
+        "alt": "Ludlow Flagstone Limestone Flooring – Timeless Stone Collection",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/ludlow9.jpg"
+      },
+      {
+        "file": "ludlow10.jpg",
+        "alt": "Ludlow Flagstone Limestone Flooring – Timeless Stone Collection",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/ludlow10.jpg"
+      },
+      {
+        "file": "ludlow-limestone-installed-in-chilmark.jpg",
+        "alt": "Ludlow Limestone installed in Wilshire by Simali Stone",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/ludlow-limestone-installed-in-chilmark-scaled.jpg"
+      },
+      {
+        "file": "ludlow-limestone-flooring-before-grout-step-detail.jpg",
+        "alt": "Ludlow Limestone prior to grouting",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/ludlow-limestone-flooring-before-grout-step-detail-scaled.jpg"
+      },
+      {
+        "file": "ludlow-limestone-step-showing-kitchen-floor.jpg",
+        "alt": "Ludlow limestone step detail, ready for grout",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/ludlow-limestone-step-showing-kitchen-floor-scaled.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "marnhull",
+    "name": "Marnhull",
+    "price": 0.0,
+    "max_price": null,
+    "categories": [
+      "limestone"
+    ],
+    "collection": null,
+    "short": "Marnhull limestone is quarried locally in Dorset. Cream and orange tones in substantial 25mm flagstones, supplied in 400mm, 500mm and 600mm widths with random lengths. Suited to flooring and fireplaces.",
+    "description": "<ul><li>Cream-Orange tones</li><li>High quality</li><li>Perfect for flooring and fireplaces</li></ul>",
+    "material": "Limestone",
+    "sizes": [
+      "400 × random lengths × 25mm",
+      "500 × random lengths × 25mm",
+      "600 × random lengths × 25mm"
+    ],
+    "thickness": [
+      "25mm"
+    ],
+    "finish": [],
+    "edge": [],
+    "colours": [
+      "Cream"
+    ],
+    "location": [
+      "Indoor"
+    ],
+    "rooms": [
+      "Fireplaces"
+    ],
+    "ufh": null,
+    "origin": "Marnhull, Dorset (local quarry)",
+    "tags": [
+      "cream",
+      "exclusive",
+      "fireplace",
+      "marnhull",
+      "natural"
+    ],
+    "featured": true,
+    "virtual": false,
+    "meta_description": "Cream-Orange tones High quality Perfect for flooring and fireplaces",
+    "images": [
+      {
+        "file": "marnhull-limestone-floor-gold-hill-shaftesbury.jpg",
+        "alt": "Marnhull Limestone floor installed in Gold Hill, Shaftesbury",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/marnhull-limestone-floor-gold-hill-shaftesbury.jpg"
+      },
+      {
+        "file": "marnhull-1.jpg",
+        "alt": "Marnhull",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/marnhull-1.jpg"
+      },
+      {
+        "file": "marnhull3.jpg",
+        "alt": "Marnhull",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/marnhull3.jpg"
+      },
+      {
+        "file": "marnhull4.jpg",
+        "alt": "Marnhull",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/marnhull4.jpg"
+      },
+      {
+        "file": "marnhull-limestone-flagstones-step-and-random-widths.jpg",
+        "alt": "Marnhull limestone floor showing step detail and metre long stone flagstones",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/marnhull-limestone-flagstones-step-and-random-widths.jpg"
+      },
+      {
+        "file": "marnhull-limestone-installation-gold-hill-dorset.jpg",
+        "alt": "Local marnhull limestone installed in a living room in Shaftesbury",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/marnhull-limestone-installation-gold-hill-dorset.jpg"
+      },
+      {
+        "file": "marnhull-limestone-installation-shaftesbury-dorset.jpg",
+        "alt": "Marnhull stone floor part finished showing the thickness and detailing of the limestone",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/marnhull-limestone-installation-shaftesbury-dorset.jpg"
+      },
+      {
+        "file": "marnhull-limestone-installation-using-lime-cement.jpg",
+        "alt": "Freshly installed marnhull limestone, using lime cement to help the stone breathe",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/marnhull-limestone-installation-using-lime-cement.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "moleanos-blue",
+    "name": "Moleanos Blue",
+    "price": 39.99,
+    "max_price": 79.79,
+    "categories": [
+      "limestone"
+    ],
+    "collection": null,
+    "short": "Blue undertone and an even spread of grey/blue fossils. These tiles come with bevelled edges for easy grouting.",
+    "description": "<ul><li>Beautiful Portuguese Moleanos limestone</li><li>Honed for a smooth, matt surface</li></ul>",
+    "material": "Limestone",
+    "sizes": [
+      "600 × 400 × 15mm",
+      "600 × 600 × 15mm",
+      "900 × 600 × 15mm"
+    ],
+    "thickness": [
+      "15mm"
+    ],
+    "finish": [
+      "Honed"
+    ],
+    "edge": [
+      "Bevelled"
+    ],
+    "colours": [
+      "Grey",
+      "Blue"
+    ],
+    "location": [
+      "Indoor"
+    ],
+    "rooms": [],
+    "ufh": null,
+    "origin": "Portugal",
+    "tags": [
+      "blue",
+      "fossil",
+      "grey",
+      "honed",
+      "limestone",
+      "moleanos",
+      "portuguese"
+    ],
+    "featured": false,
+    "virtual": false,
+    "meta_description": "Blue undertone and an even spread of grey/blue fossils. These tiles come with bevelled edges for easy grouting.",
+    "images": [
+      {
+        "file": "moleanos-blue-1-1.jpg",
+        "alt": "Moleanos Blue",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/07/moleanos-blue-1-1.jpg"
+      },
+      {
+        "file": "moleanos2.jpg",
+        "alt": "Moleanos Blue",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/07/moleanos2.jpg"
+      },
+      {
+        "file": "moleanos3.jpg",
+        "alt": "Moleanos Blue",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/07/moleanos3.jpg"
+      },
+      {
+        "file": "moleanos2-1.jpg",
+        "alt": "Moleanos Blue",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/07/moleanos2-1.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "moleanos-white",
+    "name": "Moleanos White",
+    "price": 69.54,
+    "max_price": 79.79,
+    "categories": [
+      "limestone"
+    ],
+    "collection": null,
+    "short": "With an off-white consistent base colour and small grey fossils, these tiles add light to small areas and come with a bevelled edge and honed surfaces.",
+    "description": "<ul><li>Tiles are perfect for walls and floors</li><li>Easy maintenance</li></ul>",
+    "material": "Limestone",
+    "sizes": [
+      "600 × 400 × 15mm",
+      "600 × 600 × 15mm",
+      "900 × 600 × 15mm"
+    ],
+    "thickness": [
+      "15mm"
+    ],
+    "finish": [
+      "Honed"
+    ],
+    "edge": [
+      "Bevelled"
+    ],
+    "colours": [
+      "Grey",
+      "White"
+    ],
+    "location": [
+      "Indoor"
+    ],
+    "rooms": [
+      "Walls"
+    ],
+    "ufh": null,
+    "origin": "Portugal",
+    "tags": [
+      "fossils",
+      "grey",
+      "honed",
+      "limestone",
+      "moleanos",
+      "white"
+    ],
+    "featured": false,
+    "virtual": false,
+    "meta_description": "With an off-white consistent base colour and small grey fossils, these tiles add light to small areas and come with a bevelled edge and honed surfaces.",
+    "images": [
+      {
+        "file": "moleanos1.jpg",
+        "alt": "Moleanos White",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/07/moleanos1.jpg"
+      },
+      {
+        "file": "moleanos2-2.jpg",
+        "alt": "Moleanos White",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/07/moleanos2.png"
+      }
+    ]
   },
   {
     "slug": "moleanus-blue",
@@ -167,36 +1965,933 @@
     "categories": [
       "limestone"
     ],
-    "short": "Blue undertone and an even spread of grey/blue fossils. These tiles come with bevelled edges for easy grouting."
+    "collection": null,
+    "short": "Blue undertone and an even spread of grey/blue fossils. These tiles come with bevelled edges for easy grouting.",
+    "description": "<p>Beautiful Portuguese Moleanus limestone</p><p>Honed for a smooth, matt surface</p><p>Size 305mm x 305mm x10mm</p>",
+    "material": "Limestone",
+    "sizes": [
+      "305 × 305 × 10mm"
+    ],
+    "thickness": [
+      "10mm"
+    ],
+    "finish": [
+      "Honed"
+    ],
+    "edge": [
+      "Bevelled"
+    ],
+    "colours": [
+      "Grey",
+      "Blue"
+    ],
+    "location": [
+      "Indoor"
+    ],
+    "rooms": [],
+    "ufh": null,
+    "origin": "Portugal",
+    "tags": [
+      "indoor"
+    ],
+    "featured": false,
+    "virtual": false,
+    "meta_description": "Blue undertone and an even spread of grey/blue fossils. These tiles come with bevelled edges for easy grouting.",
+    "images": [
+      {
+        "file": "moleanos-blue-1-1-2.jpg",
+        "alt": "Moleanus Blue",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/moleanos-blue-1-1.jpg"
+      },
+      {
+        "file": "moleanos-blue-1.jpg",
+        "alt": "Moleanus Blue",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/moleanos-blue-1.jpg"
+      }
+    ]
   },
   {
-    "slug": "the-stone-collection-goodwood",
-    "name": "Goodwood Sandstone Flagstone Flooring \u2013 Timeless Stone Collection",
+    "slug": "newbury-limestone-flooring",
+    "name": "Newbury Limestone – Timeless Stone Collection",
     "price": 0.0,
     "max_price": null,
     "categories": [
       "timeless-stone-collection"
     ],
-    "short": "Goodwood sandstone flagstone flooring is a 20mm natural stone with soft muted off-white and weathered grey tones. Supplied in 600mm widths with random lengths up to approximately 900mm, Goodwood features a lightly brushed and honed surface that creates a gently riven, traditional flagstone appearance."
+    "collection": "Timeless Stone Collection",
+    "short": "Newbury limestone flooring from the Timeless Stone Collection features soft biscuit beige tones with subtle grey flecking and gently tumbled edges. Supplied in random length flagstone format and large format tiles, Newbury offers a refined and timeless natural stone finish.",
+    "description": "<p><strong>Newbury Limestone flooring – Refined Timeless Flagstone</strong></p><p>Newbury limestone flooring is a beautifully balanced natural stone with warm biscuit tones and delicate grey flecked detail. Finished with a smooth honed surface and softly tumbled edges, Newbury delivers an elegant flagstone aesthetic suited to both traditional and contemporary interiors.</p><p>Part of our Timeless Stone Collection, Newbury limestone offers a calm and refined appearance while maintaining the natural character expected from premium limestone flooring.</p><p><strong>Sizes and Formats</strong></p><p>Newbury limestone flooring is available in:</p><ul><li>400mm x random lengths x 15mm</li><li>500mm x random lengths x 15mm</li><li>600mm x random lengths x 15mm</li><li>600mm x 900mm x 15mm</li><li>900mm x 900mm x 15mm</li><li>Large Opus Pattern x 15mm</li></ul><p>The random length option creates a classic flagstone layout, while the larger format tiles provide a more architectural feel.</p><p><strong>Suitability</strong></p><p>Newbury limestone flooring is suitable for:</p><ul><li>Kitchens</li><li>Hallways</li><li>Open plan living areas</li><li>Period properties</li><li>Country homes</li><li>Contemporary extensions</li></ul><p>The honed surface finish enhances light reflection while maintaining a soft, natural underfoot feel.</p><p><a href=\"/our-work/\">For professional installation services across Dorset and the South West</a>, contact Simali Stone for advice and availability.</p>",
+    "material": "Limestone",
+    "sizes": [
+      "400 × random lengths × 15mm",
+      "500 × random lengths × 15mm",
+      "600 × random lengths × 15mm",
+      "600 × 900 × 15mm",
+      "900 × 900 × 15mm",
+      "Large opus pattern"
+    ],
+    "thickness": [
+      "15mm"
+    ],
+    "finish": [
+      "Honed"
+    ],
+    "edge": [
+      "Tumbled"
+    ],
+    "colours": [
+      "Grey",
+      "Beige"
+    ],
+    "location": [
+      "Indoor"
+    ],
+    "rooms": [
+      "Kitchens",
+      "Hallways",
+      "Living rooms",
+      "Open-plan spaces"
+    ],
+    "ufh": null,
+    "origin": null,
+    "tags": [
+      "fossil",
+      "honed",
+      "limestone",
+      "Newbury Limestone",
+      "tumbled edge"
+    ],
+    "featured": false,
+    "virtual": false,
+    "meta_description": "Newbury limestone flooring from the Timeless Stone Collection. Honed limestone with warm biscuit tones available in random lengths and large format tiles.",
+    "images": [
+      {
+        "file": "heritage-limestone-open-plan-flooring-ungrouted-somerset.jpg",
+        "alt": "Newbury Limestone been installed by Simali Stone showing random lengths and ungrouted lines",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/Heritage-limestone-open-plan-flooring-ungrouted-somerset-scaled.jpg"
+      },
+      {
+        "file": "heritage-brushed2.jpg",
+        "alt": "Close up view of Newbury Limestone showing shell fossils and soft tumbled edge",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/05/heritage-brushed2.jpg"
+      },
+      {
+        "file": "heritage-brushed1.jpg",
+        "alt": "Close up shot of Heritage Limestones beige, grey flecked fossil make up",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/05/heritage-brushed1.jpg"
+      }
+    ]
   },
   {
-    "slug": "the-stone-collection-sandown",
-    "name": "Sandown Limestone Flooring \u2013 Timeless Stone Collection",
-    "price": 0.0,
+    "slug": "seashell",
+    "name": "Seashell",
+    "price": 51.0,
     "max_price": null,
     "categories": [
-      "timeless-stone-collection"
+      "limestone"
     ],
-    "short": "Sandown limestone flooring is a warm 20mm natural stone characterised by biscuit and oatmeal tones with subtle fossil detailing. Supplied in 500mm and 600mm widths with random lengths, Sandown features a honed and lightly brushed surface with gently tumbled edges for a rich, established appearance."
+    "collection": null,
+    "short": "Limestone stone to bring an air of warmth and charm to the home. With striking variations in tone and unique seashells making an appearance, this stone will be sure to attract attention .",
+    "description": "<p>Creamy colour</p><p>Natural looking stone</p>",
+    "material": "Limestone",
+    "sizes": [
+      "600 × random lengths × 13mm"
+    ],
+    "thickness": [
+      "13mm"
+    ],
+    "finish": [],
+    "edge": [],
+    "colours": [
+      "Cream"
+    ],
+    "location": [
+      "Indoor"
+    ],
+    "rooms": [],
+    "ufh": null,
+    "origin": null,
+    "tags": [
+      "cream",
+      "limestone",
+      "natural",
+      "seashell",
+      "unique"
+    ],
+    "featured": false,
+    "virtual": false,
+    "meta_description": "Seashell",
+    "images": [
+      {
+        "file": "seashell1.jpg",
+        "alt": "Detailed view of Seashell limestone showing prominent seashell inclusions and mineral variation",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/seashell1.jpg"
+      },
+      {
+        "file": "seashell2.jpg",
+        "alt": "Seashell limestone flooring tile showing golden cream tones with visible fossil shell content",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/seashell2.jpg"
+      },
+      {
+        "file": "seashell3.jpg",
+        "alt": "Close-up of Seashell limestone flooring surface with honed finish and gentle tumbled edges",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/seashell3.jpg"
+      },
+      {
+        "file": "seashell4.jpg",
+        "alt": "Close-up of Seashell limestone flooring showing dense fossil shells and natural stone texture",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/seashell4.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "siena-classic",
+    "name": "Siena Classic",
+    "price": 49.5,
+    "max_price": null,
+    "categories": [
+      "limestone"
+    ],
+    "collection": null,
+    "short": "A distinctive antiqued and tumbled limestone with subtle patterning throughout and minimal variation from tile to tile. Suitable for both classical and more modern settings.",
+    "description": "<ul><li>Soft creamy beige base</li><li>Highly durable</li><li>Available in a large format size option</li></ul>",
+    "material": "Limestone",
+    "sizes": [
+      "600 × 400 × 15mm",
+      "600 × random lengths × 15mm",
+      "900 × 600 × 15mm"
+    ],
+    "thickness": [
+      "15mm"
+    ],
+    "finish": [
+      "Antiqued"
+    ],
+    "edge": [
+      "Tumbled"
+    ],
+    "colours": [
+      "Cream"
+    ],
+    "location": [
+      "Indoor"
+    ],
+    "rooms": [],
+    "ufh": null,
+    "origin": null,
+    "tags": [
+      "antiqued",
+      "classic",
+      "classical",
+      "contemporary",
+      "cream",
+      "durable",
+      "siena",
+      "tumbled"
+    ],
+    "featured": false,
+    "virtual": false,
+    "meta_description": "A distinctive antiqued and tumbled limestone with subtle patterning throughout and minimal variation from tile to tile. Suitable for both classical and more modern settings.",
+    "images": [
+      {
+        "file": "siena5.jpg",
+        "alt": "Siena Classic limestone tile detail showing antique limestone character and smooth finish",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/siena5.jpg"
+      },
+      {
+        "file": "sienaclassic1.jpg",
+        "alt": "Siena Classic",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/SienaClassic1.jpg"
+      },
+      {
+        "file": "sienaclassic3.jpg",
+        "alt": "Siena Classic",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/SienaClassic3.jpg"
+      },
+      {
+        "file": "siena4.jpg",
+        "alt": "Siena Classic limestone flooring tile showing soft beige tones with honed surface and tumbled edges",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/siena4.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "stratford",
+    "name": "Stratford",
+    "price": 42.35,
+    "max_price": 50.83,
+    "categories": [
+      "limestone",
+      "outdoor"
+    ],
+    "collection": null,
+    "short": "Light creamy beige colour, with minimalistic detail featuring across the slightly textured surface of the tiles. Soft colour, warmth and detail.",
+    "description": "",
+    "material": "Limestone",
+    "sizes": [
+      "600 × 400 × 15mm",
+      "600 × random lengths × 15mm",
+      "900 × 600 × 15mm"
+    ],
+    "thickness": [
+      "15mm"
+    ],
+    "finish": [
+      "Textured"
+    ],
+    "edge": [
+      "Tumbled"
+    ],
+    "colours": [
+      "Cream",
+      "Beige"
+    ],
+    "location": [
+      "Indoor",
+      "Outdoor"
+    ],
+    "rooms": [],
+    "ufh": null,
+    "origin": null,
+    "tags": [
+      "beige",
+      "cream",
+      "indoor",
+      "limestone",
+      "outdoor",
+      "stratford",
+      "textured",
+      "tumbled"
+    ],
+    "featured": false,
+    "virtual": false,
+    "meta_description": "Light creamy beige colour, with minimalistic detail featuring across the slightly textured surface of the tiles. Soft colour, warmth and detail.",
+    "images": [
+      {
+        "file": "stratford1.jpg",
+        "alt": "Stratford limestone slab showing pale grey beige colouring with sandblasted surface and tumbled edges",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/stratford1.jpg"
+      },
+      {
+        "file": "stratford2.jpg",
+        "alt": "Detailed view of Stratford limestone showing lightly textured sandblasted finish and natural fossil marks",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/stratford2.jpg"
+      },
+      {
+        "file": "stratford3.jpg",
+        "alt": "Stratford limestone flooring close-up showing sandblasted surface with subtle stippling and pale cream tones",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2022/06/stratford3.jpg"
+      }
+    ]
   },
   {
     "slug": "the-stone-collection-chepstow",
-    "name": "Chepstow Limestone Flooring \u2013 Timeless Stone Collection",
+    "name": "Chepstow Limestone Flooring – Timeless Stone Collection",
     "price": 0.0,
     "max_price": null,
     "categories": [
       "timeless-stone-collection"
     ],
-    "short": "Chepstow limestone flooring is a warm cream 15mm honed natural stone with abundant fossil shell detailing and gently tumbled edges. Supplied in 600mm widths with random lengths up to approximately 900mm, Chepstow offers a classic, established appearance suited to both period and contemporary interiors."
+    "collection": "Timeless Stone Collection",
+    "short": "Chepstow limestone flooring is a warm cream 15mm honed natural stone with abundant fossil shell detailing and gently tumbled edges. Supplied in 600mm widths with random lengths up to approximately 900mm, Chepstow offers a classic, established appearance suited to both period and contemporary interiors.",
+    "description": "<p>Chepstow limestone flooring is part of our Timeless Stone Collection and is selected for its warm cream base tones and distinctive natural shell content. The stone’s surface reveals subtle fossil markings that give each floor depth and movement while maintaining a calm, traditional character.</p><p>Finished with a smooth honed surface and lightly tumbled edges, Chepstow limestone flooring delivers a timeless look that works equally well in period properties and sympathetically designed modern homes.</p><p><strong>Sizes &amp; Specification</strong></p><p>Chepstow limestone is supplied in:</p><ul><li>600mm widths with random lengths</li><li>15mm thickness</li><li>Honed surface finish</li><li>Lightly tumbled edges</li></ul><p>The random length format ensures a natural flagstone layout that enhances the stone’s authentic character.</p><p><strong>Installation &amp; Suitability</strong></p><p>Chepstow limestone flooring is suitable for kitchens, hallways and open-plan living spaces and is compatible with underfloor heating when installed correctly. Simali Stone supplies and installs Chepstow limestone across Dorset and the South West, ensuring professional preparation and finishing for long-term performance.</p>",
+    "material": "Limestone",
+    "sizes": [
+      "600 × random lengths × 15mm"
+    ],
+    "thickness": [
+      "15mm"
+    ],
+    "finish": [
+      "Honed"
+    ],
+    "edge": [
+      "Tumbled"
+    ],
+    "colours": [
+      "Cream"
+    ],
+    "location": [
+      "Indoor"
+    ],
+    "rooms": [
+      "Kitchens",
+      "Hallways",
+      "Living rooms",
+      "Open-plan spaces"
+    ],
+    "ufh": true,
+    "origin": null,
+    "tags": [
+      "15mm limestone",
+      "Creamy shell finish",
+      "flagstone",
+      "limestone",
+      "Timeless Stone Collection"
+    ],
+    "featured": false,
+    "virtual": false,
+    "meta_description": "Chepstow limestone flooring is a 15mm honed natural stone with warm cream tones and rich fossil shell detailing. Supplied in 600mm random lengths with gently tumbled edges.",
+    "images": [
+      {
+        "file": "1b2eb757-31d7-4c93-acb0-4f43c6d82274.jpg",
+        "alt": "Timeless Stone Collection natural stone flooring tiles available from Simali Stone Ltd showroom in Shaftesbury Dorset with UK nationwide delivery",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2023/10/1b2eb757-31d7-4c93-acb0-4f43c6d82274.jpg"
+      },
+      {
+        "file": "a9635812-219f-42a8-b6ab-dfd749110b28.jpg",
+        "alt": "Chepstow Limestone Flooring – Timeless Stone Collection",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2023/10/a9635812-219f-42a8-b6ab-dfd749110b28.jpg"
+      },
+      {
+        "file": "bb21fd4b-eb43-4cef-859a-6cfd6c8b53d6.jpg",
+        "alt": "Chepstow Limestone Flooring – Timeless Stone Collection",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2023/10/bb21fd4b-eb43-4cef-859a-6cfd6c8b53d6.jpg"
+      },
+      {
+        "file": "e2f76232-e6e4-4f88-8407-4a2524ae34d7.jpg",
+        "alt": "Chepstow Limestone Flooring – Timeless Stone Collection",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2023/10/e2f76232-e6e4-4f88-8407-4a2524ae34d7.jpg"
+      },
+      {
+        "file": "seashell-limestone-flooring-fossils-1.jpg",
+        "alt": "Seashell Limestone conservatory floor, showing fossil-shell variance",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/seashell-limestone-flooring-fossils-1.jpg"
+      },
+      {
+        "file": "seashell-limestone-conservatory-floor.jpg",
+        "alt": "Chepstow Limestone recently installed in a consevatory in Wiltshire",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/seashell-limestone-conservatory-floor.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "the-stone-collection-goodwood",
+    "name": "Goodwood Sandstone Flagstone Flooring – Timeless Stone Collection",
+    "price": 0.0,
+    "max_price": null,
+    "categories": [
+      "timeless-stone-collection",
+      "outdoor"
+    ],
+    "collection": "Timeless Stone Collection",
+    "short": "Goodwood sandstone flagstone flooring is a 20mm natural stone with soft muted off-white and weathered grey tones. Supplied in 600mm widths with random lengths up to approximately 900mm, Goodwood features a lightly brushed and honed surface that creates a gently riven, traditional flagstone appearance.",
+    "description": "<p>Goodwood sandstone flagstone flooring is part of our Timeless Stone Collection and is selected for its understated colour palette and authentic flagstone character. Defined by soft neutral tones with subtle warmth, Goodwood delivers a calm, architectural look suited to both period-style interiors and sympathetic modern designs.</p><p>Unlike smoother limestones, Goodwood’s lightly brushed and honed surface introduces gentle texture, giving the stone a natural, established feel reminiscent of traditional sandstone floors.</p><p><strong>Sizes &amp; Specification</strong></p><p>Goodwood sandstone is supplied in:</p><ul><li>600mm widths with random lengths (up to approximately 900mm)</li><li>20mm thickness</li><li>Lightly brushed and honed surface</li><li>Natural flagstone-style edges</li></ul><p>Its 20mm thickness and dense composition make it a durable and practical option for high-traffic areas.</p><p><strong>Installation &amp; Suitability</strong></p><p>Goodwood sandstone flagstone flooring is particularly well suited to kitchens, hallways and open-plan interiors where a traditional stone presence is desired. Its thickness also makes it suitable for selected external applications when specified correctly.</p><p>Simali Stone supplies and installs Goodwood sandstone across Dorset and the South West, ensuring professional preparation and long-term performance.</p>",
+    "material": "Sandstone",
+    "sizes": [
+      "600 × random lengths × 20mm"
+    ],
+    "thickness": [
+      "20mm"
+    ],
+    "finish": [
+      "Honed",
+      "Brushed",
+      "Riven"
+    ],
+    "edge": [],
+    "colours": [
+      "Grey",
+      "White"
+    ],
+    "location": [
+      "Indoor",
+      "Outdoor"
+    ],
+    "rooms": [
+      "Kitchens",
+      "Hallways",
+      "Open-plan spaces",
+      "Patios"
+    ],
+    "ufh": null,
+    "origin": null,
+    "tags": [
+      "20mm thick",
+      "flagstone",
+      "indoor",
+      "Sandstone",
+      "Timeless Stone Collection"
+    ],
+    "featured": false,
+    "virtual": false,
+    "meta_description": "Goodwood sandstone flagstone flooring is a 20mm natural stone with muted off-white and soft grey tones. Supplied in 600mm random lengths with a lightly brushed finish.",
+    "images": [
+      {
+        "file": "goodwood-sandstone-kitchen-floor-dorset.jpg",
+        "alt": "Goodward limestone floor installed in Gillingham, Dorset",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/goodwood-sandstone-kitchen-floor-dorset.jpg"
+      },
+      {
+        "file": "goodwood1.jpg",
+        "alt": "Goodwood Sandstone Flagstone Flooring – Timeless Stone Collection",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2023/10/goodwood1.jpg"
+      },
+      {
+        "file": "goodwood2.jpg",
+        "alt": "Goodwood Sandstone Flagstone Flooring – Timeless Stone Collection",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2023/10/goodwood2.jpg"
+      },
+      {
+        "file": "goodwood3.jpg",
+        "alt": "Goodwood Sandstone Flagstone Flooring – Timeless Stone Collection",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2023/10/goodwood3.jpg"
+      },
+      {
+        "file": "goodwood4.jpg",
+        "alt": "Goodwood Sandstone Flagstone Flooring – Timeless Stone Collection",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2023/10/goodwood4.jpg"
+      },
+      {
+        "file": "goodwood-sandstone-installed-in-dorset.jpg",
+        "alt": "Goodwood sandstone showing random lengths",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/goodwood-sandstone-installed-in-dorset.jpg"
+      },
+      {
+        "file": "goodwood-limestone-floor-gillingham-dorset.jpg",
+        "alt": "Goodwood sandstone showing colour variations and riven textured surface",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/goodwood-limestone-floor-gillingham-dorset.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "the-stone-collection-sandown",
+    "name": "Sandown Limestone Flooring – Timeless Stone Collection",
+    "price": 0.0,
+    "max_price": null,
+    "categories": [
+      "timeless-stone-collection",
+      "outdoor"
+    ],
+    "collection": "Timeless Stone Collection",
+    "short": "Sandown limestone flooring is a warm 20mm natural stone characterised by biscuit and oatmeal tones with subtle fossil detailing. Supplied in 500mm and 600mm widths with random lengths, Sandown features a honed and lightly brushed surface with gently tumbled edges for a rich, established appearance.",
+    "description": "<p>Sandown limestone flooring is part of our Timeless Stone Collection and is selected for its warm, nutty oatmeal tones and natural fossil character. The stone’s surface reveals soft grey and beige fossil inclusions that create movement while maintaining a balanced, welcoming feel.</p><p>At 20mm thick, Sandown offers a more substantial presence than thinner limestones. Its honed and lightly brushed finish, combined with gently tumbled edges, gives the floor a softly textured, established look that works beautifully in both traditional and contemporary interiors.</p><p><strong>Sizes &amp; Specification</strong></p><p>Sandown limestone is supplied in:</p><ul><li>500mm widths with random lengths</li><li>600mm widths with random lengths</li><li>20mm thickness</li><li>Honed and lightly brushed surface</li><li>Gently tumbled edges</li></ul><p>The increased thickness and random length format give Sandown a strong flagstone character while retaining the refinement of a honed limestone.</p><p><strong>Installation &amp; Suitability</strong></p><p>Sandown limestone flooring is particularly well suited to kitchens, hallways and open-plan living spaces where warmth and depth of tone are desired. Its 20mm thickness also makes it a durable option for busy family homes.</p><p>Simali Stone supplies and installs Sandown limestone across Dorset and the South West, ensuring professional preparation and long-term performance.</p>",
+    "material": "Limestone",
+    "sizes": [
+      "500 × random lengths × 20mm",
+      "600 × random lengths × 20mm"
+    ],
+    "thickness": [
+      "20mm"
+    ],
+    "finish": [
+      "Honed",
+      "Brushed",
+      "Textured"
+    ],
+    "edge": [
+      "Tumbled"
+    ],
+    "colours": [
+      "Grey",
+      "Beige"
+    ],
+    "location": [
+      "Indoor",
+      "Outdoor"
+    ],
+    "rooms": [
+      "Kitchens",
+      "Hallways",
+      "Living rooms",
+      "Open-plan spaces"
+    ],
+    "ufh": null,
+    "origin": null,
+    "tags": [
+      "20mm thick limestone",
+      "indoor stone flooring",
+      "limestone",
+      "outdoor",
+      "Timeless Stone Collection"
+    ],
+    "featured": false,
+    "virtual": false,
+    "meta_description": "Sandown limestone flooring is a 20mm honed and lightly brushed natural stone with warm oatmeal tones and fossil detailing. Supplied in 500mm and 600mm random lengths.",
+    "images": [
+      {
+        "file": "86ea14ee-ebd2-4e13-93c1-7cf92b96ee78.jpg",
+        "alt": "Sandown limestone flooring displaying warm neutral tones and traditional stone character",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2023/10/86ea14ee-ebd2-4e13-93c1-7cf92b96ee78.jpg"
+      },
+      {
+        "file": "sandown1.jpg",
+        "alt": "Sandown limestone flooring showing warm biscuity and beige tones with tumbled edges",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2023/10/sandown1.jpg"
+      },
+      {
+        "file": "sandown-2.jpg",
+        "alt": "Sandown limestone flagstones in random lengths with nutty and oatmeal-coloured tones",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2023/10/sandown-2.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "timeless-stone-collection-southwell",
+    "name": "Southwell Limestone Flagstone Flooring – Timeless Stone Collection",
+    "price": 0.0,
+    "max_price": null,
+    "categories": [
+      "timeless-stone-collection",
+      "outdoor"
+    ],
+    "collection": "Timeless Stone Collection",
+    "short": "Southwell limestone flagstone flooring is a substantial 22–23mm natural stone with elegant neutral grey tones and a brushed, lightly honed surface. Supplied in 400mm, 500mm and 600mm random lengths, Southwell features hand-cut edges and a traditional flagstone character ideal for larger spaces.",
+    "description": "<p>Southwell limestone flagstone flooring forms part of our Timeless Stone Collection and reflects the character of traditional cathedral-style stone floors. With balanced neutral grey tones and natural variation throughout, Southwell delivers a composed yet characterful finish suited to both period properties and contemporary interiors.</p><p>Its substantial 22–23mm thickness gives the floor weight and durability, making it ideal for busy family homes and high-traffic areas.</p><p><strong>Finish &amp; Surface Detail</strong></p><p>Southwell features:</p><ul><li>A brushed and lightly honed surface</li><li>Subtle natural texture</li><li>Hand-cut, tumbled flagstone edges</li><li>22–23mm thickness</li></ul><p>The result is a floor that feels established and authentic, with the depth and structure expected of a traditional grey flagstone.</p><p><strong> Sizes &amp; Specification</strong></p><p>Southwell limestone is supplied in:</p><ul><li>400mm widths with random lengths</li><li>500mm widths with random lengths</li><li>600mm widths with random lengths</li><li>22–23mm thickness</li></ul><p>The random length format enhances the natural flagstone layout and creates movement across larger areas.</p><p><strong>Installation &amp; Suitability</strong></p><p>Southwell limestone flooring is particularly well suited to:</p><ul><li>Kitchens</li><li>Hallways</li><li>Open-plan living spaces</li><li>Barn conversions</li><li>Country homes</li><li>Period renovations</li></ul><p>It is compatible with underfloor heating and offers a durable, timeless flooring solution across Dorset and the South West.</p>",
+    "material": "Limestone",
+    "sizes": [
+      "600 × random lengths × 22mm",
+      "500 × random lengths × 22mm",
+      "400 × random lengths × 22mm"
+    ],
+    "thickness": [
+      "22–23mm"
+    ],
+    "finish": [
+      "Honed",
+      "Brushed"
+    ],
+    "edge": [
+      "Tumbled",
+      "Hand-cut"
+    ],
+    "colours": [
+      "Grey"
+    ],
+    "location": [
+      "Indoor",
+      "Outdoor"
+    ],
+    "rooms": [
+      "Kitchens",
+      "Hallways",
+      "Living rooms",
+      "Open-plan spaces"
+    ],
+    "ufh": true,
+    "origin": null,
+    "tags": [
+      "22mm limestone",
+      "brushed",
+      "Cathedral style flooring",
+      "flagstone",
+      "grey",
+      "Grey limestone flooring",
+      "Hand cut edges",
+      "limestone",
+      "Timeless Stone Collection"
+    ],
+    "featured": false,
+    "virtual": false,
+    "meta_description": "Southwell limestone flagstone flooring in 22–23mm thickness with brushed surface and hand-cut edges. Supplied in 400mm, 500mm and 600mm random lengths.",
+    "images": [
+      {
+        "file": "southwell-limestone-floor-showing-random-length-flagstones.jpg",
+        "alt": "Southwell limestone flooring showing random length flagstones",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/southwell-limestone-floor-showing-random-length-flagstones.jpg"
+      },
+      {
+        "file": "southwell1-1.jpg",
+        "alt": "Southwell Limestone Flagstone Flooring – Timeless Stone Collection",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/southwell1-1.jpg"
+      },
+      {
+        "file": "southwell1.jpg",
+        "alt": "Timeless Stone Collection natural stone flooring tiles available from Simali Stone Ltd showroom in Shaftesbury Dorset with UK nationwide delivery",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/southwell1.jpg"
+      },
+      {
+        "file": "southwell2.jpg",
+        "alt": "Southwell Limestone Flagstone Flooring – Timeless Stone Collection",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/southwell2.jpg"
+      },
+      {
+        "file": "southwell3.jpg",
+        "alt": "Natural stone flooring Manchester Home",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/southwell3.jpg"
+      },
+      {
+        "file": "southwell4.jpg",
+        "alt": "Southwell Limestone Flagstone Flooring – Timeless Stone Collection",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/southwell4.jpg"
+      },
+      {
+        "file": "southwell5.jpg",
+        "alt": "Southwell Limestone Flagstone Flooring – Timeless Stone Collection",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/southwell5.jpg"
+      },
+      {
+        "file": "southwell6.jpg",
+        "alt": "Southwell Limestone Flagstone Flooring – Timeless Stone Collection",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/southwell6.jpg"
+      },
+      {
+        "file": "cathedral-grey-limestone-floor-motcombe-dorset.jpg",
+        "alt": "Southwell Limestone installed in a hallway-porch in Motcombe, Dorset",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/cathedral-grey-limestone-floor-motcombe-dorset.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "timeless-stone-collection-wetherby",
+    "name": "Wetherby Limestone Flooring – Antiqued Heritage Flagstone",
+    "price": 0.0,
+    "max_price": null,
+    "categories": [
+      "timeless-stone-collection"
+    ],
+    "collection": "Timeless Stone Collection",
+    "short": "Wetherby limestone flooring is an antiqued 15mm natural stone with warm biscuit tones and enhanced fossil character. Acid-washed to gently expose shell detail, Wetherby is supplied in 500mm and 600mm random lengths with softly tumbled edges for a traditional flagstone appearance.",
+    "description": "<p><strong>Wetherby  Limestone Flooring</strong></p><p>Wetherby limestone flooring is part of our Timeless Stone Collection and is an antiqued variation of our popular heritage-style limestone. Through a controlled acid-wash process, natural fossil inclusions are subtly brought to the surface, creating gentle pitting and added texture across the stone.</p><p>The result is a warm biscuit-toned limestone with enhanced shell character and a more established appearance compared to standard honed finishes.</p><p><strong>Finish &amp; Surface Character</strong></p><p>Wetherby features:</p><ul><li>A lightly honed surface</li><li>Antiqued / acid-washed finish</li><li>Subtle surface pitting from exposed fossil content</li><li>Softly tumbled edges</li><li>15mm thickness</li></ul><p>The antiqued treatment gives the floor greater depth and texture while retaining the warmth and balance expected of heritage limestone.</p><p><strong>Sizes &amp; Specification</strong></p><p>Wetherby limestone is supplied in:</p><ul><li>500mm widths with random lengths</li><li>600mm widths with random lengths</li><li>15mm thickness</li></ul><p>The random length format enhances the traditional flagstone layout while maintaining a refined, liveable feel.</p><p><strong>Installation &amp; Suitability</strong></p><p>Wetherby limestone flooring works particularly well in:</p><ul><li>Kitchens</li><li>Hallways</li><li>Open-plan living areas</li><li>Barn conversions</li><li>Period properties</li></ul><p>It is compatible with underfloor heating and offers a durable yet characterful flooring solution across Dorset and the South West.</p>",
+    "material": "Limestone",
+    "sizes": [
+      "500 × random lengths × 15mm",
+      "600 × random lengths × 15mm"
+    ],
+    "thickness": [
+      "15mm"
+    ],
+    "finish": [
+      "Antiqued",
+      "Honed"
+    ],
+    "edge": [
+      "Tumbled"
+    ],
+    "colours": [
+      "Beige"
+    ],
+    "location": [
+      "Indoor"
+    ],
+    "rooms": [
+      "Kitchens",
+      "Hallways",
+      "Living rooms",
+      "Open-plan spaces"
+    ],
+    "ufh": true,
+    "origin": null,
+    "tags": [
+      "15mm limestone",
+      "Antiqued limestone",
+      "Heritage style limestone",
+      "Kitchen Limestone flooring",
+      "limestone",
+      "Timeless Stone Collection"
+    ],
+    "featured": false,
+    "virtual": false,
+    "meta_description": "Wetherby limestone flooring with antiqued acid-washed finish and warm biscuit tones. Available in 500mm and 600mm random lengths with tumbled edges.",
+    "images": [
+      {
+        "file": "weatherby1-2.jpg",
+        "alt": "Wetherby Limestone Flooring – Antiqued Heritage Flagstone",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/weatherby1-2.jpg"
+      },
+      {
+        "file": "weatherby1.jpg",
+        "alt": "Wetherby Limestone Flooring – Antiqued Heritage Flagstone",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/weatherby1.jpg"
+      },
+      {
+        "file": "weatherby2.jpg",
+        "alt": "Wetherby Limestone Flooring – Antiqued Heritage Flagstone",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/weatherby2.jpg"
+      },
+      {
+        "file": "weatherby3.jpg",
+        "alt": "Wetherby Limestone Flooring – Antiqued Heritage Flagstone",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/weatherby3.jpg"
+      },
+      {
+        "file": "weatherby4.jpg",
+        "alt": "Wetherby Limestone Flooring – Antiqued Heritage Flagstone",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/weatherby4.jpg"
+      },
+      {
+        "file": "weatherby5.jpg",
+        "alt": "Wetherby Limestone Flooring – Antiqued Heritage Flagstone",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/weatherby5.jpg"
+      },
+      {
+        "file": "weatherby6.jpg",
+        "alt": "Wetherby Limestone Flooring – Antiqued Heritage Flagstone",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/weatherby6.jpg"
+      },
+      {
+        "file": "weatherby7.jpg",
+        "alt": "Wetherby Limestone Flooring – Antiqued Heritage Flagstone",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/02/weatherby7.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "worcester-limestone-flooring",
+    "name": "Worcester Limestone Flooring – Timeless Stone Collection",
+    "price": 0.0,
+    "max_price": null,
+    "categories": [
+      "timeless-stone-collection"
+    ],
+    "collection": "Timeless Stone Collection",
+    "short": "Worcester limestone flooring is a warm, characterful 20mm limestone with rich orange and yellow tones softened by natural grey shelly detailing. Supplied in 500mm and 600mm widths with random lengths, Worcester offers a honed finish with gently tumbled edges for a timeless, hard-wearing floor suited to both traditional and contemporary interiors.",
+    "description": "<p>Worcester limestone flooring is part of our Timeless Stone Collection and is selected for its warm natural colour variation and durable 20mm thickness. The stone features beautiful orange and golden tones complemented by subtle grey shelly inclusions, creating a floor full of depth and natural character.</p><p>Finished in a smooth honed surface with lightly tumbled edges, Worcester limestone flooring provides a soft, traditional appearance while maintaining a refined, contemporary feel. Its 20mm thickness makes it particularly robust and well suited to busy family homes, kitchens and open-plan living areas.</p><p><strong>Sizes &amp; Finish</strong></p><p>Worcester limestone is supplied in:</p><ul><li>500mm wide slabs with random lengths</li><li>600mm wide slabs with random lengths</li><li>20mm thickness</li><li>Honed surface finish</li><li>Lightly tumbled edges</li></ul><p>The combination of random lengths and natural tonal variation ensures each installation has an authentic, established look.</p><p><strong>Installation &amp; Supply</strong></p><p>Simali Stone supplies and installs Worcester limestone flooring across Dorset and the South West. Our experienced team ensures correct preparation, professional installation and careful finishing to achieve a long-lasting result.</p><p>If you would like to view Worcester limestone in person or discuss your project, please contact us or visit our showroom for advice.</p><p><strong>Why Choose Worcester Limestone Flooring?</strong></p><ul><li>Warm orange and golden tones</li><li>Natural grey shelly detailing</li><li>Hard-wearing 20mm thickness</li><li>Honed finish with traditional tumbled edges</li><li>Suitable for kitchens, hallways and open-plan spaces</li><li>Part of our curated Timeless Stone Collection</li></ul>",
+    "material": "Limestone",
+    "sizes": [
+      "500 × random lengths × 20mm",
+      "600 × random lengths × 20mm"
+    ],
+    "thickness": [
+      "20mm"
+    ],
+    "finish": [
+      "Honed"
+    ],
+    "edge": [
+      "Tumbled"
+    ],
+    "colours": [
+      "Golden"
+    ],
+    "location": [
+      "Indoor"
+    ],
+    "rooms": [
+      "Kitchens",
+      "Hallways",
+      "Living rooms",
+      "Open-plan spaces"
+    ],
+    "ufh": null,
+    "origin": null,
+    "tags": [
+      "20mm thick limestone",
+      "fossil",
+      "honed",
+      "limestone",
+      "Orange yellow tones"
+    ],
+    "featured": true,
+    "virtual": false,
+    "meta_description": "Worcester limestone flooring is a 20mm honed natural stone with warm orange and golden tones and grey shelly detailing. Supplied in 500mm and 600mm random lengths as part of our Timeless Stone Collection.",
+    "images": [
+      {
+        "file": "worcester-limestone-dining-room-floor.jpg",
+        "alt": "Worcester limestone kitchen floor installation showing a dining room table and chairs",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/worcester-limestone-dining-room-floor.jpg"
+      },
+      {
+        "file": "worcester-limestone-kitchen-floor.jpg",
+        "alt": "Worcester limestone random length slabs",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/worcester-limestone-kitchen-floor.jpg"
+      },
+      {
+        "file": "worcester-limestone-fireplace-area-floor.jpg",
+        "alt": "Worcester limestone 20mm honed finish detail and tonal variations",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/worcester-limestone-fireplace-area-floor.jpg"
+      },
+      {
+        "file": "worcester-limestone-living-area-floor.jpg",
+        "alt": "Worcester limestone living room floor installation",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/worcester-limestone-living-area-floor.jpg"
+      },
+      {
+        "file": "worcester-limestone-small-hallway-floor-1.jpg",
+        "alt": "Worcester limestone warm orange and grey tones in a doorway floor",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/worcester-limestone-small-hallway-floor-1-scaled.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "york",
+    "name": "York Limestone Flagstone Flooring – Timeless Stone Collection",
+    "price": 0.0,
+    "max_price": null,
+    "categories": [
+      "timeless-stone-collection",
+      "outdoor"
+    ],
+    "collection": "Timeless Stone Collection",
+    "short": "York limestone flagstone flooring is a substantial 22–23mm natural stone with warm autumnal tones and traditional cathedral-style character. Supplied in 400mm, 500mm and 600mm random lengths, as well as larger format options and opus patterns, York features a brushed and lightly honed surface with hand-cut edges.",
+    "description": "<p>York limestone flagstone flooring is part of our Timeless Stone Collection and reflects the character of traditional cathedral-style stone floors. With rich autumnal tones, natural variation and substantial thickness, York delivers depth and presence across larger spaces.</p><p>Its combination of warm golden, beige and subtle grey notes creates movement within the floor while maintaining a balanced, timeless appearance.</p><p><strong>Finish &amp; Surface Character</strong></p><p>York features:</p><ul><li>A brushed and lightly honed surface</li><li>Natural tonal variation</li><li>Hand-cut, chipped flagstone edges</li><li>22–23mm thickness</li></ul><p>The surface offers a traditional worn aesthetic while remaining practical for modern homes.</p><p><strong>Sizes &amp; Formats</strong></p><p>York limestone is available in:</p><ul><li>400mm widths with random lengths x (22mm)</li><li>500mm widths with random lengths x (22mm)</li><li>600mm widths with random lengths x (22mm)</li><li>600x900mm format x (22mm)</li><li>Small opus pattern x (22mm)</li></ul><p>This range of formats allows flexibility for both classic flagstone layouts and more structured contemporary designs.</p><p><strong>Installation &amp; Suitability</strong></p><p>York limestone flooring is particularly well suited to:</p><ul><li>Large kitchens</li><li>Hallways</li><li>Open-plan living spaces</li><li>Barn conversions</li><li>Country homes</li><li>External continuity spaces (where appropriate)</li></ul><p>Its substantial thickness and natural strength make it a durable option for high-traffic areas while retaining a timeless architectural finish.</p>",
+    "material": "Limestone",
+    "sizes": [
+      "400 × random lengths × 23mm",
+      "500 × random lengths × 23mm",
+      "600 × random lengths × 23mm",
+      "Large opus pattern"
+    ],
+    "thickness": [
+      "22–23mm"
+    ],
+    "finish": [
+      "Honed",
+      "Brushed"
+    ],
+    "edge": [
+      "Hand-cut"
+    ],
+    "colours": [
+      "Golden"
+    ],
+    "location": [
+      "Indoor",
+      "Outdoor"
+    ],
+    "rooms": [
+      "Kitchens",
+      "Hallways",
+      "Living rooms",
+      "Open-plan spaces",
+      "Patios"
+    ],
+    "ufh": null,
+    "origin": null,
+    "tags": [
+      "22mm Flagstone",
+      "Autumnal colours",
+      "cathedral",
+      "Cathedral style flooring",
+      "flagstone",
+      "limestone",
+      "Timeless Stone Collection",
+      "Traditional Limestone flooring"
+    ],
+    "featured": false,
+    "virtual": false,
+    "meta_description": "York limestone flagstone flooring in 22mm thickness with brushed surface and hand-cut edges. Available in random lengths, large formats and opus patterns.",
+    "images": [
+      {
+        "file": "york1-1.jpg",
+        "alt": "York Limestone Flagstone Flooring – Timeless Stone Collection",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/03/york1-1.jpg"
+      },
+      {
+        "file": "york1.jpg",
+        "alt": "Timeless Stone Collection natural stone flooring tiles available from Simali Stone Ltd showroom in Shaftesbury Dorset with UK nationwide delivery",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/03/york1.jpg"
+      },
+      {
+        "file": "york2.jpg",
+        "alt": "York Limestone Flagstone Flooring – Timeless Stone Collection",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/03/york2.jpg"
+      },
+      {
+        "file": "york3.jpg",
+        "alt": "Birmingham kitchen limestone floor tiles",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/03/york3.jpg"
+      },
+      {
+        "file": "york4.jpg",
+        "alt": "York Limestone Flagstone Flooring – Timeless Stone Collection",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/03/york4.jpg"
+      },
+      {
+        "file": "york5.jpg",
+        "alt": "York Limestone Flagstone Flooring – Timeless Stone Collection",
+        "source": "https://simalistone.co.uk/wp-content/uploads/2024/03/york5.jpg"
+      }
+    ]
   }
 ]

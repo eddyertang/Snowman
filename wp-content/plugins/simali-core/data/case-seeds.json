@@ -1,66 +1,506 @@
 [
   {
-    "alt": "Simali Stone",
-    "image": "https://simalistone.co.uk/wp-content/uploads/2022/03/cropped-LOGO-1.png"
+    "title": "Bathroom floor retiled in porcelain near Shaftesbury",
+    "image": "bare-floor-fully-tiled-simali-stone.jpg",
+    "alt": "Porcelain bathroom floor tiles installed in a small bathroom near Shaftesbury, Dorset",
+    "town": "Shaftesbury",
+    "room": "bathroom",
+    "material": "porcelain",
+    "product": "",
+    "story": "A small bathroom near Shaftesbury, taken back to the bare timber floor. An anti-fracture mat went down first so movement in the boards cannot crack the tiles, then the porcelain was laid and grouted.",
+    "gallery": [
+      "bare-floor-showing-anti-fracture-mat-installed-shaftesbury.jpg",
+      "bare-floor-with-anti-fracture-mat-installed-part-tiled-shaftesbury.jpg"
+    ],
+    "before": "bare-floor-prior-to-tile-installation-shaftesbury.jpg",
+    "source": "https://simalistone.co.uk/wp-content/uploads/2026/03/bare-floor-fully-tiled-simali-stone.jpg"
   },
   {
-    "alt": "Simali Stone",
-    "image": "https://simalistone.co.uk/wp-content/uploads/2022/03/cropped-LOGO-1.png"
+    "title": "Decorative shower walls with a Cathedral Grey limestone floor, Motcombe",
+    "image": "decorative-porcelain-wall-tiles-installed-simali-stone.jpg",
+    "alt": "Completed bathroom showing decorative shower tiles, black shower tray and Cathedral Grey limestone floor",
+    "town": "Motcombe",
+    "room": "bathroom",
+    "material": "limestone",
+    "product": "cathedral-grey",
+    "story": "Decorative porcelain on the shower walls, set with a levelling system, and Cathedral Grey limestone across the floor.",
+    "gallery": [
+      "decorative-porcelain-wall-tiles-been-installed-motcombe-dorset.jpg",
+      "decorative-porcelain-wall-tiles-installed-dorset.jpg"
+    ],
+    "before": null,
+    "source": "https://simalistone.co.uk/wp-content/uploads/2026/03/decorative-porcelain-wall-tiles-installed-simali-stone.jpg"
   },
   {
-    "alt": "Hampton Olive limestone stone floor tiles installed in Dorset",
-    "image": "https://simalistone.co.uk/wp-content/uploads/2026/01/hampton-olive-limestone-floor-tiles.jpg"
+    "title": "Large-format grey porcelain through an open-plan kitchen, Motcombe",
+    "image": "large-format-porcelain-tiles-showing-kitchen-dining-room-floors-tiled.jpg",
+    "alt": "Large porcelain floor tiles installed across open plan room and kitchen in Shaftesbury home",
+    "town": "Motcombe",
+    "room": "kitchen",
+    "material": "porcelain",
+    "product": "",
+    "story": "Large-format grey porcelain with tumbled edges run from the living area into the kitchen, including a cupboard and an inset floor drain.",
+    "gallery": [
+      "large-format-full-room-installation-dorset.jpg",
+      "large-format-porcelain-tiles-grey-motcombe.jpg",
+      "large-format-porcelain-showing-tumbled-edges-motcombe.jpg",
+      "large-porcelain-format-tiles-showing-drain-inset-details.jpg",
+      "large-format-porcelain-tiles-installed-motcombe.jpg"
+    ],
+    "before": null,
+    "source": "https://simalistone.co.uk/wp-content/uploads/2026/03/large-format-porcelain-tiles-showing-kitchen-dining-room-floors-tiled.jpg"
   },
   {
-    "alt": "2. Cathedral stone floor fitted near Shaftesbury in DT11",
-    "image": "https://simalistone.co.uk/wp-content/uploads/2026/01/cathedral-stone-flooring-charlton-marshall-dt11-09.jpg"
+    "title": "Patterned porcelain floor in a small bathroom, Shaftesbury",
+    "image": "porcelain-floor-tiles-installed-shaftesbury-simali-stone.jpg",
+    "alt": "Decorative patterned bathroom floor tiles installed in small bathroom renovation",
+    "town": "Shaftesbury",
+    "room": "bathroom",
+    "material": "porcelain",
+    "product": "barcelona-porcelain-feature-tile-223mm",
+    "story": "",
+    "gallery": [],
+    "before": null,
+    "source": "https://simalistone.co.uk/wp-content/uploads/2026/03/porcelain-floor-tiles-installed-shaftesbury-simali-stone.jpg"
   },
   {
+    "title": "Outdoor porcelain patio, Gillingham",
+    "image": "porcelain-outdoor-patio-installed-gillingham-dorset.jpg",
+    "alt": "Large outdoor porcelain patio tiles installed in Dorset garden patio area",
+    "town": "Gillingham",
+    "room": "outdoor",
+    "material": "porcelain",
+    "product": "",
+    "story": "",
+    "gallery": [],
+    "before": null,
+    "source": "https://simalistone.co.uk/wp-content/uploads/2026/03/porcelain-outdoor-patio-installed-gillingham-dorset.jpg"
+  },
+  {
+    "title": "Porcelain kitchen wall tiles, Bourton",
+    "image": "porcelain-kitchen-wall-tiles-simali-stone-bourton-1.jpg",
+    "alt": "Porcelain kitchen wall tiles installed by Simali Stone in Bourton",
+    "town": "Bourton",
+    "room": "kitchen",
+    "material": "porcelain",
+    "product": "",
+    "story": "",
+    "gallery": [],
+    "before": null,
+    "source": "https://simalistone.co.uk/wp-content/uploads/2026/03/porcelain-kitchen-wall-tiles-simali-stone-bourton-1.jpg"
+  },
+  {
+    "title": "Stone-effect porcelain floor",
+    "image": "porcelain-stone-lookalike-floor-tiles-installed-by-simali-stone.jpg",
+    "alt": "Porcelain stone lookalike floor tiles installed by Simali Stone",
+    "town": "Dorset",
+    "room": "",
+    "material": "porcelain",
+    "product": "",
+    "story": "",
+    "gallery": [],
+    "before": null,
+    "source": "https://simalistone.co.uk/wp-content/uploads/2026/03/porcelain-stone-lookalike-floor-tiles-installed-by-simali-stone.jpg"
+  },
+  {
+    "title": "Wood-effect porcelain on floor and walls",
+    "image": "porcelain-wood-effect-tiles-on-floor-and-walls-scaled-1.jpg",
+    "alt": "Porcelain wood effect tiles on floor and walls",
+    "town": "Dorset",
+    "room": "bathroom",
+    "material": "porcelain",
+    "product": "",
+    "story": "",
+    "gallery": [],
+    "before": null,
+    "source": "https://simalistone.co.uk/wp-content/uploads/2026/03/porcelain-wood-effect-tiles-on-floor-and-walls-scaled-1.jpg"
+  },
+  {
+    "title": "Marble-effect floor and wall tiles in a shower room",
+    "image": "marble-stone-floor-wall-tiles-shower-scaled-1.jpg",
+    "alt": "Marble stone floor and wall tiles in a shower",
+    "town": "Dorset",
+    "room": "bathroom",
+    "material": "porcelain",
+    "product": "athens-marble-effect-porcelain-tile",
+    "story": "",
+    "gallery": [],
+    "before": null,
+    "source": "https://simalistone.co.uk/wp-content/uploads/2026/03/marble-stone-floor-wall-tiles-shower-scaled-1.jpg"
+  },
+  {
+    "title": "Cathedral limestone open-plan living room, Bruton",
+    "image": "cathedral-limestone-flooring-installation-bruton-028.jpg",
+    "alt": "Cathedral limestone open plan living room floor with natural light and pet friendly finish in Bruton, Somerset",
+    "town": "Bruton",
+    "room": "living",
+    "material": "limestone",
+    "product": "cathedral",
+    "story": "Cathedral limestone through an open-plan living room in Bruton, Somerset, with a hallway run through twin doorways.",
+    "gallery": [
+      "cathedral-limestone-hallway-flooring-installation-bruton-037.jpg",
+      "cathedral-limestone-flooring-installation-bruton-025.jpg",
+      "cathedral-limestone-flooring-installation-bruton-023.jpg",
+      "cathedral-limestone-flooring-installation-bruton-024.jpg"
+    ],
+    "before": null,
+    "source": "https://simalistone.co.uk/wp-content/uploads/2026/01/cathedral-limestone-flooring-installation-Bruton-028.jpg"
+  },
+  {
+    "title": "Cathedral stone floor, Charlton Marshall",
+    "image": "cathedral-stone-flooring-charlton-marshall-dt11-05.jpg",
     "alt": "Cathedral stone flooring in a real home near Shaftesbury, Dorset",
-    "image": "https://simalistone.co.uk/wp-content/uploads/2026/01/cathedral-stone-flooring-charlton-marshall-dt11-05.jpg"
+    "town": "Charlton Marshall",
+    "room": "kitchen",
+    "material": "limestone",
+    "product": "cathedral",
+    "story": "",
+    "gallery": [
+      "cathedral-stone-flooring-charlton-marshall-dt11-09.jpg",
+      "cathedral-stone-flooring-charlton-marshall-dt11-01.jpg"
+    ],
+    "before": null,
+    "source": "https://simalistone.co.uk/wp-content/uploads/2026/01/cathedral-stone-flooring-charlton-marshall-dt11-05.jpg"
   },
   {
-    "alt": "Cathedral limestone floor installed in Bruton",
-    "image": "https://simalistone.co.uk/wp-content/uploads/2026/01/cathedral-limestone-hallway-flooring-installation-Bruton-037.jpg"
+    "title": "Cathedral limestone cottage living room with four steps, Teffont",
+    "image": "cathedral-limestone-cottage-living-room-floor-teffont.jpg",
+    "alt": "Cathedral Limestone flooring in a living room with four steps in Teffont, Wiltshire",
+    "town": "Teffont",
+    "room": "living",
+    "material": "limestone",
+    "product": "cathedral",
+    "story": "",
+    "gallery": [
+      "cathedral-limestone-entrance-hallway-with-mat-well-teffont-3.jpg",
+      "cathedral-limestone-floor-installed-teffont.jpg"
+    ],
+    "before": null,
+    "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/cathedral-limestone-cottage-living-room-floor-teffont.jpg"
   },
   {
-    "alt": "Cathedral stone flooring installed in Bruton Somerset",
-    "image": "https://simalistone.co.uk/wp-content/uploads/2026/01/cathedral-limestone-flooring-installation-Bruton-025.jpg"
+    "title": "Cathedral limestone kitchen floor, freshly installed",
+    "image": "cathedral-limestone-kitchen-floor-freshly-installed.jpg",
+    "alt": "Cathedral Limestone Tiles in Dorset",
+    "town": "Dorset",
+    "room": "kitchen",
+    "material": "limestone",
+    "product": "cathedral",
+    "story": "",
+    "gallery": [],
+    "before": null,
+    "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/cathedral-limestone-kitchen-floor-freshly-installed.jpg"
   },
   {
-    "alt": "Cathedral stone installation in Somerset",
-    "image": "https://simalistone.co.uk/wp-content/uploads/2026/01/cathedral-limestone-flooring-installation-Bruton-023.jpg"
+    "title": "Cathedral limestone kitchen floor, Wiltshire",
+    "image": "cathedral-limestone-floor-grouted-wiltshire.jpg",
+    "alt": "Cathedral limestone kitchen flooring installed in Wiltshire",
+    "town": "Wiltshire",
+    "room": "kitchen",
+    "material": "limestone",
+    "product": "cathedral",
+    "story": "",
+    "gallery": [],
+    "before": null,
+    "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/cathedral-limestone-floor-grouted-wiltshire.jpg"
   },
   {
+    "title": "Cathedral limestone open-plan floor before grouting, Frome",
+    "image": "cathedral-limestone-flooring-installation-frome-014.jpg",
+    "alt": "Cathedral limestone open plan flooring installation before grouting in Frome home",
+    "town": "Frome",
+    "room": "living",
+    "material": "limestone",
+    "product": "cathedral",
+    "story": "",
+    "gallery": [],
+    "before": null,
+    "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/cathedral-limestone-flooring-installation-Frome-014-scaled.jpg"
+  },
+  {
+    "title": "Cathedral limestone patio, Dorset",
+    "image": "james-cathedral-limestone-patio-grouted-finished-dorset.jpg",
+    "alt": "Cathedral limestone patio supplied to a customer in Dorset",
+    "town": "Dorset",
+    "room": "outdoor",
+    "material": "limestone",
+    "product": "cathedral",
+    "story": "",
+    "gallery": [
+      "cathedral-limestone-part-grouted-with-steps-shaftesbury.jpg"
+    ],
+    "before": null,
+    "source": "https://simalistone.co.uk/wp-content/uploads/2026/04/james-cathedral-limestone-patio-grouted-finished-dorset.jpg"
+  },
+  {
+    "title": "Southwell limestone hallway in random lengths, Motcombe",
+    "image": "cathedral-grey-limestone-floor-motcombe-dorset.jpg",
+    "alt": "Southwell Limestone flagstones installed in random lengths in a hallway in Motcombe, Dorset",
+    "town": "Motcombe",
+    "room": "hall",
+    "material": "limestone",
+    "product": "timeless-stone-collection-southwell",
+    "story": "",
+    "gallery": [
+      "southwell-limestone-kitchen-floor-motcombe-dorset.jpg",
+      "southwell-limestone-installed-in-a-kitchen.jpg",
+      "southwell-limestone-floor-showing-random-length-flagstones.jpg"
+    ],
+    "before": null,
+    "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/cathedral-grey-limestone-floor-motcombe-dorset.jpg"
+  },
+  {
+    "title": "Southwell limestone patio with a step, Dorset",
+    "image": "cathedral-grey-patio-and-step-installed-dorset.jpg",
+    "alt": "Southwell Limestone outdoor patio with random lengths and a step",
+    "town": "Dorset",
+    "room": "outdoor",
+    "material": "limestone",
+    "product": "timeless-stone-collection-southwell",
+    "story": "",
+    "gallery": [],
+    "before": null,
+    "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/cathedral-grey-patio-and-step-installed-dorset.jpg"
+  },
+  {
+    "title": "Hampton Olive limestone kitchen, Dorset",
+    "image": "hampton-olive-limestone-floor-tiles.jpg",
+    "alt": "Hampton Olive limestone stone floor tiles installed in Dorset",
+    "town": "Dorset",
+    "room": "kitchen",
+    "material": "limestone",
+    "product": "hampton-olive",
+    "story": "",
+    "gallery": [
+      "hampton-olive-limestone-floor-dorset-6.jpg"
+    ],
+    "before": null,
+    "source": "https://simalistone.co.uk/wp-content/uploads/2026/01/hampton-olive-limestone-floor-tiles.jpg"
+  },
+  {
+    "title": "Heritage limestone flagstones in a long room",
+    "image": "tonya-long-room-shot-showing-heritage-limestone-flagstones.jpg",
+    "alt": "Finished Heritage limestone floor showing random length beige stone tiles",
+    "town": "Dorset",
+    "room": "living",
+    "material": "limestone",
+    "product": "heritage",
+    "story": "",
+    "gallery": [
+      "heritage-limestone-flooring-installation-dorset-013.jpg",
+      "heritage-limestone-flooring-installation-dorset-014.jpg",
+      "heritage-limestone-flooring-installation-dorset-018.jpg"
+    ],
+    "before": null,
+    "source": "https://simalistone.co.uk/wp-content/uploads/2026/03/tonya-long-room-shot-showing-heritage-limestone-flagstones.jpg"
+  },
+  {
+    "title": "Heritage limestone patio, Tisbury",
+    "image": "heritage-limestone-flooring-installation-dorset-020.jpg",
     "alt": "Heritage limestone patio installed in Tisbury",
-    "image": "https://simalistone.co.uk/wp-content/uploads/2026/01/heritage-limestone-flooring-installation-dorset-020.jpg"
+    "town": "Tisbury",
+    "room": "outdoor",
+    "material": "limestone",
+    "product": "heritage",
+    "story": "",
+    "gallery": [
+      "heritage-stone-paving-tisbury-wiltshire.jpg"
+    ],
+    "before": null,
+    "source": "https://simalistone.co.uk/wp-content/uploads/2026/01/heritage-limestone-flooring-installation-dorset-020.jpg"
   },
   {
+    "title": "Heritage stone patio, Salisbury",
+    "image": "heritage-limestone-flooring-installation-dorset-015.jpg",
     "alt": "Heritage stone patio in Salisbury",
-    "image": "https://simalistone.co.uk/wp-content/uploads/2026/01/heritage-limestone-flooring-installation-dorset-015.jpg"
+    "town": "Salisbury",
+    "room": "outdoor",
+    "material": "limestone",
+    "product": "heritage",
+    "story": "",
+    "gallery": [],
+    "before": null,
+    "source": "https://simalistone.co.uk/wp-content/uploads/2026/01/heritage-limestone-flooring-installation-dorset-015.jpg"
   },
   {
-    "alt": "Stone flooring installation across the south west customers may like Marnhull stone.  A local quarry stone supplied and installed by Simali stone in Shaftesbury Dorset.",
-    "image": "https://simalistone.co.uk/wp-content/uploads/2026/04/marnhull-stone-flooring-open-plan.jpg"
+    "title": "Newbury limestone open-plan floor before grouting, Somerset",
+    "image": "heritage-limestone-open-plan-flooring-ungrouted-somerset-2.jpg",
+    "alt": "Newbury Limestone being installed by Simali Stone showing random lengths and ungrouted lines",
+    "town": "Somerset",
+    "room": "living",
+    "material": "limestone",
+    "product": "newbury-limestone-flooring",
+    "story": "",
+    "gallery": [
+      "heritage-flagstone-flooring-installed-dorset.jpg"
+    ],
+    "before": null,
+    "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/Heritage-limestone-open-plan-flooring-ungrouted-somerset.jpg"
   },
   {
-    "alt": "Cathedral limestone patio supplied to a customer in Dorset.",
-    "image": "https://simalistone.co.uk/wp-content/uploads/2026/04/james-cathedral-limestone-patio-grouted-finished-dorset.jpg"
+    "title": "Marnhull stone open-plan floor, Shaftesbury",
+    "image": "marnhull-stone-flooring-open-plan.jpg",
+    "alt": "Marnhull stone, a local quarry stone, supplied and installed by Simali Stone in Shaftesbury, Dorset",
+    "town": "Shaftesbury",
+    "room": "living",
+    "material": "limestone",
+    "product": "marnhull",
+    "story": "Marnhull is quarried a few miles from the showroom. This open-plan floor was laid on lime cement so the stone can breathe.",
+    "gallery": [
+      "marnhull-limestone-floor-gold-hill-shaftesbury.jpg",
+      "marnhull-limestone-installation-gold-hill-dorset.jpg",
+      "marnhull-limestone-flagstones-step-and-random-widths.jpg",
+      "marnhull-limestone-installation-using-lime-cement.jpg"
+    ],
+    "before": null,
+    "source": "https://simalistone.co.uk/wp-content/uploads/2026/04/marnhull-stone-flooring-open-plan.jpg"
   },
   {
-    "alt": "Fieldstone limestone also known as Worcester from the Timeless stone collection",
-    "image": "https://simalistone.co.uk/wp-content/uploads/2026/03/Fieldstone-limestone-conservatory-floor-Dorset.jpeg"
+    "title": "Worcester (Fieldstone) limestone conservatory, Dorset",
+    "image": "fieldstone-limestone-conservatory-floor-dorset.jpg",
+    "alt": "Fieldstone limestone, also known as Worcester from the Timeless Stone Collection, in a conservatory in Dorset",
+    "town": "Dorset",
+    "room": "living",
+    "material": "limestone",
+    "product": "worcester-limestone-flooring",
+    "story": "",
+    "gallery": [
+      "fieldstone-limestone-showing-calcite-lines-and-random-length-flagstones.jpg",
+      "fieldstone-limestone-showing-natural-tonal-shades-simali-stone-1.jpg",
+      "worcester-limestone-dining-room-floor.jpg"
+    ],
+    "before": null,
+    "source": "https://simalistone.co.uk/wp-content/uploads/2026/03/Fieldstone-limestone-conservatory-floor-Dorset.jpeg"
   },
   {
-    "alt": "Travertine limestone supplied and installed by simali stone to a house in Salisbury.",
-    "image": "https://simalistone.co.uk/wp-content/uploads/2026/03/shelagh-travertine-floor-grouted-and-sealed-with-upstands.jpg"
+    "title": "Travertine floor with upstands, Salisbury",
+    "image": "shelagh-travertine-floor-grouted-and-sealed-with-upstands.jpg",
+    "alt": "Travertine supplied and installed by Simali Stone to a house in Salisbury",
+    "town": "Salisbury",
+    "room": "kitchen",
+    "material": "travertine",
+    "product": "",
+    "story": "",
+    "gallery": [],
+    "before": null,
+    "source": "https://simalistone.co.uk/wp-content/uploads/2026/03/shelagh-travertine-floor-grouted-and-sealed-with-upstands.jpg"
   },
   {
-    "alt": "finished heritage limestone floor showing random length beige stone tiles.",
-    "image": "https://simalistone.co.uk/wp-content/uploads/2026/03/tonya-long-room-shot-showing-heritage-limestone-flagstones.jpg"
+    "title": "Travertine floor restoration and repairs",
+    "image": "travertine-restoration-showing-completed-floor-repairs.jpg",
+    "alt": "Completed travertine floor repairs",
+    "town": "Dorset",
+    "room": "",
+    "material": "travertine",
+    "product": "",
+    "story": "Not every job is a new floor. This travertine was repaired and restored rather than replaced.",
+    "gallery": [],
+    "before": null,
+    "source": "https://simalistone.co.uk/wp-content/uploads/2026/03/travertine-restoration-showing-completed-floor-repairs.jpg"
   },
   {
-    "alt": "stone floor suppliers Dorset travertine tiles",
-    "image": "https://simalistone.co.uk/wp-content/uploads/2026/03/travertine-restoration-showing-completed-floor-repairs.jpg"
+    "title": "Bath limestone living room flowing into the conservatory, Templecombe",
+    "image": "bath-limestone-floor-living-room-conservatory-dorset-1.jpg",
+    "alt": "Bath Limestone installed in a living room flowing to the conservatory, both rooms with limestone skirting boards",
+    "town": "Templecombe",
+    "room": "living",
+    "material": "limestone",
+    "product": "bath",
+    "story": "Bath limestone through the living room and conservatory, with matching limestone skirting boards in both rooms.",
+    "gallery": [
+      "bath-limestone-conservatory-floor-and-skirting-boards-templecombe-1.jpg",
+      "bath-limestone-floor-living-room-dorset.jpg"
+    ],
+    "before": null,
+    "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/bath-limestone-floor-living-room-conservatory-dorset-1.jpg"
+  },
+  {
+    "title": "Ludlow limestone kitchen with step detail, Chilmark",
+    "image": "ludlow-limestone-flooring-pre-grout-chilmark-wiltshire-1.jpg",
+    "alt": "Ludlow Limestone kitchen floor before grouting, showing riven flagstones and a step detail",
+    "town": "Chilmark",
+    "room": "kitchen",
+    "material": "limestone",
+    "product": "ludlow",
+    "story": "",
+    "gallery": [
+      "ludlow-limestone-floor-installed-wiltshire-1.jpg",
+      "ludlow-limestone-flooring-supplied-by-simali-stone-shaftesbury-1.jpg",
+      "ludlow-limestone-in-a-traditional-kitchen-setting-1.jpg"
+    ],
+    "before": null,
+    "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/ludlow-limestone-flooring-pre-grout-chilmark-wiltshire-1.jpg"
+  },
+  {
+    "title": "Goodwood sandstone kitchen floor, Gillingham",
+    "image": "goodwood-sandstone-kitchen-floor-dorset.jpg",
+    "alt": "Goodwood sandstone floor installed in Gillingham, Dorset",
+    "town": "Gillingham",
+    "room": "kitchen",
+    "material": "sandstone",
+    "product": "the-stone-collection-goodwood",
+    "story": "",
+    "gallery": [],
+    "before": null,
+    "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/goodwood-sandstone-kitchen-floor-dorset.jpg"
+  },
+  {
+    "title": "Seashell limestone conservatory, Wiltshire",
+    "image": "seashell-limestone-flooring-wiltshire.jpg",
+    "alt": "Seashell Limestone conservatory floor showing random length flagstones with shell detailing in Wiltshire",
+    "town": "Wiltshire",
+    "room": "living",
+    "material": "limestone",
+    "product": "seashell",
+    "story": "",
+    "gallery": [],
+    "before": null,
+    "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/seashell-limestone-flooring-wiltshire.jpg"
+  },
+  {
+    "title": "Stratford limestone kitchen, Dorset",
+    "image": "stratford-limestone-kitchen-dt11-dorset.jpg",
+    "alt": "Stratford Limestone kitchen floor installation in Dorset",
+    "town": "Dorset",
+    "room": "kitchen",
+    "material": "limestone",
+    "product": "stratford",
+    "story": "",
+    "gallery": [],
+    "before": null,
+    "source": "https://simalistone.co.uk/wp-content/uploads/2026/02/stratford-limestone-kitchen-DT11-dorset.jpg"
+  },
+  {
+    "title": "Wetherby limestone kitchen, Salisbury",
+    "image": "wetherby-limestone-installed-and-supplied-by-simali-stone.jpg",
+    "alt": "Wetherby limestone installed in a kitchen in Salisbury, Wiltshire",
+    "town": "Salisbury",
+    "room": "kitchen",
+    "material": "limestone",
+    "product": "timeless-stone-collection-wetherby",
+    "story": "",
+    "gallery": [
+      "wetherby-limestone-showing-random-lengths-and-beige-tones.jpg",
+      "wetherby-limestone-close-up-showing-shell-content-and-textured-surface.jpg"
+    ],
+    "before": null,
+    "source": "https://simalistone.co.uk/wp-content/uploads/2026/06/wetherby-limestone-installed-and-supplied-by-simali-stone.png"
+  },
+  {
+    "title": "Epsom limestone kitchen and hallway, Dorset",
+    "image": "epsom-limestone-kitchen-showing-random-length-flagstones.jpg",
+    "alt": "Epsom limestone installed in a kitchen in Dorset",
+    "town": "Dorset",
+    "room": "kitchen",
+    "material": "limestone",
+    "product": "epsom-limestone-flooring",
+    "story": "",
+    "gallery": [
+      "epsom-limestone-kitchen-floor-dorset.jpg",
+      "epsom-limestone-showing-hallway-detailing.jpg",
+      "epsom-kitchen-floor-showing-natural-colour-shades.jpg"
+    ],
+    "before": null,
+    "source": "https://simalistone.co.uk/wp-content/uploads/2026/06/Epsom-limestone-kitchen-showing-random-length-flagstones.jpg"
   }
 ]

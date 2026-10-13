@@ -1,8 +1,15 @@
 (function () {
   var main = document.getElementById("gallery-main");
-  document.querySelectorAll("[data-gallery]").forEach(function (button) {
+  var thumbs = document.querySelectorAll("[data-gallery]");
+  thumbs.forEach(function (button) {
     button.addEventListener("click", function () {
-      if (main) main.src = button.getAttribute("data-gallery");
+      if (main) {
+        main.src = button.getAttribute("data-gallery");
+        main.removeAttribute("srcset");
+        main.removeAttribute("sizes");
+      }
+      thumbs.forEach(function (other) { other.removeAttribute("aria-current"); });
+      button.setAttribute("aria-current", "true");
     });
   });
   var dialog = document.getElementById("zoom-dialog");

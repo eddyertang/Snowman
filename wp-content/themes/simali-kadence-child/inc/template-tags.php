@@ -59,18 +59,106 @@ function simali_basket_count() {
 	return 0;
 }
 
-function simali_placeholder( $label, $ratio = '1' ) {
-	$class = 'ratio-1';
+function simali_ratio_class( $ratio ) {
 	if ( '4x3' === $ratio ) {
-		$class = 'ratio-4x3';
-	} elseif ( '3x2' === $ratio ) {
-		$class = 'ratio-3x2';
+		return 'ratio-4x3';
 	}
+	if ( '3x2' === $ratio ) {
+		return 'ratio-3x2';
+	}
+	if ( '16x9' === $ratio ) {
+		return 'ratio-16x9';
+	}
+	return 'ratio-1';
+}
+
+/**
+ * Quiet stone-coloured block used where a photograph has not been supplied yet.
+ */
+function simali_placeholder( $label, $ratio = '1' ) {
 	printf(
-		'<div class="%1$s todo">%2$s</div>',
-		esc_attr( $class ),
-		esc_html( $label )
+		'<div class="%1$s photo-pending" role="img" aria-label="%2$s"></div>',
+		esc_attr( simali_ratio_class( $ratio ) ),
+		esc_attr( $label )
 	);
+}
+
+/**
+ * Public URL for a photograph imported from the previous site, or '' when it is missing.
+ */
+function simali_image_url( $file ) {
+	return class_exists( 'Simali_Media' ) ? Simali_Media::url( $file ) : '';
+}
+
+/**
+ * Print an imported photograph, falling back to the quiet placeholder.
+ *
+ * @param string $file  File name inside uploads/simali.
+ * @param string $alt   Alt text.
+ * @param string $ratio 1, 4x3, 3x2 or 16x9.
+ * @param array  $args  Extra attributes: class, loading, fetchpriority, sizes.
+ */
+function simali_image( $file, $alt, $ratio = '3x2', $args = array() ) {
+	$url = simali_image_url( $file );
+	if ( ! $url ) {
+		simali_placeholder( $alt, $ratio );
+		return;
+	}
+	list( $w, $h ) = Simali_Media::size( $file );
+	$attrs = array(
+		'class'    => trim( simali_ratio_class( $ratio ) . ' ' . ( $args['class'] ?? '' ) ),
+		'src'      => $url,
+		'alt'      => $alt,
+		'loading'  => $args['loading'] ?? 'lazy',
+		'decoding' => 'async',
+	);
+	if ( $w && $h ) {
+		$attrs['width']  = $w;
+		$attrs['height'] = $h;
+	}
+	if ( ! empty( $args['fetchpriority'] ) ) {
+		$attrs['fetchpriority'] = $args['fetchpriority'];
+	}
+	$html = '<img';
+	foreach ( $attrs as $key => $value ) {
+		$html .= ' ' . $key . '="' . esc_attr( $value ) . '"';
+	}
+	echo $html . '>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+}
+
+/**
+ * Home-page hero photograph: the option set in the dashboard, else the Ludlow cottage.
+ */
+function simali_hero_url() {
+	$hero = get_option( 'simali_hero_image' );
+	if ( $hero ) {
+		return $hero;
+	}
+	return simali_image_url( 'ludlow-limestone-flooring-supplied-by-simali-stone-shaftesbury-1.jpg' );
+}
+
+function simali_google_reviews_url() {
+	return 'https://www.google.com/search?q=simali+stone+ltd+shaftesbury+reviews';
+}
+
+function simali_houzz_url() {
+	return 'https://www.houzz.co.uk/hznb/projects/cathedral-limestone-floor-installation-dorset-pj-vj~7828329';
+}
+
+function simali_facebook_url() {
+	return 'https://www.facebook.com/SimaliStoneLtd';
+}
+
+/**
+ * Opening hours copy. The previous site never published hours, so until the client
+ * confirms them we ask people to call ahead.
+ */
+function simali_hours_copy() {
+	$hours = get_option( 'simali_opening_hours' );
+	if ( $hours ) {
+		return $hours;
+	}
+	return 'Showroom visits by appointment: call 01747 852557 before you set off and we will make sure someone is here.';
 }
 
 function simali_testimonials() {
@@ -102,14 +190,19 @@ function simali_render_testimonials() {
 	echo '<div class="quote-grid">';
 	foreach ( simali_testimonials() as $item ) {
 		echo '<blockquote class="quote-card">';
-		echo wp_kses_post( wpautop( $item['text'] ) );
-		echo '<footer>' . esc_html( $item['name'] );
 		if ( ! empty( $item['rating'] ) ) {
-			echo ' <span aria-label="' . esc_attr( $item['rating'] . ' out of 5' ) . '">' . esc_html( str_repeat( '★', (int) $item['rating'] ) ) . '</span>';
+			echo '<p class="stars" aria-label="' . esc_attr( $item['rating'] . ' out of 5 stars' ) . '">' . esc_html( str_repeat( '★', (int) $item['rating'] ) ) . '</p>';
 		}
-		echo '<br><span class="todo">TODO(client): source and date</span>';
+		echo wp_kses_post( wpautop( $item['text'] ) );
+		echo '<footer><strong>' . esc_html( $item['name'] ) . '</strong>';
+		$meta = array_filter( array( $item['source'] ?? '', $item['date'] ?? '' ) );
+		if ( $meta ) {
+			echo '<span class="spec">' . esc_html( implode( ' · ', $meta ) ) . '</span>';
+		} else {
+			echo '<span class="spec">Simali Stone customer</span>';
+		}
 		echo '</footer></blockquote>';
 	}
 	echo '</div>';
-	echo '<p><a href="https://www.houzz.co.uk/hznb/projects/cathedral-limestone-floor-installation-dorset-pj-vj~7828329">You can also view more of our recent installations on our Houzz profile</a></p>';
+	echo '<p class="review-links">Read more reviews on <a href="' . esc_url( simali_google_reviews_url() ) . '" rel="noopener">Google</a>, or browse recent installations on our <a href="' . esc_url( simali_houzz_url() ) . '" rel="noopener">Houzz profile</a>.</p>';
 }

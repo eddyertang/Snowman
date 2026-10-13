@@ -163,9 +163,8 @@ function simali_preload_fonts() {
 			esc_url( get_stylesheet_directory_uri() . '/assets/fonts/' . $font )
 		);
 	}
-	$hero = get_option( 'simali_hero_image' );
-	if ( $hero ) {
-		printf( '<link rel="preload" as="image" href="%s">' . "\n", esc_url( $hero ) );
+	if ( is_front_page() && function_exists( 'simali_hero_url' ) && simali_hero_url() ) {
+		printf( '<link rel="preload" as="image" href="%s">' . "\n", esc_url( simali_hero_url() ) );
 	}
 }
 

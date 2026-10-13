@@ -109,3 +109,78 @@ function simali_attr_list( $product, $taxonomy ) {
 	}
 	return implode( ', ', $names );
 }
+
+/**
+ * Long description with the short description removed when the seed prepended it,
+ * so the same paragraph is not shown twice on the page.
+ */
+function simali_product_about( $product ) {
+	$long  = trim( (string) $product->get_description() );
+	$short = trim( wp_strip_all_tags( (string) $product->get_short_description() ) );
+	if ( '' === $long ) {
+		return '';
+	}
+	if ( $short && preg_match( '/^\s*<p>(.*?)<\/p>/su', $long, $m ) ) {
+		$first = trim( wp_strip_all_tags( html_entity_decode( $m[1], ENT_QUOTES, 'UTF-8' ) ) );
+		if ( $first === $short ) {
+			$long = trim( substr( $long, strlen( $m[0] ) ) );
+		}
+	}
+	if ( '' === trim( wp_strip_all_tags( $long ) ) ) {
+		return '';
+	}
+	return apply_filters( 'the_content', $long );
+}
+
+/**
+ * Care and sealing guidance, by material.
+ */
+function simali_care_copy( $product ) {
+	$material = strtolower( simali_attr_list( $product, 'pa_material' ) );
+	$outdoor  = false !== stripos( simali_attr_list( $product, 'pa_location' ), 'outdoor' );
+	if ( false !== strpos( $material, 'porcelain' ) ) {
+		$html = '<p>Porcelain is fired dense and does not need sealing. Sweep or vacuum grit, then mop with warm water and a pH-neutral tile cleaner. Avoid soap-based products, which leave a film that dulls the surface.</p>'
+			. '<p>Grout joints benefit from a grout protector once the floor has cured. Matt and textured finishes hide marks best; polished porcelain shows footprints more and is slippery when wet, so keep it for walls and dry rooms.</p>';
+		if ( $outdoor ) {
+			$html .= '<p>Outdoors, 20 mm porcelain can be laid on pedestals, on a full mortar bed or on a prepared base. Brush off leaves and algae in autumn; a stiff brush and warm water is usually all it takes.</p>';
+		}
+		return $html;
+	}
+	if ( false !== strpos( $material, 'sandstone' ) ) {
+		return '<p>Sandstone is porous and must be sealed. We seal before grouting and again once the floor is finished, then every two to three years depending on wear.</p>'
+			. '<p>Clean with warm water and a pH-neutral stone cleaner. Never use acidic, bleach-based or “limescale” cleaners. Wipe spills promptly, especially wine, oil and anything acidic, and use felt pads under furniture.</p>'
+			. ( $outdoor ? '<p>Outdoors, a breathable sealer protects against staining while letting the stone dry out. Brush off leaves in autumn and avoid pressure-washing at close range, which opens the surface.</p>' : '' );
+	}
+	$html = '<p>Limestone is a natural, slightly porous stone and must be sealed. We seal before grouting, so grout cannot stain the face of the stone, and again once the floor is finished. Depending on wear, plan to re-seal every few years; we will tell you which product to use.</p>'
+		. '<p>Day to day, sweep or vacuum grit and mop with warm water and a pH-neutral stone cleaner. Never use vinegar, bleach, acidic bathroom cleaners or “limescale” products: they etch limestone. Wipe up wine, fruit juice and oil promptly, and use felt pads under chair legs.</p>'
+		. '<p>Tumbled and brushed flagstones hide everyday marks well. Honed finishes show more, and reward a quick wipe. Over the years the stone mellows and develops a patina; most people see that as the point of a natural floor.</p>';
+	if ( $outdoor ) {
+		$html .= '<p>Outdoors, use a breathable impregnating sealer so the stone can dry out, brush off leaves and algae before winter, and avoid de-icing salt on the surface.</p>';
+	}
+	return $html;
+}
+
+add_action( 'wp_head', 'simali_meta_description', 2 );
+function simali_meta_description() {
+	$description = '';
+	if ( function_exists( 'is_product' ) && is_product() ) {
+		$description = get_post_meta( get_queried_object_id(), '_simali_meta_description', true );
+		if ( ! $description ) {
+			$product     = wc_get_product( get_queried_object_id() );
+			$description = $product ? wp_strip_all_tags( $product->get_short_description() ) : '';
+		}
+	} elseif ( is_front_page() ) {
+		$description = 'Natural stone and porcelain floors supplied nationwide and installed within 40 miles of Shaftesbury. Limestone flagstones, porcelain and patios from the Simali Stone showroom in Dorset.';
+	} elseif ( is_page() && has_excerpt() ) {
+		$description = get_the_excerpt();
+	} elseif ( function_exists( 'is_product_category' ) && is_product_category() ) {
+		$description = term_description();
+	}
+	$description = trim( wp_strip_all_tags( (string) $description ) );
+	if ( $description ) {
+		if ( mb_strlen( $description ) > 160 ) {
+			$description = mb_substr( $description, 0, 157 ) . '…';
+		}
+		echo '<meta name="description" content="' . esc_attr( $description ) . '">' . "\n";
+	}
+}

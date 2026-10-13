@@ -19,7 +19,8 @@
 		<div class="wrap">
 			<a href="<?php echo esc_url( simali_phone_href() ); ?>">01747 852557</a>
 			<a href="<?php echo esc_url( home_url( '/showroom/' ) ); ?>">Visit our Shaftesbury showroom</a>
-			<span class="todo">TODO(client): free or paid samples</span>
+			<span>Nationwide delivery · installation within 40 miles</span>
+			<a class="utility-end" href="<?php echo esc_url( home_url( '/samples/' ) ); ?>">Order samples</a>
 		</div>
 	</div>
 	<div class="bar wrap">

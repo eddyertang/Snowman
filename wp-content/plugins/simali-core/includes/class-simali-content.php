@@ -162,29 +162,64 @@ class Simali_Content {
 		return ob_get_clean();
 	}
 
+	/**
+	 * Grid of installation photographs. [simali_work limit="6" material="limestone" room="kitchen"]
+	 */
 	public static function work( $atts ) {
-		$atts  = shortcode_atts( array( 'limit' => 6 ), $atts );
-		$query = new WP_Query(
+		$atts = shortcode_atts(
 			array(
-				'post_type'      => 'simali_case',
-				'posts_per_page' => (int) $atts['limit'],
-			)
+				'limit'    => 6,
+				'material' => '',
+				'room'     => '',
+				'exclude'  => '',
+			),
+			$atts
 		);
+		$args = array(
+			'post_type'      => 'simali_case',
+			'posts_per_page' => max( 1, (int) $atts['limit'] ),
+			'orderby'        => array( 'menu_order' => 'ASC', 'date' => 'DESC' ),
+			'meta_query'     => array(), // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_query
+		);
+		if ( '' !== $atts['exclude'] ) {
+			$args['post__not_in'] = array_map( 'intval', explode( ',', $atts['exclude'] ) );
+		}
+		foreach ( array( 'material' => '_simali_material', 'room' => '_simali_room' ) as $att => $key ) {
+			if ( '' !== $atts[ $att ] ) {
+				$args['meta_query'][] = array( 'key' => $key, 'value' => sanitize_title( $atts[ $att ] ) );
+			}
+		}
+		$query = new WP_Query( $args );
+		if ( ! $query->have_posts() && $args['meta_query'] ) {
+			unset( $args['meta_query'] );
+			$query = new WP_Query( $args );
+		}
+		if ( ! $query->have_posts() ) {
+			return '<p>Photographs of recent installations are on our <a href="https://www.houzz.co.uk/hznb/projects/cathedral-limestone-floor-installation-dorset-pj-vj~7828329">Houzz profile</a>.</p>';
+		}
 		ob_start();
 		echo '<div class="work-grid teaser">';
-		if ( ! $query->have_posts() ) {
-			echo '<p class="todo">TODO(client): project photographs</p>';
-		}
 		while ( $query->have_posts() ) {
 			$query->the_post();
-			$image = get_post_meta( get_the_ID(), '_simali_image', true );
+			$id   = get_the_ID();
+			$alt  = get_post_meta( $id, '_simali_alt', true );
+			$town = get_post_meta( $id, '_simali_town', true );
 			echo '<a class="tile" href="' . esc_url( get_permalink() ) . '">';
-			if ( $image ) {
-				echo '<img class="ratio-3x2" alt="" src="' . esc_url( $image ) . '" width="768" height="512" loading="lazy">';
+			if ( has_post_thumbnail( $id ) ) {
+				echo get_the_post_thumbnail( $id, 'medium_large', array( 'class' => 'ratio-3x2', 'alt' => $alt ? $alt : get_the_title(), 'loading' => 'lazy' ) );
 			} else {
-				echo '<span class="todo">TODO(client): photograph</span>';
+				$image = get_post_meta( $id, '_simali_image', true );
+				if ( $image ) {
+					echo '<img class="ratio-3x2" alt="' . esc_attr( $alt ) . '" src="' . esc_url( $image ) . '" width="768" height="512" loading="lazy">';
+				} else {
+					echo '<span class="ratio-3x2 photo-pending" aria-hidden="true"></span>';
+				}
 			}
-			echo '<span class="card-body">' . esc_html( get_the_title() ) . '</span></a>';
+			echo '<span class="card-body"><span class="tile-title">' . esc_html( get_the_title() ) . '</span>';
+			if ( $town ) {
+				echo '<span class="spec">' . esc_html( $town ) . '</span>';
+			}
+			echo '</span></a>';
 		}
 		echo '</div>';
 		wp_reset_postdata();
@@ -201,13 +236,22 @@ class Simali_Content {
 			'email'    => 'sales@simalistone.co.uk',
 			'address'  => array(
 				'@type'           => 'PostalAddress',
-				'streetAddress'   => '40d–40f Wincome Business Park',
+				'streetAddress'   => '40d–40f Wincombe Business Park',
 				'addressLocality' => 'Shaftesbury',
 				'postalCode'      => 'SP7 9QJ',
 				'addressCountry'  => 'GB',
 			),
 			'vatID'    => 'GB711839046',
+			'areaServed' => array( 'Dorset', 'Wiltshire', 'Somerset' ),
+			'sameAs'   => array(
+				'https://www.facebook.com/SimaliStoneLtd',
+				'https://www.houzz.co.uk/hznb/projects/cathedral-limestone-floor-installation-dorset-pj-vj~7828329',
+			),
 		);
+		$hero = Simali_Media::url( 'ludlow-limestone-flooring-supplied-by-simali-stone-shaftesbury-1.jpg' );
+		if ( $hero ) {
+			$data['image'] = $hero;
+		}
 		echo '<script type="application/ld+json">' . wp_json_encode( $data ) . '</script>';
 		if ( function_exists( 'is_product' ) && is_product() ) {
 			$product = wc_get_product( get_the_ID() );
@@ -217,7 +261,15 @@ class Simali_Content {
 					'@type'    => 'Product',
 					'name'     => $product->get_name(),
 					'url'      => $product->get_permalink(),
+					'brand'    => array( '@type' => 'Brand', 'name' => 'Simali Stone' ),
 				);
+				$short = wp_strip_all_tags( $product->get_short_description() );
+				if ( $short ) {
+					$schema['description'] = $short;
+				}
+				if ( $product->get_image_id() ) {
+					$schema['image'] = wp_get_attachment_image_url( $product->get_image_id(), 'large' );
+				}
 				if ( '' !== $product->get_price() && (float) $product->get_price() > 0 ) {
 					$schema['offers'] = array(
 						'@type'         => 'Offer',

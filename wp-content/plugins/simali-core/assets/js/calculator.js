@@ -34,7 +34,7 @@
       text += " · Materials and delivery £" + quote.total_inc_vat.toFixed(2) + " inc VAT";
     }
     if (quote.delivery_inc_vat) {
-      text += " (£" + quote.delivery_inc_vat.toFixed(2) + " inc VAT)";
+      text += " (of which delivery £" + quote.delivery_inc_vat.toFixed(2) + " inc VAT)";
     }
     result.textContent = text;
     var qty = document.querySelector("input.qty, input[name='quantity']");

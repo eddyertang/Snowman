@@ -18,6 +18,7 @@ define( 'SIMALI_CORE_DIR', plugin_dir_path( __FILE__ ) );
 
 require_once SIMALI_CORE_DIR . 'includes/class-simali-calculator.php';
 require_once SIMALI_CORE_DIR . 'includes/class-simali-postcode.php';
+require_once SIMALI_CORE_DIR . 'includes/class-simali-media.php';
 require_once SIMALI_CORE_DIR . 'includes/class-simali-content.php';
 require_once SIMALI_CORE_DIR . 'includes/class-simali-samples.php';
 require_once SIMALI_CORE_DIR . 'includes/class-simali-forms.php';

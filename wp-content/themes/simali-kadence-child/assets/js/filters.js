@@ -2,6 +2,10 @@
   var form = document.getElementById("filters");
   var grid = document.getElementById("product-grid");
   if (!form || !grid) return;
+  var shell = form.querySelector(".filters-shell");
+  if (shell && window.matchMedia("(max-width: 767px)").matches && !form.querySelector("input:checked")) {
+    shell.removeAttribute("open");
+  }
   form.addEventListener("submit", function (event) {
     event.preventDefault();
     var data = new FormData(form);

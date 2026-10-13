@@ -238,8 +238,11 @@ class Simali_Forms {
 				self::field( 'message', 'Project notes', 'textarea', false, $old );
 			}
 		);
-		if ( ! get_option( 'simali_sample_max' ) ) {
-			echo '<p class="todo">TODO(client): maximum samples per order</p>';
+		$max = (int) get_option( 'simali_sample_max' );
+		if ( $max > 0 ) {
+			echo '<p class="fine">Up to ' . esc_html( (string) $max ) . ' samples per order. If you would like more, mention it in the project notes.</p>';
+		} else {
+			echo '<p class="fine">Choosing between several stones? Add them all. If an order is unusually large we will call before we send it.</p>';
 		}
 		return ob_get_clean();
 	}

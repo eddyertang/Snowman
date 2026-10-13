@@ -1,0 +1,10 @@
+# WordPress generates resized copies next to the originals when media is attached
+# (name-300x200.jpg, name-scaled.jpg). Only the optimised originals in
+# wp-content/uploads/simali/ are tracked; filenames that legitimately contain a
+# size (…-600x900-stone…, …-60x120cm.jpg) are re-included below.
+wp-content/uploads/simali/*-[0-9]*x[0-9]*.jpg
+wp-content/uploads/simali/*-[0-9]*x[0-9]*.png
+wp-content/uploads/simali/*-[0-9]*x[0-9]*.webp
+wp-content/uploads/simali/*-scaled.*
+!wp-content/uploads/simali/*x[0-9]*[a-z]*.jpg
+wp-content/uploads/[0-9][0-9][0-9][0-9]/

@@ -35,9 +35,29 @@ class Simali_Catalog {
 			'/product-category/stone-flooring-guides/'  => '/guides/',
 		);
 		if ( isset( $map[ $path ] ) ) {
-			wp_safe_redirect( home_url( $map[ $path ] ), 301 );
+			$target = $map[ $path ];
+			$query  = (string) wp_parse_url( $_SERVER['REQUEST_URI'] ?? '', PHP_URL_QUERY );
+			if ( '' !== $query ) {
+				$target .= ( false === strpos( $target, '?' ) ? '?' : '&' ) . $query;
+			}
+			wp_safe_redirect( home_url( $target ), 301 );
 			exit;
 		}
+	}
+
+	/**
+	 * Canonical URL for a product category: short slugs for the three
+	 * main categories, the default term link otherwise.
+	 */
+	public static function category_url( $term = null ) {
+		if ( ! $term || is_wp_error( $term ) ) {
+			return home_url( '/shop/' );
+		}
+		if ( in_array( $term->slug, array( 'limestone', 'porcelain', 'outdoor' ), true ) ) {
+			return home_url( '/' . $term->slug . '/' );
+		}
+		$link = get_term_link( $term );
+		return is_wp_error( $link ) ? home_url( '/shop/' ) : $link;
 	}
 
 	public static function filters( $query ) {
@@ -90,10 +110,10 @@ class Simali_Catalog {
 		}
 
 		$order = isset( $_GET['orderby'] ) ? sanitize_text_field( wp_unslash( $_GET['orderby'] ) ) : '';
-		if ( 'price' === $order ) {
+		if ( 'price' === $order || 'price-desc' === $order ) {
 			$query->set( 'meta_key', '_price' );
 			$query->set( 'orderby', 'meta_value_num' );
-			$query->set( 'order', 'ASC' );
+			$query->set( 'order', 'price' === $order ? 'ASC' : 'DESC' );
 		} elseif ( 'date' === $order ) {
 			$query->set( 'orderby', 'date' );
 		}
